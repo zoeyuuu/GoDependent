@@ -1,7 +1,5 @@
 package main
 
-//callback1
-
 import (
 	"go/ast"
 	"go/token"

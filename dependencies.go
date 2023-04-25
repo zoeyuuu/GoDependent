@@ -3,9 +3,6 @@ package main
 import (
 	"fmt"
 	"go/ast"
-	"go/parser"
-	"go/token"
-	"log"
 )
 
 type dependencies struct {
@@ -30,12 +27,8 @@ func findDependencies() {
 
 func findRelationshipsAB() {
 	filename1 := "./file/b.go"
-	fset := token.NewFileSet()
-	// 解析指定的Go代码文件，返回一个ast.File类型的对象 表示整个源代码文件的抽象语法树
-	f, err := parser.ParseFile(fset, filename1, nil, 0)
-	if err != nil {
-		log.Fatal(err)
-	}
+	f, _ := astParser(filename1)
+
 	// 初始化结构体-示例化map
 	mp = make(map[string]string)
 
