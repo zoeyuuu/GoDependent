@@ -6,6 +6,7 @@ var files []string
 func main() {
 
 	getFileName()
+
 	// filename1 := "./file/b.go"
 	filename1 := files[0]
 	filename2 := "./file/a.go"
