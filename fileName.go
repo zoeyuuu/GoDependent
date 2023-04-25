@@ -2,66 +2,51 @@ package main
 
 import (
 	"fmt"
-	"io/ioutil"
 	"os"
 	"path/filepath"
 )
 
-func getFileName() {
-	root := "." // 目录名
+var root string
 
+func getFileName() {
+	/*
+		// 获取命令行参数作为目录路径
+		if len(os.Args) < 2 {
+			fmt.Println("Usage: go run main.go <dir>")
+			return
+		}
+		root := os.Args[1]
+	*/
+
+	root = "D:\\projects\\go_projects\\src\\GoDependent\\file"
+
+	// 遍历目录下的所有文件和子目录
 	err := filepath.Walk(root, func(path string, info os.FileInfo, err error) error {
 		if err != nil {
 			return err
 		}
-		if info.IsDir() {
-			// 如果是目录，则递归遍历
-			if path != root {
-				subfiles, err := listFiles(path)
-				if err != nil {
-					return err
-				}
-				files = append(files, subfiles...)
-				return filepath.SkipDir
-			}
-		} else {
+		if !info.IsDir() {
 			// 如果是文件，则添加到结果列表
-			files = append(files, path)
+			absPath, err := filepath.Abs(path)
+			if err != nil {
+				return err
+			}
+			if filepath.Ext(absPath) == ".go" {
+				files = append(files, absPath)
+			}
+
 		}
 		return nil
 	})
-
 	if err != nil {
 		fmt.Println(err)
 		return
 	}
-	/*
-		for _, file := range files {
-			fmt.Println(file)
-		}
-	*/
-}
+	var relPath string
+	// 打印所有文件的相对路径
+	for _, file := range files {
+		relPath, _ = filepath.Rel(root, file)
+		fmt.Println(relPath)
+	}
 
-// 列出指定目录下的所有文件和子目录
-func listFiles(dir string) ([]string, error) {
-	files := []string{}
-	list, err := ioutil.ReadDir(dir)
-	if err != nil {
-		return files, err
-	}
-	for _, item := range list {
-		path := filepath.Join(dir, item.Name())
-		if item.IsDir() {
-			// 如果是子目录，则递归遍历
-			subfiles, err := listFiles(path)
-			if err != nil {
-				return files, err
-			}
-			files = append(files, subfiles...)
-		} else {
-			// 如果是文件，则添加到结果列表
-			files = append(files, path)
-		}
-	}
-	return files, nil
 }

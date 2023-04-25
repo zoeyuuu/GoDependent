@@ -11,14 +11,19 @@ import (
 	"strings"
 )
 
+// 所有GO文件基础信息
+var infoList []fileInfo
+
 type fileInfo struct {
-	fileName   string
-	PkgName    string //ny
-	imports    []string
-	cons       []string
-	structName []string
-	funcName   []string //普通函数名
-	method     []method
+	fileBaseName string //文件名
+	fileRelName  string //相对路径名
+	fileAbsName  string //绝对路径名
+	PkgName      string //ny
+	imports      []string
+	cons         []string
+	structName   []string
+	funcName     []string //普通函数名
+	method       []method
 }
 
 type method struct {
@@ -28,11 +33,26 @@ type method struct {
 	methodName string
 }
 
-func findFileInfo(filename string) fileInfo {
-	f, _ := astParser(filename)
-	baseName := filepath.Base(filename)
+// 处理路径下所有文件基础信息
+func findFileInfos() {
+	for _, filename := range files {
+		findFileInfo(filename)
+	}
+}
+
+// 处理单个文件的基础信息
+func findFileInfo(filename string) {
+
 	info := fileInfo{}
-	info.fileName = baseName
+
+	//处理文件名
+	baseName := filepath.Base(filename)
+	info.fileBaseName = baseName
+	relName, _ := filepath.Rel(root, filename)
+	info.fileRelName = relName
+	info.fileAbsName = filename
+
+	f, _ := astParser(filename)
 	//使用类型断言时，将*ast.File放置在一个接口类型的变量中
 	var i interface{} = f
 	switch n := i.(type) {
@@ -78,11 +98,11 @@ func findFileInfo(filename string) fileInfo {
 			info.imports = append(info.imports, impName)
 		}
 	}
-	return info
+	infoList = append(infoList, info)
 }
 
 func printFileInfo(info fileInfo) {
-	fmt.Printf("File Name: %s\n", info.fileName)
+	fmt.Printf("FileBaseName: %s\n", info.fileBaseName)
 	fmt.Printf("Import: %s\n", info.imports)
 	fmt.Printf("Constants: %v\n", info.cons)
 	fmt.Printf("Structs: %v\n", info.structName)

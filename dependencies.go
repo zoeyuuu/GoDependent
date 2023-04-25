@@ -16,18 +16,24 @@ var mp map[string]string
 var dependency dependencies
 
 func findDependencies() {
+	for i := 0; i < len(infoList); i++ {
+		for j := 0; j < len(infoList); j++ {
+			if i != j {
+				findRelationshipsAtoB(i, j)
+			}
+		}
+	}
 	info1 := infoList[0] //b.go
 	info2 := infoList[1] //a.go
-	dependency.src = info1.fileName
-	dependency.des = info2.fileName
+	dependency.src = info1.fileRelName
+	dependency.des = info2.fileRelName
 	dependency.relation = make(map[string]int)
-	findRelationshipsAB()
-	//return denpendency
+
 }
 
-func findRelationshipsAB() {
-	filename1 := "./file/b.go"
-	f, _ := astParser(filename1)
+func findRelationshipsAtoB(i, j int) {
+	filename := infoList[i].fileAbsName
+	f, _ := astParser(filename)
 
 	// 初始化结构体-示例化map
 	mp = make(map[string]string)
