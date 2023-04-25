@@ -1,6 +1,5 @@
 package main
 
-// 111
 var infoList []fileInfo
 
 func main() {
