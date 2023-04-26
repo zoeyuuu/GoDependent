@@ -1,6 +1,10 @@
-package file
+package main
 
-import "fmt"
+import (
+	"fmt"
+	"test/file"
+	"test/file/file1"
+)
 
 const TIP = `A`
 const TIP2 = `A`
@@ -10,8 +14,11 @@ type B struct {
 }
 
 var a2, a3 A
+var c file.C
 
 func a() {
+	file.PrintNormalC()
+	file1.PrintNormalD()
 	a1 := A{}
 	a2.printA()
 	a1.printA()

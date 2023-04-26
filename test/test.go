@@ -24,7 +24,7 @@ type allSelectorVisitor struct {
 }
 
 func main() {
-	filename := "D:\\projects\\go_projects\\src\\GoDependent\\file\\b.go"
+	filename := "D:\\projects\\go_projects\\src\\GoDependent\\test\\b.go"
 	fset := token.NewFileSet()
 	f, err := parser.ParseFile(fset, filename, nil, 0)
 	if err != nil {
@@ -51,6 +51,13 @@ func (v *visitor) Visit(node ast.Node) ast.Visitor {
 					// typename对应的结构体名
 					ident := valueSpec.Type.(*ast.Ident)
 					fmt.Println(ident)
+				}
+			}
+		}
+		if n.Tok == token.IMPORT {
+			for _, spec := range n.Specs {
+				if importSpec, ok := spec.(*ast.ImportSpec); ok {
+					fmt.Println(importSpec)
 				}
 			}
 		}

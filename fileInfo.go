@@ -52,6 +52,8 @@ func findFileInfo(filename string) {
 	baseName := filepath.Base(filename)
 	info.fileBaseName = baseName
 	relName, _ := filepath.Rel(root, filename)
+	// 反斜杠转换为斜杠
+	relName = filepath.ToSlash(relName)
 	info.fileRelName = relName
 	info.fileAbsName = filename
 

@@ -21,7 +21,7 @@ func getFileName() {
 		root := os.Args[1]
 	*/
 
-	root = "D:\\projects\\go_projects\\src\\GoDependent\\file"
+	root = "D:/projects/go_projects/src/GoDependent/test"
 
 	// 遍历目录下的所有文件和子目录
 	err := filepath.Walk(root, func(path string, info os.FileInfo, err error) error {
@@ -35,6 +35,7 @@ func getFileName() {
 				return err
 			}
 			if filepath.Ext(absPath) == ".go" {
+				absPath = filepath.ToSlash(absPath)
 				files = append(files, absPath)
 			}
 
@@ -45,11 +46,16 @@ func getFileName() {
 		fmt.Println(err)
 		return
 	}
+	printAllFileRelPath()
+}
+
+// 打印所有文件的相对路径
+func printAllFileRelPath() {
 	var relPath string
-	// 打印所有文件的相对路径
 	fmt.Println("所有文件的相对路径")
 	for _, file := range files {
 		relPath, _ = filepath.Rel(root, file)
+		relPath = filepath.ToSlash(relPath)
 		fmt.Println(relPath)
 	}
 	fmt.Println("--------")
