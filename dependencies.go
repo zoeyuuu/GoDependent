@@ -6,35 +6,37 @@ import (
 )
 
 type dependencies struct {
-	src      string
-	des      string
-	relation map[string]int
+	src       string
+	des       string
+	relation  map[string]int
+	relations map[string]struct{}
 }
 
-var mp map[string]string
-
-var dependency dependencies
+var dependencyList []dependencies
 
 func findDependencies() {
+
 	for i := 0; i < len(infoList); i++ {
 		for j := 0; j < len(infoList); j++ {
 			if i != j {
-				findRelationshipsAtoB(i, j)
+				findDependencyAtoB(i, j)
 			}
 		}
 	}
-	info1 := infoList[0] //b.go
-	info2 := infoList[1] //a.go
-	dependency.src = info1.fileRelName
-	dependency.des = info2.fileRelName
-	dependency.relation = make(map[string]int)
+	//dependency.relation = make(map[string]int)
 
 }
 
-func findRelationshipsAtoB(i, j int) {
+func findDependencyAtoB(i, j int) {
+	var dependency dependencies
+	dependency.src = infoList[i].fileRelName
+	dependency.des = infoList[j].fileRelName
+
 	filename := infoList[i].fileAbsName
 	f, _ := astParser(filename)
 
+	// 存储实例化
+	var mp map[string]string
 	// 初始化结构体-示例化map
 	mp = make(map[string]string)
 
@@ -44,11 +46,15 @@ func findRelationshipsAtoB(i, j int) {
 	ast.Inspect(f, findInheritance)
 	ast.Inspect(f, findFunction)
 
+	dependencyList = append(dependencyList, dependency)
+
 }
 
-func printDenpendencies(dep dependencies) {
-	fmt.Println(dep.src, "->", dep.des)
-	for k, v := range dep.relation {
-		fmt.Println(k, ":", v)
+func printDenpendenyList() {
+	for _, dep := range dependencyList {
+		fmt.Println(dep.src, "->", dep.des)
+		for k, v := range dep.relation {
+			fmt.Println(k, ":", v)
+		}
 	}
 }

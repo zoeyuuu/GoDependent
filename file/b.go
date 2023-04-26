@@ -12,7 +12,6 @@ type B struct {
 var a2 A
 
 func a() {
-	var a2 A
 	a1 := A{}
 	a2.printA()
 	a1.printA()

@@ -44,9 +44,10 @@ func getFileName() {
 	}
 	var relPath string
 	// 打印所有文件的相对路径
+	fmt.Println("所有文件的相对路径")
 	for _, file := range files {
 		relPath, _ = filepath.Rel(root, file)
 		fmt.Println(relPath)
 	}
-
+	fmt.Println("--------")
 }

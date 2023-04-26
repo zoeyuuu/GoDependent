@@ -14,6 +14,9 @@ import (
 // 所有GO文件基础信息
 var infoList []fileInfo
 
+// 思考一下
+// type structName string
+
 type fileInfo struct {
 	fileBaseName string //文件名
 	fileRelName  string //相对路径名
@@ -24,6 +27,7 @@ type fileInfo struct {
 	structName   []string
 	funcName     []string //普通函数名
 	method       []method
+	instMap      map[string]string
 }
 
 type method struct {
@@ -44,6 +48,7 @@ func findFileInfos() {
 func findFileInfo(filename string) {
 
 	info := fileInfo{}
+	//p := &info
 
 	//处理文件名
 	baseName := filepath.Base(filename)
@@ -85,11 +90,14 @@ func findFileInfo(filename string) {
 									methodName: decl.Name.Name,
 								}
 								info.method = append(info.method, methodTemp)
+								//test
+								fmt.Println("identtype:", ident.Obj)
 							}
 						}
 					}
 				}
 			}
+
 		}
 		//处理imports
 		for _, imp := range f.Imports {
@@ -98,19 +106,15 @@ func findFileInfo(filename string) {
 			info.imports = append(info.imports, impName)
 		}
 	}
+	//findInstantion(f, p)
 	infoList = append(infoList, info)
 }
 
-func printFileInfo(info fileInfo) {
-	fmt.Printf("FileBaseName: %s\n", info.fileBaseName)
-	fmt.Printf("Import: %s\n", info.imports)
-	fmt.Printf("Constants: %v\n", info.cons)
-	fmt.Printf("Structs: %v\n", info.structName)
-	fmt.Printf("Functions: %v\n", info.funcName)
-	for _, m := range info.method {
-		fmt.Printf("Methods: %s.%s\n", m.Receiver, m.methodName)
-	}
+/*
+func findInstantion(f ast.Node, info *fileInfo) {
+	ast.Inspect(f, findVar)
 }
+*/
 
 // 解析指定的Go代码文件，返回一个ast.File类型的对象 表示整个源代码文件的抽象语法树
 func astParser(filename string) (*ast.File, *token.FileSet) {
@@ -120,4 +124,17 @@ func astParser(filename string) (*ast.File, *token.FileSet) {
 		log.Fatal(err)
 	}
 	return f, fset
+}
+
+// test
+func printiSingleFileInfo() {
+	info := infoList[0]
+	fmt.Printf("FileBaseName: %s\n", info.fileBaseName)
+	fmt.Printf("Import: %s\n", info.imports)
+	fmt.Printf("Constants: %v\n", info.cons)
+	fmt.Printf("Structs: %v\n", info.structName)
+	fmt.Printf("Functions: %v\n", info.funcName)
+	for _, m := range info.method {
+		fmt.Printf("Methods: %s.%s\n", m.Receiver, m.methodName)
+	}
 }

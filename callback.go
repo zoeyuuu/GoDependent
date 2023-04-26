@@ -14,13 +14,13 @@ func findVar(n ast.Node) bool {
 	}
 	for _, spec := range genDecl.Specs {
 		if valueSpec, ok := spec.(*ast.ValueSpec); ok {
-			// 判断结构体名
+			// typename对应的结构体名
 			typename := valueSpec.Type.(*ast.Ident).Name
 			for _, v := range valueSpec.Names {
-				// 存储实例化变量名
+				// 存储多个实例化变量名
 				mp[v.Name] = typename
 				// for _, v := range info2.structName
-				for _, v := range infoList[1].structName {
+				for _, v := range infoList[0].structName {
 					if typename == v {
 						dependency.relation["instantiation"]++
 					}

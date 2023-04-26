@@ -7,9 +7,9 @@ func main() {
 
 	getFileName()
 	findFileInfos()
+	printiSingleFileInfo()
 
-	//printFileInfo(info2)
-	findDependencies()
-	printDenpendencies(dependency)
+	//findDependencies()
+	//printDenpendenyList()
 
 }
