@@ -8,6 +8,9 @@ import (
 
 var root string
 
+// 所有文件的绝对路径名
+var files []string
+
 func getFileName() {
 	/*
 		// 获取命令行参数作为目录路径

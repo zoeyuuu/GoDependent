@@ -9,7 +9,7 @@ type B struct {
 	a3 A
 }
 
-var a2 A
+var a2, a3 A
 
 func a() {
 	a1 := A{}

@@ -32,7 +32,33 @@ func main() {
 	}
 	varAll := allSelectorVisitor{}
 	ast.Walk(&varAll, f)
+	ast.Walk(&visitor{}, f)
 	fmt.Println(varAll)
+}
+
+// visitor 实现 ast.Visitor 接口
+type visitor struct {
+	k int
+}
+
+func (v *visitor) Visit(node ast.Node) ast.Visitor {
+	// 处理语法树节点
+	switch n := node.(type) {
+	case *ast.GenDecl:
+		if n.Tok == token.VAR {
+			for _, spec := range n.Specs {
+				if valueSpec, ok := spec.(*ast.ValueSpec); ok {
+					// typename对应的结构体名
+					ident := valueSpec.Type.(*ast.Ident)
+					fmt.Println(ident)
+				}
+			}
+		}
+
+	case *ast.CallExpr:
+		fmt.Printf("found call to %s\n", n.Fun)
+	}
+	return v
 }
 
 func (v *allSelectorVisitor) Visit(n ast.Node) ast.Visitor {
@@ -42,11 +68,11 @@ func (v *allSelectorVisitor) Visit(n ast.Node) ast.Visitor {
 	// 判断它是否是一个 SelectorExpr 类型的表达式（即变量选择器）
 	if selectorExp, ok := n.(*ast.SelectorExpr); ok {
 		// 只判断a.b
+		fmt.Println(selectorExp.Sel)
 		if va, ok := selectorExp.X.(*ast.Ident); ok {
 			if va.Obj == nil {
 				return v
 			}
-			fmt.Println(va.Obj)
 			if va.Obj.Kind.String() == "var" {
 
 				newSelector := selector{

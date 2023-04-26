@@ -1,15 +1,13 @@
 package main
 
-// 所有文件的绝对路径名
-var files []string
+import "fmt"
 
 func main() {
 
 	getFileName()
 	findFileInfos()
-	printiSingleFileInfo()
+	//findDependency(1, 0)
+	findDependenyAll()
 
-	//findDependencies()
-	//printDenpendenyList()
-
+	fmt.Println(dependencyList)
 }

@@ -5,31 +5,39 @@ import (
 	"go/token"
 )
 
-// 查找var语句实例化
-func findVar(n ast.Node) bool {
-	// 将参数 n 转换为 *ast.GenDecl 类型
-	genDecl, ok := n.(*ast.GenDecl)
-	if !ok || genDecl.Tok != token.VAR {
-		return true
+func (v *visitor) Visit(node ast.Node) ast.Visitor {
+	// 处理语法树节点
+	switch n := node.(type) {
+	case *ast.GenDecl:
+		findVar(n, v)
 	}
-	for _, spec := range genDecl.Specs {
-		if valueSpec, ok := spec.(*ast.ValueSpec); ok {
-			// typename对应的结构体名
-			typename := valueSpec.Type.(*ast.Ident).Name
-			for _, v := range valueSpec.Names {
-				// 存储多个实例化变量名
-				mp[v.Name] = typename
-				// for _, v := range info2.structName
-				for _, v := range infoList[0].structName {
-					if typename == v {
-						dependency.relation["instantiation"]++
+	return v
+}
+
+// 查找var语句实例化
+func findVar(n *ast.GenDecl, v *visitor) {
+	if n.Tok == token.VAR {
+		for _, spec := range n.Specs {
+			if valueSpec, ok := spec.(*ast.ValueSpec); ok {
+				if ident, ok := valueSpec.Type.(*ast.Ident); ok {
+					//if ident.Obj == nil 需要判断吗 存疑
+					for _, structName := range infoList[v.k].structName {
+						//类型匹配成功
+						if ident.Name == structName {
+							for _, identName := range valueSpec.Names {
+								inst := instantiation{typeName: ident.Name, varName: identName.Name}
+								v.dep.relations["instantiation"] = append(v.dep.relations["instantiation"], inst)
+							}
+						}
 					}
 				}
 			}
 		}
 	}
-	return true
 }
+
+/*
+
 
 // 查找结构体继承
 func findInheritance(n ast.Node) bool {
@@ -84,3 +92,4 @@ func findFunction(n ast.Node) bool {
 	}
 	return true
 }
+*/

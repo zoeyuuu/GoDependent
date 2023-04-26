@@ -27,7 +27,6 @@ type fileInfo struct {
 	structName   []string
 	funcName     []string //普通函数名
 	method       []method
-	instMap      map[string]string
 }
 
 type method struct {
@@ -48,7 +47,6 @@ func findFileInfos() {
 func findFileInfo(filename string) {
 
 	info := fileInfo{}
-	//p := &info
 
 	//处理文件名
 	baseName := filepath.Base(filename)
@@ -58,6 +56,9 @@ func findFileInfo(filename string) {
 	info.fileAbsName = filename
 
 	f, _ := astParser(filename)
+	// 包名
+	info.PkgName = f.Name.Name
+
 	//使用类型断言时，将*ast.File放置在一个接口类型的变量中
 	var i interface{} = f
 	switch n := i.(type) {
@@ -90,8 +91,6 @@ func findFileInfo(filename string) {
 									methodName: decl.Name.Name,
 								}
 								info.method = append(info.method, methodTemp)
-								//test
-								fmt.Println("identtype:", ident.Obj)
 							}
 						}
 					}
@@ -106,15 +105,9 @@ func findFileInfo(filename string) {
 			info.imports = append(info.imports, impName)
 		}
 	}
-	//findInstantion(f, p)
+
 	infoList = append(infoList, info)
 }
-
-/*
-func findInstantion(f ast.Node, info *fileInfo) {
-	ast.Inspect(f, findVar)
-}
-*/
 
 // 解析指定的Go代码文件，返回一个ast.File类型的对象 表示整个源代码文件的抽象语法树
 func astParser(filename string) (*ast.File, *token.FileSet) {
