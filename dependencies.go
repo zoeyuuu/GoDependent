@@ -20,7 +20,9 @@ var dependencyList []dependencies
 func findDependenyAll() {
 	for i := 0; i < len(infoList); i++ {
 		for j := 0; j < len(infoList); j++ {
-			findDependency(i, j)
+			if i != j {
+				findDependency(i, j)
+			}
 		}
 	}
 }

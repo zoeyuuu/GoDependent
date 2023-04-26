@@ -14,7 +14,7 @@ type B struct {
 }
 
 var a2, a3 A
-var c file.C
+var c1, c2 file.C
 
 func a() {
 	file.PrintNormalC()

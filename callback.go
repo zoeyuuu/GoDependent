@@ -19,14 +19,28 @@ func findVar(n *ast.GenDecl, v *visitor) {
 	if n.Tok == token.VAR {
 		for _, spec := range n.Specs {
 			if valueSpec, ok := spec.(*ast.ValueSpec); ok {
-				if ident, ok := valueSpec.Type.(*ast.Ident); ok {
-					//if ident.Obj == nil 需要判断吗 存疑
+				switch node := valueSpec.Type.(type) {
+				case *ast.Ident:
+					// 普通类型
 					for _, structName := range infoList[v.k].structName {
 						//类型匹配成功
-						if ident.Name == structName {
+						if node.Name == structName {
 							for _, identName := range valueSpec.Names {
-								inst := instantiation{typeName: ident.Name, varName: identName.Name}
+								inst := instantiation{typeName: structName, varName: identName.Name}
 								v.dep.relations["instantiation"] = append(v.dep.relations["instantiation"], inst)
+							}
+						}
+					}
+				case *ast.SelectorExpr:
+					// 跨包类型 sel一定是Ident类型 暂时认定X也是
+					if infoList[v.k].PkgName == node.X.(*ast.Ident).Name {
+						for _, structName := range infoList[v.k].structName {
+							//类型匹配成功
+							if structName == node.Sel.Name {
+								for _, identName := range valueSpec.Names {
+									inst := instantiation{typeName: structName, varName: identName.Name}
+									v.dep.relations["instantiation"] = append(v.dep.relations["instantiation"], inst)
+								}
 							}
 						}
 					}
