@@ -8,6 +8,6 @@ func main() {
 	findFileInfos()
 	//findDependency(1, 0)
 	findDependenyAll()
-
-	fmt.Println(dependencyList)
+	fmt.Println(len(files))
+	fmt.Println(111)
 }

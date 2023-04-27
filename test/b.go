@@ -10,13 +10,15 @@ const TIP = `A`
 const TIP2 = `A`
 
 type B struct {
-	a3 A
+	A
+	a1, a2 A
 }
 
 var a2, a3 A
 var c1, c2 file.C
 
 func a() {
+	var a4 A
 	file.PrintNormalC()
 	file1.PrintNormalD()
 	a1 := A{}
