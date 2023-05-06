@@ -29,14 +29,22 @@ func FindDependenyAll() {
 
 func findDependency(i, j int) {
 	filename := infoList[i].FileAbsName
-	f, _ := file.AstParser(filename)
+	f, fset := file.AstParser(filename)
+	comments := ast.NewCommentMap(fset, f, f.Comments)
 	// 两个文件间单向的依赖关系
 	dependency := &Dependencies{
 		Src:       infoList[i].FileRelName,
 		Des:       infoList[j].FileRelName,
 		Relations: make(map[string][]any),
 	}
-	v := &Visitor{K: j, Dep: dependency}
+	v := &Visitor{
+		J:        j,
+		I:        i,
+		Dep:      dependency,
+		comments: comments,
+		f:        f,
+		fset:     fset,
+	}
 	ast.Walk(v, f)
 	if len(dependency.Relations) != 0 {
 		DependencyList = append(DependencyList, *dependency)
@@ -65,7 +73,7 @@ func FindDependencytest(filename1, filename2 string) {
 		Des:       infoList[j].FileRelName,
 		Relations: make(map[string][]any),
 	}
-	v := &Visitor{K: j, Dep: dependency, fset: fset}
+	v := &Visitor{J: j, Dep: dependency, fset: fset}
 	ast.Walk(v, f)
 	if len(dependency.Relations) != 0 {
 		DependencyList = append(DependencyList, *dependency)

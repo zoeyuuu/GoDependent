@@ -16,23 +16,27 @@ func findStructRelation(n *ast.GenDecl, v *Visitor) {
 					for _, field := range structType.Fields.List {
 						switch node := field.Type.(type) {
 						case *ast.Ident:
-							for _, structName := range infoList[v.K].StructName {
+							for _, structName := range infoList[v.J].StructName {
 								// 匹配成功
 								if node.Name == structName {
 									//匿名嵌套
 									if field.Names == nil {
+										pos := v.fset.Position(node.Pos())
 										temp := structEmbedding{
 											container: typeSpec.Name.Name,
 											member:    field.Type.(*ast.Ident).Name,
+											pos:       pos,
 										}
 										v.Dep.Relations["structEmbedding"] = append(v.Dep.Relations["structEmbedding"], temp)
 									} else {
 										//聚合关系
 										for _, identName := range field.Names {
+											pos := v.fset.Position(node.Pos())
 											temp := structAggregation{
 												whole:   typeSpec.Name.Name,
 												part:    field.Type.(*ast.Ident).Name,
 												varName: identName.Name,
+												pos:     pos,
 											}
 											v.Dep.Relations["structAggregation"] = append(v.Dep.Relations["structAggregation"], temp)
 										}
@@ -41,24 +45,28 @@ func findStructRelation(n *ast.GenDecl, v *Visitor) {
 							}
 						case *ast.SelectorExpr:
 							// 包名匹配
-							if infoList[v.K].PkgName == node.X.(*ast.Ident).Name {
-								for _, structName := range infoList[v.K].StructName {
+							if infoList[v.J].PkgName == node.X.(*ast.Ident).Name {
+								for _, structName := range infoList[v.J].StructName {
 									// 匹配成功
 									if node.Sel.Name == structName {
 										//匿名嵌套
 										if field.Names == nil {
+											pos := v.fset.Position(node.Pos())
 											temp := structEmbedding{
 												container: typeSpec.Name.Name,
 												member:    field.Type.(*ast.SelectorExpr).Sel.Name,
+												pos:       pos,
 											}
 											v.Dep.Relations["structEmbedding"] = append(v.Dep.Relations["structEmbedding"], temp)
 										} else {
 											//聚合关系
 											for _, identName := range field.Names {
+												pos := v.fset.Position(node.Pos())
 												temp := structAggregation{
 													whole:   typeSpec.Name.Name,
 													part:    field.Type.(*ast.SelectorExpr).Sel.Name,
 													varName: identName.Name,
+													pos:     pos,
 												}
 												v.Dep.Relations["structAggregation"] = append(v.Dep.Relations["structAggregation"], temp)
 											}

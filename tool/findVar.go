@@ -13,24 +13,34 @@ func findVar(n *ast.GenDecl, v *Visitor) {
 				switch node := valueSpec.Type.(type) {
 				case *ast.Ident:
 					// 普通类型
-					for _, structName := range infoList[v.K].StructName {
+					for _, structName := range infoList[v.J].StructName {
 						//类型匹配成功
 						if node.Name == structName {
 							for _, identName := range valueSpec.Names {
-								inst := Instantiation{TypeName: structName, VarName: identName.Name}
-								v.Dep.Relations["instantiation"] = append(v.Dep.Relations["instantiation"], inst)
+								pos := v.fset.Position(n.Pos())
+								tmp := Instantiation{
+									TypeName: structName,
+									VarName:  identName.Name,
+									pos:      pos,
+								}
+								v.Dep.Relations["instantiation"] = append(v.Dep.Relations["instantiation"], tmp)
 							}
 						}
 					}
 				case *ast.SelectorExpr:
 					// 跨包类型 sel一定是Ident类型 暂时认定X也是
-					if infoList[v.K].PkgName == node.X.(*ast.Ident).Name {
-						for _, structName := range infoList[v.K].StructName {
+					if infoList[v.J].PkgName == node.X.(*ast.Ident).Name {
+						for _, structName := range infoList[v.J].StructName {
 							//类型匹配成功
 							if structName == node.Sel.Name {
 								for _, identName := range valueSpec.Names {
-									inst := Instantiation{TypeName: structName, VarName: identName.Name}
-									v.Dep.Relations["instantiation"] = append(v.Dep.Relations["instantiation"], inst)
+									pos := v.fset.Position(n.Pos())
+									tmp := Instantiation{
+										TypeName: structName,
+										VarName:  identName.Name,
+										pos:      pos,
+									}
+									v.Dep.Relations["instantiation"] = append(v.Dep.Relations["instantiation"], tmp)
 								}
 							}
 						}

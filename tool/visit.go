@@ -3,17 +3,19 @@ package tool
 import (
 	"go/ast"
 	"go/token"
-	"go/types"
 )
 
 type Visitor struct {
-	K    int // j作为visitor结构体的字段
-	Dep  *Dependencies
-	Info *types.Info    // 包含类型信息
-	fset *token.FileSet // 文件集合
+	I        int
+	J        int // j作为visitor结构体的字段
+	Dep      *Dependencies
+	comments ast.CommentMap
+	fset     *token.FileSet
+	f        *ast.File
 }
 
 func (v *Visitor) Visit(node ast.Node) ast.Visitor {
+
 	// 处理语法树节点
 	switch n := node.(type) {
 	case *ast.GenDecl:
@@ -24,11 +26,11 @@ func (v *Visitor) Visit(node ast.Node) ast.Visitor {
 		//接口嵌套
 		//findInterfaceRelation(n,v)
 	case *ast.Ident:
-		//		pos := v.fset.Position(n.Pos())
-		//		if !strings.HasPrefix(pos.LineComment, "//") && !strings.HasPrefix(pos.LineComment, "/*") {
-		//			findConstRefer(n, v)
-		//		}
-
+		// 排除注释里的情况
+		if _, ok := v.comments[n.Pos()]; ok {
+			return v
+		}
+		// 找到
 		findConstRefer(n, v)
 	}
 	return v
