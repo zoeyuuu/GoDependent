@@ -1,4 +1,4 @@
-package main
+package file
 
 import (
 	"fmt"
@@ -9,9 +9,9 @@ import (
 var root string
 
 // 所有文件的绝对路径名
-var files []string
+var Files []string
 
-func getFileName() {
+func GetFileName() {
 	/*
 		// 获取命令行参数作为目录路径
 		if len(os.Args) < 2 {
@@ -21,7 +21,7 @@ func getFileName() {
 		root := os.Args[1]
 	*/
 
-	root = "D:/projects/go_projects/src/github.com/hugo"
+	root = "D:\\projects\\go_projects\\src\\github.com\\gin-gonic\\gin"
 
 	// 遍历目录下的所有文件和子目录
 	err := filepath.Walk(root, func(path string, info os.FileInfo, err error) error {
@@ -36,7 +36,7 @@ func getFileName() {
 			}
 			if filepath.Ext(absPath) == ".go" {
 				absPath = filepath.ToSlash(absPath)
-				files = append(files, absPath)
+				Files = append(Files, absPath)
 			}
 
 		}
@@ -53,7 +53,7 @@ func getFileName() {
 func printAllFileRelPath() {
 	var relPath string
 	fmt.Println("所有文件的相对路径")
-	for _, file := range files {
+	for _, file := range Files {
 		relPath, _ = filepath.Rel(root, file)
 		relPath = filepath.ToSlash(relPath)
 		fmt.Println(relPath)
