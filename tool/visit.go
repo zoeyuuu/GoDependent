@@ -27,7 +27,7 @@ func (v *Visitor) Visit(node ast.Node) ast.Visitor {
 		//findInterfaceRelation(n,v)
 	case *ast.Ident:
 		// 排除注释里的情况
-		if _, ok := v.comments[n.Pos()]; ok {
+		if _, ok := v.comments[&ast.Ident{NamePos: n.Pos()}]; ok {
 			return v
 		}
 		// 找到
