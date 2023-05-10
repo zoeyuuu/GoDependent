@@ -36,3 +36,9 @@ type globalRefer struct {
 	Type string
 	pos  token.Position
 }
+
+// 函数调用
+type functionCall struct {
+	funName string
+	pos     token.Position
+}

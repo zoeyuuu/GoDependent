@@ -6,7 +6,7 @@ import (
 )
 
 // 查找var语句实例化
-func findVar(n *ast.GenDecl, v *Visitor) {
+func findVarInst(n *ast.GenDecl, v *Visitor) {
 	if n.Tok == token.VAR {
 		for _, spec := range n.Specs {
 			if valueSpec, ok := spec.(*ast.ValueSpec); ok {

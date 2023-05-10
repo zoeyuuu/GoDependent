@@ -30,7 +30,7 @@ type FileInfo struct {
 	Vars          []Var
 	//	Type         []any
 	StructName []string
-	funcName   []string //普通函数名
+	FuncName   []string //普通函数名
 	method     []method
 }
 
@@ -161,7 +161,7 @@ func findFileInfo(filename string) {
 					}
 				}
 			case *ast.FuncDecl:
-				info.funcName = append(info.funcName, decl.Name.Name)
+				info.FuncName = append(info.FuncName, decl.Name.Name)
 				if decl.Recv != nil {
 					for _, field := range decl.Recv.List {
 						if t, ok := field.Type.(*ast.StarExpr); ok {

@@ -20,11 +20,14 @@ func (v *Visitor) Visit(node ast.Node) ast.Visitor {
 	switch n := node.(type) {
 	case *ast.GenDecl:
 		//var实例化
-		findVar(n, v)
+		findVarInst(n, v)
 		//结构体嵌套、组合
 		findStructRelation(n, v)
 		//接口嵌套
 		//findInterfaceRelation(n,v)
+	case *ast.CallExpr:
+		//查找函数/方法调用
+		findFunctionCall(n, v)
 	case *ast.Ident:
 		// 排除注释里的情况
 		if _, ok := v.comments[&ast.Ident{NamePos: n.Pos()}]; ok {
