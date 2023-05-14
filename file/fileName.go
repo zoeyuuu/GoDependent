@@ -21,8 +21,8 @@ func GetFileName() {
 		root := os.Args[1]
 	*/
 
-	root = "D:\\projects\\go_projects\\src\\gin"
-	//root = "D:\\projects\\go_projects\\src\\github.com\\gin-gonic\\gin"
+	//root = "D:\\projects\\go_projects\\src\\gin"
+	root = "D:\\projects\\go_projects\\src\\github.com\\gin-gonic\\gin"
 
 	// 遍历目录下的所有文件和子目录
 	err := filepath.Walk(root, func(path string, info os.FileInfo, err error) error {
@@ -47,7 +47,6 @@ func GetFileName() {
 		fmt.Println(err)
 		return
 	}
-	//printAllFileRelPath()
 }
 
 // 打印所有文件的相对路径

@@ -19,9 +19,10 @@ func findVarInst(n *ast.GenDecl, v *Visitor) {
 							for _, identName := range valueSpec.Names {
 								pos := v.fset.Position(n.Pos())
 								tmp := Instantiation{
-									TypeName: structName,
-									VarName:  identName.Name,
-									pos:      pos,
+									StructName: structName,
+									ObjName:    identName.Name,
+									Token:      "var",
+									pos:        pos,
 								}
 								v.Dep.Relations["instantiation"] = append(v.Dep.Relations["instantiation"], tmp)
 							}
@@ -36,9 +37,10 @@ func findVarInst(n *ast.GenDecl, v *Visitor) {
 								for _, identName := range valueSpec.Names {
 									pos := v.fset.Position(n.Pos())
 									tmp := Instantiation{
-										TypeName: structName,
-										VarName:  identName.Name,
-										pos:      pos,
+										StructName: structName,
+										ObjName:    identName.Name,
+										Token:      "var",
+										pos:        pos,
 									}
 									v.Dep.Relations["instantiation"] = append(v.Dep.Relations["instantiation"], tmp)
 								}

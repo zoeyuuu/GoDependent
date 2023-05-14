@@ -35,7 +35,7 @@ func findStructRelation(n *ast.GenDecl, v *Visitor) {
 											temp := structAggregation{
 												whole:   typeSpec.Name.Name,
 												part:    field.Type.(*ast.Ident).Name,
-												varName: identName.Name,
+												ObjName: identName.Name,
 												pos:     pos,
 											}
 											v.Dep.Relations["structAggregation"] = append(v.Dep.Relations["structAggregation"], temp)
@@ -65,7 +65,7 @@ func findStructRelation(n *ast.GenDecl, v *Visitor) {
 												temp := structAggregation{
 													whole:   typeSpec.Name.Name,
 													part:    field.Type.(*ast.SelectorExpr).Sel.Name,
-													varName: identName.Name,
+													ObjName: identName.Name,
 													pos:     pos,
 												}
 												v.Dep.Relations["structAggregation"] = append(v.Dep.Relations["structAggregation"], temp)

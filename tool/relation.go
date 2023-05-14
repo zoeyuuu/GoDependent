@@ -4,16 +4,17 @@ import "go/token"
 
 // 实例化
 type Instantiation struct {
-	TypeName string
-	VarName  string
-	pos      token.Position
+	StructName string
+	ObjName    string
+	Token      string // var or :=
+	pos        token.Position
 }
 
 // 结构体聚合
 type structAggregation struct {
 	whole   string
 	part    string
-	varName string
+	ObjName string
 	pos     token.Position
 }
 

@@ -21,8 +21,9 @@ func main() {
 	infoList = file.InfoList
 
 	findDepOfFile("gin.go")
+	tool.Dependencies_To_Json()
 
-	dep := showDependency("context_appengine.go", "gin.go")
+	dep := showDependency("binding.go", "form.go")
 	fmt.Println(depList, dep)
 }
 
@@ -49,6 +50,6 @@ func showDependency(file1, file2 string) tool.Dependencies {
 			return v
 		}
 	}
-	fmt.Println("no dependency")
+	//fmt.Println("no dependency")
 	return tool.Dependencies{}
 }

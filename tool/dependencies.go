@@ -2,7 +2,6 @@ package tool
 
 import (
 	"GoDependent/file"
-	"fmt"
 	"go/ast"
 )
 
@@ -48,9 +47,6 @@ func findDependency(i, j int) {
 	ast.Walk(v, f)
 	if len(dependency.Relations) != 0 {
 		DependencyList = append(DependencyList, *dependency)
-	}
-	if _, ok := dependency.Relations["GlobalRefer"]; ok {
-		fmt.Println(dependency)
 	}
 }
 
