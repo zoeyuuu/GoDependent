@@ -9,9 +9,9 @@ import (
 	"time"
 )
 
-func Dependencies_To_Json() {
+func DependenciesToJson() {
 	now := time.Now()
-	dirName := fmt.Sprintf("outputs/%s", now.Format("2006-01-02_15-04"))
+	dirName := fmt.Sprintf("outputs/ByDependType/%s", now.Format("2006-01-02_15-04"))
 	err := os.MkdirAll(dirName, 0755)
 	if err != nil {
 		panic(err)
@@ -23,7 +23,7 @@ func Dependencies_To_Json() {
 	ConstReferToJSON(dirName)
 	GlobalReferToJSON(dirName)
 	FunctionCallToJSON(dirName)
-	os.Exit(0)
+	//os.Exit(0)
 }
 
 func InstantiationToJson(dirName string) {
@@ -39,14 +39,14 @@ func InstantiationToJson(dirName string) {
 						StructName: ins.StructName,
 						ObjName:    ins.ObjName,
 						Token:      ins.Token,
-						Pos:        ins.pos.String(),
+						Pos:        ins.Pos.String(),
 					})
 				}
 			}
 		}
 	}
 
-	fileName := "Instantiation.txt"
+	fileName := "Instantiation.json"
 	filePath := filepath.Join(dirName, fileName)
 	jsonData, err := json.MarshalIndent(instantiationsJSON, "", "    ")
 	if err != nil {
@@ -68,10 +68,10 @@ func StructaggregationToJson(dirName string) {
 					structAggregationsJSON = append(structAggregationsJSON, StructAggregationJSON{
 						Src:     dep.Src,
 						Des:     dep.Des,
-						Whole:   ins.whole,
-						Part:    ins.part,
+						Whole:   ins.Whole,
+						Part:    ins.Part,
 						ObjName: ins.ObjName,
-						Pos:     ins.pos.String(),
+						Pos:     ins.Pos.String(),
 					})
 				}
 			}
@@ -79,7 +79,7 @@ func StructaggregationToJson(dirName string) {
 	}
 
 	// 输出 JSON 格式数据到文件
-	fileName := "StructAggregation.txt"
+	fileName := "StructAggregation.json"
 	filePath := filepath.Join(dirName, fileName)
 	jsonData, err := json.MarshalIndent(structAggregationsJSON, "", "    ")
 	if err != nil {
@@ -101,16 +101,16 @@ func StructEmbeddingToJSON(dirName string) {
 					structEmbeddingsJSON = append(structEmbeddingsJSON, StructEmbeddingJSON{
 						Src:       dep.Src,
 						Des:       dep.Des,
-						Container: ins.container,
-						Member:    ins.member,
-						Pos:       ins.pos.String(),
+						Container: ins.Container,
+						Member:    ins.Member,
+						Pos:       ins.Pos.String(),
 					})
 				}
 			}
 		}
 	}
 
-	fileName := "StructEmbedding.txt"
+	fileName := "StructEmbedding.json"
 	filePath := filepath.Join(dirName, fileName)
 	jsonData, err := json.MarshalIndent(structEmbeddingsJSON, "", "    ")
 	if err != nil {
@@ -132,15 +132,15 @@ func ConstReferToJSON(dirName string) {
 					constRefersJSON = append(constRefersJSON, ConstReferJSON{
 						Src:  dep.Src,
 						Des:  dep.Des,
-						Name: ins.name,
-						Pos:  ins.pos.String(),
+						Name: ins.Name,
+						Pos:  ins.Pos.String(),
 					})
 				}
 			}
 		}
 	}
 
-	fileName := "ConstRefer.txt"
+	fileName := "ConstRefer.json"
 	filePath := filepath.Join(dirName, fileName)
 	jsonData, err := json.MarshalIndent(constRefersJSON, "", "    ")
 	if err != nil {
@@ -162,16 +162,16 @@ func GlobalReferToJSON(dirName string) {
 					globalRefersJSON = append(globalRefersJSON, GlobalReferJSON{
 						Src:  dep.Src,
 						Des:  dep.Des,
-						Name: ins.name,
+						Name: ins.Name,
 						Type: ins.Type,
-						Pos:  ins.pos.String(),
+						Pos:  ins.Pos.String(),
 					})
 				}
 			}
 		}
 	}
 
-	fileName := "GlobalRefer.txt"
+	fileName := "GlobalRefer.json"
 	filePath := filepath.Join(dirName, fileName)
 	jsonData, err := json.MarshalIndent(globalRefersJSON, "", "    ")
 	if err != nil {
@@ -193,15 +193,15 @@ func FunctionCallToJSON(dirName string) {
 					functionCallsJSON = append(functionCallsJSON, FunctionCallJSON{
 						Src:     dep.Src,
 						Des:     dep.Des,
-						FunName: ins.funName,
-						Pos:     ins.pos.String(),
+						FunName: ins.FunName,
+						Pos:     ins.Pos.String(),
 					})
 				}
 			}
 		}
 	}
 
-	fileName := "FunctionCall.txt"
+	fileName := "FunctionCall.json"
 	filePath := filepath.Join(dirName, fileName)
 	jsonData, err := json.MarshalIndent(functionCallsJSON, "", "    ")
 	if err != nil {

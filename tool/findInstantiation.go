@@ -22,7 +22,7 @@ func findVarInst(n *ast.GenDecl, v *Visitor) {
 									StructName: structName,
 									ObjName:    identName.Name,
 									Token:      "var",
-									pos:        pos,
+									Pos:        pos,
 								}
 								v.Dep.Relations["instantiation"] = append(v.Dep.Relations["instantiation"], tmp)
 							}
@@ -40,7 +40,7 @@ func findVarInst(n *ast.GenDecl, v *Visitor) {
 										StructName: structName,
 										ObjName:    identName.Name,
 										Token:      "var",
-										pos:        pos,
+										Pos:        pos,
 									}
 									v.Dep.Relations["instantiation"] = append(v.Dep.Relations["instantiation"], tmp)
 								}

@@ -15,8 +15,8 @@ func findFunctionCall(n *ast.CallExpr, v *Visitor) {
 		for _, funName := range infoList[v.J].FuncName {
 			if name == funName {
 				tmp := functionCall{
-					funName: name,
-					pos:     pos,
+					FunName: name,
+					Pos:     pos,
 				}
 				v.Dep.Relations["FunctionCall"] = append(v.Dep.Relations["FunctionCall"], tmp)
 			}
@@ -33,8 +33,8 @@ func findFunctionCall(n *ast.CallExpr, v *Visitor) {
 					for _, funName := range infoList[v.J].FuncName {
 						if name == funName {
 							tmp := functionCall{
-								funName: name,
-								pos:     pos,
+								FunName: name,
+								Pos:     pos,
 							}
 							v.Dep.Relations["FunctionCall"] = append(v.Dep.Relations["FunctionCall"], tmp)
 						}
@@ -44,8 +44,8 @@ func findFunctionCall(n *ast.CallExpr, v *Visitor) {
 				for _, funName := range infoList[v.J].FuncName {
 					if name == funName {
 						tmp := functionCall{
-							funName: name,
-							pos:     pos,
+							FunName: name,
+							Pos:     pos,
 						}
 						v.Dep.Relations["FunctionCall"] = append(v.Dep.Relations["FunctionCall"], tmp)
 					}
@@ -59,15 +59,14 @@ func findFunctionCall(n *ast.CallExpr, v *Visitor) {
 					for _, funName := range infoList[v.J].FuncName {
 						if name == funName {
 							tmp := functionCall{
-								funName: name,
-								pos:     pos,
+								FunName: name,
+								Pos:     pos,
 							}
 							v.Dep.Relations["FunctionCall"] = append(v.Dep.Relations["FunctionCall"], tmp)
 						}
 					}
 				}
 			}
-			//
 		}
 	}
 }

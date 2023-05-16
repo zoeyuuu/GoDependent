@@ -23,9 +23,9 @@ func findStructRelation(n *ast.GenDecl, v *Visitor) {
 									if field.Names == nil {
 										pos := v.fset.Position(node.Pos())
 										temp := structEmbedding{
-											container: typeSpec.Name.Name,
-											member:    field.Type.(*ast.Ident).Name,
-											pos:       pos,
+											Container: typeSpec.Name.Name,
+											Member:    field.Type.(*ast.Ident).Name,
+											Pos:       pos,
 										}
 										v.Dep.Relations["structEmbedding"] = append(v.Dep.Relations["structEmbedding"], temp)
 									} else {
@@ -33,10 +33,10 @@ func findStructRelation(n *ast.GenDecl, v *Visitor) {
 										for _, identName := range field.Names {
 											pos := v.fset.Position(node.Pos())
 											temp := structAggregation{
-												whole:   typeSpec.Name.Name,
-												part:    field.Type.(*ast.Ident).Name,
+												Whole:   typeSpec.Name.Name,
+												Part:    field.Type.(*ast.Ident).Name,
 												ObjName: identName.Name,
-												pos:     pos,
+												Pos:     pos,
 											}
 											v.Dep.Relations["structAggregation"] = append(v.Dep.Relations["structAggregation"], temp)
 										}
@@ -53,9 +53,9 @@ func findStructRelation(n *ast.GenDecl, v *Visitor) {
 										if field.Names == nil {
 											pos := v.fset.Position(node.Pos())
 											temp := structEmbedding{
-												container: typeSpec.Name.Name,
-												member:    field.Type.(*ast.SelectorExpr).Sel.Name,
-												pos:       pos,
+												Container: typeSpec.Name.Name,
+												Member:    field.Type.(*ast.SelectorExpr).Sel.Name,
+												Pos:       pos,
 											}
 											v.Dep.Relations["structEmbedding"] = append(v.Dep.Relations["structEmbedding"], temp)
 										} else {
@@ -63,10 +63,10 @@ func findStructRelation(n *ast.GenDecl, v *Visitor) {
 											for _, identName := range field.Names {
 												pos := v.fset.Position(node.Pos())
 												temp := structAggregation{
-													whole:   typeSpec.Name.Name,
-													part:    field.Type.(*ast.SelectorExpr).Sel.Name,
+													Whole:   typeSpec.Name.Name,
+													Part:    field.Type.(*ast.SelectorExpr).Sel.Name,
 													ObjName: identName.Name,
-													pos:     pos,
+													Pos:     pos,
 												}
 												v.Dep.Relations["structAggregation"] = append(v.Dep.Relations["structAggregation"], temp)
 											}

@@ -8,9 +8,9 @@ import (
 var infoList []file.FileInfo
 
 type Dependencies struct {
-	Src       string
-	Des       string
-	Relations map[string][]any
+	Src       string `json:"source"`
+	Des       string `json:"target"`
+	Relations map[string][]interface{}
 }
 
 var DependencyList []Dependencies
@@ -32,9 +32,9 @@ func findDependency(i, j int) {
 	comments := ast.NewCommentMap(fset, f, f.Comments)
 	// 两个文件间单向的依赖关系
 	dependency := &Dependencies{
-		Src:       infoList[i].FileRelName,
-		Des:       infoList[j].FileRelName,
-		Relations: make(map[string][]any),
+		Src:       infoList[i].FileBaseName,
+		Des:       infoList[j].FileBaseName,
+		Relations: make(map[string][]interface{}),
 	}
 	v := &Visitor{
 		J:        j,
@@ -67,7 +67,7 @@ func FindDependencytest(filename1, filename2 string) {
 	dependency := &Dependencies{
 		Src:       infoList[i].FileRelName,
 		Des:       infoList[j].FileRelName,
-		Relations: make(map[string][]any),
+		Relations: make(map[string][]interface{}),
 	}
 	v := &Visitor{J: j, Dep: dependency, fset: fset}
 	ast.Walk(v, f)

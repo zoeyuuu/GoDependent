@@ -5,7 +5,7 @@
         "Whole": "Context",
         "Part": "errorMsgs",
         "ObjName": "Errors",
-        "Pos": "D:/projects/go_projects/src/github.com/gin-gonic/gin/context.go:72:9"
+        "Pos": "D:/projects/go_projects/src/gin/context.go:72:9"
     },
     {
         "Src": "context.go",
@@ -13,7 +13,7 @@
         "Whole": "Context",
         "Part": "HandlersChain",
         "ObjName": "handlers",
-        "Pos": "D:/projects/go_projects/src/github.com/gin-gonic/gin/context.go:57:11"
+        "Pos": "D:/projects/go_projects/src/gin/context.go:57:11"
     },
     {
         "Src": "context.go",
@@ -21,7 +21,7 @@
         "Whole": "Context",
         "Part": "responseWriter",
         "ObjName": "writermem",
-        "Pos": "D:/projects/go_projects/src/github.com/gin-gonic/gin/context.go:52:12"
+        "Pos": "D:/projects/go_projects/src/gin/context.go:52:12"
     },
     {
         "Src": "context.go",
@@ -29,7 +29,7 @@
         "Whole": "Context",
         "Part": "ResponseWriter",
         "ObjName": "Writer",
-        "Pos": "D:/projects/go_projects/src/github.com/gin-gonic/gin/context.go:54:12"
+        "Pos": "D:/projects/go_projects/src/gin/context.go:54:12"
     },
     {
         "Src": "context.go",
@@ -37,7 +37,7 @@
         "Whole": "Context",
         "Part": "Params",
         "ObjName": "Params",
-        "Pos": "D:/projects/go_projects/src/github.com/gin-gonic/gin/context.go:56:11"
+        "Pos": "D:/projects/go_projects/src/gin/context.go:56:11"
     },
     {
         "Src": "gin.go",
@@ -45,7 +45,7 @@
         "Whole": "Engine",
         "Part": "Delims",
         "ObjName": "delims",
-        "Pos": "D:/projects/go_projects/src/github.com/gin-gonic/gin/gin.go:157:19"
+        "Pos": "D:/projects/go_projects/src/gin/gin.go:157:19"
     },
     {
         "Src": "gin.go",
@@ -53,7 +53,7 @@
         "Whole": "Engine",
         "Part": "HTMLRender",
         "ObjName": "HTMLRender",
-        "Pos": "D:/projects/go_projects/src/github.com/gin-gonic/gin/gin.go:159:19"
+        "Pos": "D:/projects/go_projects/src/gin/gin.go:159:19"
     },
     {
         "Src": "gin.go",
@@ -61,7 +61,7 @@
         "Whole": "Engine",
         "Part": "methodTrees",
         "ObjName": "trees",
-        "Pos": "D:/projects/go_projects/src/github.com/gin-gonic/gin/gin.go:166:19"
+        "Pos": "D:/projects/go_projects/src/gin/gin.go:166:19"
     },
     {
         "Src": "routergroup.go",
@@ -69,7 +69,7 @@
         "Whole": "RouterGroup",
         "Part": "HandlersChain",
         "ObjName": "Handlers",
-        "Pos": "D:/projects/go_projects/src/github.com/gin-gonic/gin/routergroup.go:56:11"
+        "Pos": "D:/projects/go_projects/src/gin/routergroup.go:56:11"
     },
     {
         "Src": "tree.go",
@@ -77,7 +77,7 @@
         "Whole": "node",
         "Part": "HandlersChain",
         "ObjName": "handlers",
-        "Pos": "D:/projects/go_projects/src/github.com/gin-gonic/gin/tree.go:123:12"
+        "Pos": "D:/projects/go_projects/src/gin/tree.go:123:12"
     },
     {
         "Src": "tree.go",
@@ -85,6 +85,6 @@
         "Whole": "nodeValue",
         "Part": "HandlersChain",
         "ObjName": "handlers",
-        "Pos": "D:/projects/go_projects/src/github.com/gin-gonic/gin/tree.go:403:11"
+        "Pos": "D:/projects/go_projects/src/gin/tree.go:403:11"
     }
 ]

@@ -4,13 +4,13 @@
         "Des": "response_writer.go",
         "Container": "interceptedWriter",
         "Member": "ResponseWriter",
-        "Pos": "D:/projects/go_projects/src/github.com/gin-gonic/gin/context_test.go:2379:2"
+        "Pos": "D:/projects/go_projects/src/gin/context_test.go:2379:2"
     },
     {
         "Src": "gin.go",
         "Des": "routergroup.go",
         "Container": "Engine",
         "Member": "RouterGroup",
-        "Pos": "D:/projects/go_projects/src/github.com/gin-gonic/gin/gin.go:85:2"
+        "Pos": "D:/projects/go_projects/src/gin/gin.go:85:2"
     }
 ]

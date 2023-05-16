@@ -15,8 +15,8 @@ func findConstRefer(n *ast.Ident, v *Visitor) {
 				if constName == vr.Name {
 					pos := v.fset.Position(n.Pos()) // 获取引用点的位置信息
 					temp := constRefer{
-						name: constName,
-						pos:  pos,
+						Name: constName,
+						Pos:  pos,
 					}
 					v.Dep.Relations["ConstRefer"] = append(v.Dep.Relations["ConstRefer"], temp)
 				}
@@ -42,9 +42,9 @@ func findConstRefer(n *ast.Ident, v *Visitor) {
 				if varName == vr.Name {
 					pos := v.fset.Position(n.Pos()) // 获取引用点的位置信息
 					temp := globalRefer{
-						name: varName,
+						Name: varName,
 						Type: infoList[v.J].Vars[i].Kind,
-						pos:  pos,
+						Pos:  pos,
 					}
 					v.Dep.Relations["GlobalRefer"] = append(v.Dep.Relations["GlobalRefer"], temp)
 				}

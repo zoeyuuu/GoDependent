@@ -3,53 +3,49 @@ package main
 import (
 	"GoDependent/file"
 	"GoDependent/tool"
+	"GoDependent/visualization"
+	"encoding/json"
 	"fmt"
+	"io/ioutil"
+	"os"
+	"path/filepath"
+	"time"
 )
 
 var infoList []file.FileInfo
 var depList []tool.Dependencies
-var fileDepList []tool.Dependencies
 
 func main() {
 
 	file.GetFileName()
 	file.FindFileInfos()
 	tool.FindDependenyAll()
-	//info := showFileinfo("context_appengine.go")
-
 	depList = tool.DependencyList
 	infoList = file.InfoList
-
-	findDepOfFile("gin.go")
-	tool.Dependencies_To_Json()
-
-	dep := showDependency("binding.go", "form.go")
-	fmt.Println(depList, dep)
+	// 可视化
+	visualization.JsonVisualization()
+	//按照依赖种类转换成json格式
+	//tool.DependenciesToJson()
+	//按照文件级别转换成json格式
+	//depListToJson(depList)
 }
 
-func findDepOfFile(filename string) {
-	for _, dep := range depList {
-		if dep.Src == filename || dep.Des == filename {
-			fileDepList = append(fileDepList, dep)
-		}
+func depListToJson(depList []tool.Dependencies) {
+	now := time.Now()
+	dirName := fmt.Sprintf("outputs/ByFilename/%s", now.Format("2006-01-02_15-04"))
+	err := os.MkdirAll(dirName, 0755)
+	if err != nil {
+		panic(err)
 	}
-}
-
-func showFileinfo(filename string) file.FileInfo {
-	for i, v := range file.InfoList {
-		if infoList[i].FileBaseName == filename {
-			return v
-		}
+	fileName := "depJson.json"
+	filePath := filepath.Join(dirName, fileName)
+	jsonData, err := json.MarshalIndent(depList, "", "    ")
+	if err != nil {
+		panic(err)
 	}
-	return file.FileInfo{}
-}
-
-func showDependency(file1, file2 string) tool.Dependencies {
-	for i, v := range depList {
-		if depList[i].Src == file1 && depList[i].Des == file2 {
-			return v
-		}
+	err = ioutil.WriteFile(filePath, jsonData, 0644)
+	if err != nil {
+		panic(err)
 	}
-	//fmt.Println("no dependency")
-	return tool.Dependencies{}
+	fmt.Printf("JSON data has been written to file %s\n", filePath)
 }
