@@ -4,7 +4,7 @@ const (
 	minWeight   = 0.0
 	maxWeight   = 500.0
 	smoothedMin = 2.0
-	smoothedMax = 10.0
+	smoothedMax = 20.0
 )
 
 func smoothWeight(weight float64) float64 {

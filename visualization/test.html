@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="">
 <head>
   <meta charset="UTF-8">
   <title>echarts示例</title>
@@ -24,7 +24,7 @@
   myChart.showLoading();
 
   // 加载本地数据文件
-  fetch('visual1.json')
+  fetch('/static/visual.json')
           .then(function (response) {
             return response.json();
           })
@@ -44,7 +44,7 @@
                     });
                     if (edge && edge.relations) {
                       var relations = edge.relations;
-                      var label = 'Source: ' + sourceName + '<br>Target: ' + targetName + '<br>Relations: ' + JSON.stringify(relations);
+                      var label = 'Source: ' + edge.sourcename + '<br>Target: ' + edge.targetname + '<br>Relations: ' + JSON.stringify(relations);
                       return label;
                     }
                   } else if (params.dataType === 'node') {
@@ -70,7 +70,9 @@
                 {
                   name: 'Les Miserables',
                   type: 'graph',
+                  //布局方式
                   layout: 'force',
+                  //layout: 'circular',
                   data: graph.nodes,
                   // 箭头
                   edgeSymbol: [ 'arrow'],
@@ -99,8 +101,9 @@
                     formatter: '{b}'
                   },
                   force: {
+                    layoutAnimation: true, // 开启布局动画
                     repulsion: 1000, // 节点之间的斥力
-                    edgeLength: 300, // 边的长度
+                    edgeLength: 200, // 边的长度
                     friction: 0.1
                   },
 
@@ -110,7 +113,7 @@
                   },
                   scaleLimit: {
                     min: 0.4,
-                    max: 2
+                    max: 5
                   },
                   lineStyle: {
                     color: 'source',
@@ -125,6 +128,7 @@
           .catch(function (error) {
             console.error('Failed to load data file:', error);
           });
+
 </script>
 </body>
 </html>

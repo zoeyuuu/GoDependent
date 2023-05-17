@@ -6,7 +6,9 @@ import (
 	"GoDependent/visualization"
 	"encoding/json"
 	"fmt"
+	"github.com/gin-gonic/gin"
 	"io/ioutil"
+	"log"
 	"os"
 	"path/filepath"
 	"time"
@@ -16,18 +18,24 @@ var infoList []file.FileInfo
 var depList []tool.Dependencies
 
 func main() {
-
 	file.GetFileName()
 	file.FindFileInfos()
 	tool.FindDependenyAll()
 	depList = tool.DependencyList
 	infoList = file.InfoList
+
 	// 可视化
-	visualization.JsonVisualization()
+	//visualization.JsonVisualization()
+
 	//按照依赖种类转换成json格式
 	//tool.DependenciesToJson()
+
 	//按照文件级别转换成json格式
 	//depListToJson(depList)
+
+	// 数据处理
+	visualization.JsonVisualization()
+	relationGraphShow()
 }
 
 func depListToJson(depList []tool.Dependencies) {
@@ -49,3 +57,42 @@ func depListToJson(depList []tool.Dependencies) {
 	}
 	fmt.Printf("JSON data has been written to file %s\n", filePath)
 }
+
+func relationGraphShow() {
+	r := gin.Default()
+
+	// 设置静态文件目录
+	r.Static("/static", "visualization")
+
+	// 设置HTML文件路径
+	filePath := "visualization/test.html"
+
+	r.GET("/", func(c *gin.Context) {
+		c.File(filePath)
+	})
+
+	// 启动HTTP服务器
+	fmt.Println("Server is running on http://localhost:8081")
+	log.Fatal(r.Run(":8081"))
+}
+
+/*
+静态文件访问
+func main() {
+    r := gin.Default()
+
+    // 设置静态文件目录
+    r.Static("/static", "visualization")
+
+    // 设置HTML文件路径
+    filePath := "visualization/test.html"
+
+    r.GET("/", func(c *gin.Context) {
+        c.File(filePath)
+    })
+
+    // 启动HTTP服务器
+    fmt.Println("Server is running on http://localhost:63342")
+    log.Fatal(r.Run(":63342"))
+}
+*/

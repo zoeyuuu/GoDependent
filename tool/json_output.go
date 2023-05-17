@@ -35,7 +35,7 @@ func InstantiationToJson(dirName string) {
 				if ins, ok := rel.(Instantiation); ok {
 					instantiationsJSON = append(instantiationsJSON, InstantiationJSON{
 						Src:        dep.Src,
-						Des:        dep.Des,
+						Des:        dep.Tar,
 						StructName: ins.StructName,
 						ObjName:    ins.ObjName,
 						Token:      ins.Token,
@@ -67,7 +67,7 @@ func StructaggregationToJson(dirName string) {
 				if ins, ok := rel.(structAggregation); ok {
 					structAggregationsJSON = append(structAggregationsJSON, StructAggregationJSON{
 						Src:     dep.Src,
-						Des:     dep.Des,
+						Des:     dep.Tar,
 						Whole:   ins.Whole,
 						Part:    ins.Part,
 						ObjName: ins.ObjName,
@@ -100,7 +100,7 @@ func StructEmbeddingToJSON(dirName string) {
 				if ins, ok := rel.(structEmbedding); ok {
 					structEmbeddingsJSON = append(structEmbeddingsJSON, StructEmbeddingJSON{
 						Src:       dep.Src,
-						Des:       dep.Des,
+						Des:       dep.Tar,
 						Container: ins.Container,
 						Member:    ins.Member,
 						Pos:       ins.Pos.String(),
@@ -131,7 +131,7 @@ func ConstReferToJSON(dirName string) {
 				if ins, ok := rel.(constRefer); ok {
 					constRefersJSON = append(constRefersJSON, ConstReferJSON{
 						Src:  dep.Src,
-						Des:  dep.Des,
+						Des:  dep.Tar,
 						Name: ins.Name,
 						Pos:  ins.Pos.String(),
 					})
@@ -161,7 +161,7 @@ func GlobalReferToJSON(dirName string) {
 				if ins, ok := rel.(globalRefer); ok {
 					globalRefersJSON = append(globalRefersJSON, GlobalReferJSON{
 						Src:  dep.Src,
-						Des:  dep.Des,
+						Des:  dep.Tar,
 						Name: ins.Name,
 						Type: ins.Type,
 						Pos:  ins.Pos.String(),
@@ -192,7 +192,7 @@ func FunctionCallToJSON(dirName string) {
 				if ins, ok := rel.(functionCall); ok {
 					functionCallsJSON = append(functionCallsJSON, FunctionCallJSON{
 						Src:     dep.Src,
-						Des:     dep.Des,
+						Des:     dep.Tar,
 						FunName: ins.FunName,
 						Pos:     ins.Pos.String(),
 					})

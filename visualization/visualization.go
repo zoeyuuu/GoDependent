@@ -15,17 +15,20 @@ var depList []tool.Dependencies
 
 type node struct {
 	Id        string `json:"id"`
-	Name      string `json:"name"`
+	Name      string `json:"relName"`
+	BaseName  string `json:"name"`
 	Weight    int    `json:"symbolSize"`
 	PkgName   string `json:"category"`
 	Draggable bool   `json:"draggable"`
 }
 type edge struct {
-	Source    string         `json:"source"`
-	Target    string         `json:"target"`
-	Relations map[string]int `json:"relations"`
-	Weight    int            `json:"weight"`
-	Value     float64        `json:"value"`
+	Source     string         `json:"source"`
+	Target     string         `json:"target"`
+	Relations  map[string]int `json:"relations"`
+	Weight     int            `json:"weight"`
+	Value      float64        `json:"value"`
+	SourceName string         `json:"sourcename"`
+	TargetName string         `json:"targetname"`
 }
 type Category struct {
 	Name string `json:"name"`
@@ -43,8 +46,7 @@ func JsonVisualization() {
 	for _, n := range nodes {
 		nodeIDMap[n.Name] = n.Id
 	}
-
-	// 遍历 links，将 "source" 和 "target" 的值改为对应的节点ID
+	// 将 "source" 和 "target" 的值改为对应的节点ID，符合echarts格式
 	for i := range edges {
 		edg := &edges[i]
 		if id, ok := nodeIDMap[edg.Source]; ok {
@@ -65,8 +67,8 @@ func JsonVisualization() {
 		Categories: categories,
 	}
 
-	dirName := "visualization"
-	fileName := "visual1.json"
+	dirName := "visualization/static"
+	fileName := "visual.json"
 	filePath := filepath.Join(dirName, fileName)
 	jsonData, err := json.MarshalIndent(data, "", "    ")
 	if err != nil {
@@ -99,13 +101,14 @@ func nodesJson(infoList []file.FileInfo, edges []edge) []node {
 	for i, info := range infoList {
 		weight := 0
 		for _, edg := range edges {
-			if edg.Source == info.FileBaseName || edg.Target == info.FileBaseName {
+			if edg.Source == info.FileRelName || edg.Target == info.FileRelName {
 				weight++
 			}
 		}
 		tmp := node{
 			Id:        strconv.Itoa(i),
-			Name:      info.FileBaseName,
+			Name:      info.FileRelName, //相对路径名
+			BaseName:  info.FileBaseName,
 			Weight:    weight,
 			PkgName:   info.PkgName,
 			Draggable: true,
@@ -139,11 +142,13 @@ func edgesJson(depList []tool.Dependencies) []edge {
 		}
 		value := smoothWeight(float64(weight))
 		tmp := edge{
-			Source:    dep.Src,
-			Target:    dep.Des,
-			Relations: relations,
-			Weight:    weight,
-			Value:     value,
+			Source:     dep.RelativeSrc,
+			Target:     dep.RelativeTar,
+			Relations:  relations,
+			Weight:     weight,
+			Value:      value,
+			SourceName: dep.RelativeSrc,
+			TargetName: dep.RelativeTar,
 		}
 		edges = append(edges, tmp)
 	}
