@@ -6,12 +6,13 @@ import (
 	"path/filepath"
 )
 
+var Name string
 var root string
 
 // 所有文件的绝对路径名
 var Files []string
 
-func GetFileName() {
+func GetFileName(root1 string) {
 	/*
 		// 获取命令行参数作为目录路径
 		if len(os.Args) < 2 {
@@ -21,7 +22,8 @@ func GetFileName() {
 		root := os.Args[1]
 	*/
 
-	root = "D:\\projects\\go_projects\\src\\gin"
+	root = root1
+	Name = filepath.Base(root)
 	//root = "D:\\projects\\go_projects\\src\\github.com\\gin-gonic\\gin"
 
 	// 遍历目录下的所有文件和子目录

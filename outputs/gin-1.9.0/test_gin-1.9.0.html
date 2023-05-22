@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="UTF-8">
+  <title>echarts示例</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+  <!-- 引入echarts库 -->
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.1.2/dist/echarts.min.js"></script>
+</head>
+<body>
+<div id="main" style="width: 100%; height: 100%;"></div>
+
+<script>
+  var chartDom = document.getElementById('main');
+  var myChart = echarts.init(chartDom);
+  var option;
+
+  myChart.showLoading();
+
+  // 异步加载数据文件
+  function loadDataFile(url, callback) {
+    var xhr = new XMLHttpRequest();
+    xhr.overrideMimeType('application/json');
+    xhr.open('GET', url, true);
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4 && xhr.status === 200) {
+        var data = JSON.parse(xhr.responseText);
+        callback(data);
+      }
+    };
+    xhr.send(null);
+  }
+
+  // 加载数据文件并处理数据
+  loadDataFile('./gin-1.9.0.json', function (graph) {
+    myChart.hideLoading();
+
+    option = {
+      tooltip: {
+        show: true,
+        formatter: function (params) {
+          if (params.dataType === 'edge') {
+            // 边的提示信息
+            var sourceName = params.data.source;
+            var targetName = params.data.target;
+            var edge = graph.links.find(function (link) {
+              return link.source === sourceName && link.target === targetName;
+            });
+            if (edge && edge.relations) {
+              var relations = edge.relations;
+              var label = 'Source: ' + edge.sourcename + '<br>Target: ' + edge.targetname + '<br>Relations: ' + JSON.stringify(relations);
+              return label;
+            }
+          } else if (params.dataType === 'node') {
+            // 节点的提示信息
+            var nodeName = params.data.name;
+            var weight = params.data.symbolSize
+            var label = 'Node: ' + nodeName +  '<br>weight:' + weight;
+            return label;
+          }
+          return ''; // 如果没有相关信息，返回空字符串
+        }
+      },
+
+
+      legend: [
+        {
+          data: graph.categories.map(function (a) {
+            return a.name;
+          })
+        }
+      ],
+      series: [
+        {
+          name: 'Les Miserables',
+          type: 'graph',
+          //布局方式
+          layout: 'force',
+          //layout: 'circular',
+          data: graph.nodes,
+          // 箭头
+          edgeSymbol: [ 'arrow'],
+          edgeSymbolSize: [4, 10],
+
+          links: graph.links.map(function (link) {
+            return {
+              source: link.source,
+              target: link.target,
+              value: link.weight,
+              relations: link.Relations,
+              lineStyle: {
+                width: link.value, // 设置边的粗细为权重值
+                type: 'solid' // 设置为实线
+              }
+            };
+          }),
+
+
+          categories: graph.categories,
+          roam: true,
+
+          label: {
+            show: true,
+            position: 'right',
+            formatter: '{b}'
+          },
+          force: {
+            layoutAnimation: true, // 开启布局动画
+            repulsion: 1000, // 节点之间的斥力
+            edgeLength: 200, // 边的长度
+            friction: 0.1
+          },
+
+
+          labelLayout: {
+            hideOverlap: true
+          },
+          scaleLimit: {
+            min: 0.4,
+            max: 5
+          },
+          lineStyle: {
+            color: 'source',
+            curveness: 0.1,
+            type: 'solid' // 设置为实线
+          }
+        }
+      ]
+    };
+    myChart.setOption(option);
+  });
+
+</script>
+</body>
+</html>
+

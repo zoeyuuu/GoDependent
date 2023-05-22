@@ -1,0 +1,794 @@
+[
+    {
+        "Src": "binding/binding_test.go",
+        "Des": "any.go",
+        "Whole": "FooStructUseNumber",
+        "Part": "any",
+        "ObjName": "Foo",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding_test.go",
+        "Des": "any.go",
+        "Whole": "FooStructDisallowUnknownFields",
+        "Part": "any",
+        "ObjName": "Foo",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding_test.go",
+        "Des": "binding/any.go",
+        "Whole": "FooStructUseNumber",
+        "Part": "any",
+        "ObjName": "Foo",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding_test.go",
+        "Des": "binding/any.go",
+        "Whole": "FooStructDisallowUnknownFields",
+        "Part": "any",
+        "ObjName": "Foo",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding_test.go",
+        "Des": "render/any.go",
+        "Whole": "FooStructUseNumber",
+        "Part": "any",
+        "ObjName": "Foo",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding_test.go",
+        "Des": "render/any.go",
+        "Whole": "FooStructDisallowUnknownFields",
+        "Part": "any",
+        "ObjName": "Foo",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding_test.go",
+        "Des": "testdata/protoexample/any.go",
+        "Whole": "FooStructUseNumber",
+        "Part": "any",
+        "ObjName": "Foo",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding_test.go",
+        "Des": "testdata/protoexample/any.go",
+        "Whole": "FooStructDisallowUnknownFields",
+        "Part": "any",
+        "ObjName": "Foo",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/validate_test.go",
+        "Des": "any.go",
+        "Whole": "structNoValidationValues",
+        "Part": "any",
+        "ObjName": "UniversalInterface",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/validate_test.go",
+        "Des": "binding/any.go",
+        "Whole": "structNoValidationValues",
+        "Part": "any",
+        "ObjName": "UniversalInterface",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/validate_test.go",
+        "Des": "render/any.go",
+        "Whole": "structNoValidationValues",
+        "Part": "any",
+        "ObjName": "UniversalInterface",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/validate_test.go",
+        "Des": "testdata/protoexample/any.go",
+        "Whole": "structNoValidationValues",
+        "Part": "any",
+        "ObjName": "UniversalInterface",
+        "Pos": ""
+    },
+    {
+        "Src": "context.go",
+        "Des": "any.go",
+        "Whole": "Negotiate",
+        "Part": "any",
+        "ObjName": "HTMLData",
+        "Pos": ""
+    },
+    {
+        "Src": "context.go",
+        "Des": "any.go",
+        "Whole": "Negotiate",
+        "Part": "any",
+        "ObjName": "JSONData",
+        "Pos": ""
+    },
+    {
+        "Src": "context.go",
+        "Des": "any.go",
+        "Whole": "Negotiate",
+        "Part": "any",
+        "ObjName": "XMLData",
+        "Pos": ""
+    },
+    {
+        "Src": "context.go",
+        "Des": "any.go",
+        "Whole": "Negotiate",
+        "Part": "any",
+        "ObjName": "YAMLData",
+        "Pos": ""
+    },
+    {
+        "Src": "context.go",
+        "Des": "any.go",
+        "Whole": "Negotiate",
+        "Part": "any",
+        "ObjName": "Data",
+        "Pos": ""
+    },
+    {
+        "Src": "context.go",
+        "Des": "any.go",
+        "Whole": "Negotiate",
+        "Part": "any",
+        "ObjName": "TOMLData",
+        "Pos": ""
+    },
+    {
+        "Src": "context.go",
+        "Des": "binding/any.go",
+        "Whole": "Negotiate",
+        "Part": "any",
+        "ObjName": "HTMLData",
+        "Pos": ""
+    },
+    {
+        "Src": "context.go",
+        "Des": "binding/any.go",
+        "Whole": "Negotiate",
+        "Part": "any",
+        "ObjName": "JSONData",
+        "Pos": ""
+    },
+    {
+        "Src": "context.go",
+        "Des": "binding/any.go",
+        "Whole": "Negotiate",
+        "Part": "any",
+        "ObjName": "XMLData",
+        "Pos": ""
+    },
+    {
+        "Src": "context.go",
+        "Des": "binding/any.go",
+        "Whole": "Negotiate",
+        "Part": "any",
+        "ObjName": "YAMLData",
+        "Pos": ""
+    },
+    {
+        "Src": "context.go",
+        "Des": "binding/any.go",
+        "Whole": "Negotiate",
+        "Part": "any",
+        "ObjName": "Data",
+        "Pos": ""
+    },
+    {
+        "Src": "context.go",
+        "Des": "binding/any.go",
+        "Whole": "Negotiate",
+        "Part": "any",
+        "ObjName": "TOMLData",
+        "Pos": ""
+    },
+    {
+        "Src": "context.go",
+        "Des": "errors.go",
+        "Whole": "Context",
+        "Part": "errorMsgs",
+        "ObjName": "Errors",
+        "Pos": ""
+    },
+    {
+        "Src": "context.go",
+        "Des": "gin.go",
+        "Whole": "Context",
+        "Part": "HandlersChain",
+        "ObjName": "handlers",
+        "Pos": ""
+    },
+    {
+        "Src": "context.go",
+        "Des": "render/any.go",
+        "Whole": "Negotiate",
+        "Part": "any",
+        "ObjName": "HTMLData",
+        "Pos": ""
+    },
+    {
+        "Src": "context.go",
+        "Des": "render/any.go",
+        "Whole": "Negotiate",
+        "Part": "any",
+        "ObjName": "JSONData",
+        "Pos": ""
+    },
+    {
+        "Src": "context.go",
+        "Des": "render/any.go",
+        "Whole": "Negotiate",
+        "Part": "any",
+        "ObjName": "XMLData",
+        "Pos": ""
+    },
+    {
+        "Src": "context.go",
+        "Des": "render/any.go",
+        "Whole": "Negotiate",
+        "Part": "any",
+        "ObjName": "YAMLData",
+        "Pos": ""
+    },
+    {
+        "Src": "context.go",
+        "Des": "render/any.go",
+        "Whole": "Negotiate",
+        "Part": "any",
+        "ObjName": "Data",
+        "Pos": ""
+    },
+    {
+        "Src": "context.go",
+        "Des": "render/any.go",
+        "Whole": "Negotiate",
+        "Part": "any",
+        "ObjName": "TOMLData",
+        "Pos": ""
+    },
+    {
+        "Src": "context.go",
+        "Des": "response_writer.go",
+        "Whole": "Context",
+        "Part": "responseWriter",
+        "ObjName": "writermem",
+        "Pos": ""
+    },
+    {
+        "Src": "context.go",
+        "Des": "response_writer.go",
+        "Whole": "Context",
+        "Part": "ResponseWriter",
+        "ObjName": "Writer",
+        "Pos": ""
+    },
+    {
+        "Src": "context.go",
+        "Des": "testdata/protoexample/any.go",
+        "Whole": "Negotiate",
+        "Part": "any",
+        "ObjName": "HTMLData",
+        "Pos": ""
+    },
+    {
+        "Src": "context.go",
+        "Des": "testdata/protoexample/any.go",
+        "Whole": "Negotiate",
+        "Part": "any",
+        "ObjName": "JSONData",
+        "Pos": ""
+    },
+    {
+        "Src": "context.go",
+        "Des": "testdata/protoexample/any.go",
+        "Whole": "Negotiate",
+        "Part": "any",
+        "ObjName": "XMLData",
+        "Pos": ""
+    },
+    {
+        "Src": "context.go",
+        "Des": "testdata/protoexample/any.go",
+        "Whole": "Negotiate",
+        "Part": "any",
+        "ObjName": "YAMLData",
+        "Pos": ""
+    },
+    {
+        "Src": "context.go",
+        "Des": "testdata/protoexample/any.go",
+        "Whole": "Negotiate",
+        "Part": "any",
+        "ObjName": "Data",
+        "Pos": ""
+    },
+    {
+        "Src": "context.go",
+        "Des": "testdata/protoexample/any.go",
+        "Whole": "Negotiate",
+        "Part": "any",
+        "ObjName": "TOMLData",
+        "Pos": ""
+    },
+    {
+        "Src": "context.go",
+        "Des": "tree.go",
+        "Whole": "Context",
+        "Part": "Params",
+        "ObjName": "Params",
+        "Pos": ""
+    },
+    {
+        "Src": "errors.go",
+        "Des": "any.go",
+        "Whole": "Error",
+        "Part": "any",
+        "ObjName": "Meta",
+        "Pos": ""
+    },
+    {
+        "Src": "errors.go",
+        "Des": "binding/any.go",
+        "Whole": "Error",
+        "Part": "any",
+        "ObjName": "Meta",
+        "Pos": ""
+    },
+    {
+        "Src": "errors.go",
+        "Des": "render/any.go",
+        "Whole": "Error",
+        "Part": "any",
+        "ObjName": "Meta",
+        "Pos": ""
+    },
+    {
+        "Src": "errors.go",
+        "Des": "testdata/protoexample/any.go",
+        "Whole": "Error",
+        "Part": "any",
+        "ObjName": "Meta",
+        "Pos": ""
+    },
+    {
+        "Src": "gin.go",
+        "Des": "render/html.go",
+        "Whole": "Engine",
+        "Part": "Delims",
+        "ObjName": "delims",
+        "Pos": ""
+    },
+    {
+        "Src": "gin.go",
+        "Des": "render/html.go",
+        "Whole": "Engine",
+        "Part": "HTMLRender",
+        "ObjName": "HTMLRender",
+        "Pos": ""
+    },
+    {
+        "Src": "gin.go",
+        "Des": "tree.go",
+        "Whole": "Engine",
+        "Part": "methodTrees",
+        "ObjName": "trees",
+        "Pos": ""
+    },
+    {
+        "Src": "render/html.go",
+        "Des": "any.go",
+        "Whole": "HTML",
+        "Part": "any",
+        "ObjName": "Data",
+        "Pos": ""
+    },
+    {
+        "Src": "render/html.go",
+        "Des": "binding/any.go",
+        "Whole": "HTML",
+        "Part": "any",
+        "ObjName": "Data",
+        "Pos": ""
+    },
+    {
+        "Src": "render/html.go",
+        "Des": "render/any.go",
+        "Whole": "HTML",
+        "Part": "any",
+        "ObjName": "Data",
+        "Pos": ""
+    },
+    {
+        "Src": "render/html.go",
+        "Des": "testdata/protoexample/any.go",
+        "Whole": "HTML",
+        "Part": "any",
+        "ObjName": "Data",
+        "Pos": ""
+    },
+    {
+        "Src": "render/json.go",
+        "Des": "any.go",
+        "Whole": "JSON",
+        "Part": "any",
+        "ObjName": "Data",
+        "Pos": ""
+    },
+    {
+        "Src": "render/json.go",
+        "Des": "any.go",
+        "Whole": "IndentedJSON",
+        "Part": "any",
+        "ObjName": "Data",
+        "Pos": ""
+    },
+    {
+        "Src": "render/json.go",
+        "Des": "any.go",
+        "Whole": "SecureJSON",
+        "Part": "any",
+        "ObjName": "Data",
+        "Pos": ""
+    },
+    {
+        "Src": "render/json.go",
+        "Des": "any.go",
+        "Whole": "JsonpJSON",
+        "Part": "any",
+        "ObjName": "Data",
+        "Pos": ""
+    },
+    {
+        "Src": "render/json.go",
+        "Des": "any.go",
+        "Whole": "AsciiJSON",
+        "Part": "any",
+        "ObjName": "Data",
+        "Pos": ""
+    },
+    {
+        "Src": "render/json.go",
+        "Des": "any.go",
+        "Whole": "PureJSON",
+        "Part": "any",
+        "ObjName": "Data",
+        "Pos": ""
+    },
+    {
+        "Src": "render/json.go",
+        "Des": "binding/any.go",
+        "Whole": "JSON",
+        "Part": "any",
+        "ObjName": "Data",
+        "Pos": ""
+    },
+    {
+        "Src": "render/json.go",
+        "Des": "binding/any.go",
+        "Whole": "IndentedJSON",
+        "Part": "any",
+        "ObjName": "Data",
+        "Pos": ""
+    },
+    {
+        "Src": "render/json.go",
+        "Des": "binding/any.go",
+        "Whole": "SecureJSON",
+        "Part": "any",
+        "ObjName": "Data",
+        "Pos": ""
+    },
+    {
+        "Src": "render/json.go",
+        "Des": "binding/any.go",
+        "Whole": "JsonpJSON",
+        "Part": "any",
+        "ObjName": "Data",
+        "Pos": ""
+    },
+    {
+        "Src": "render/json.go",
+        "Des": "binding/any.go",
+        "Whole": "AsciiJSON",
+        "Part": "any",
+        "ObjName": "Data",
+        "Pos": ""
+    },
+    {
+        "Src": "render/json.go",
+        "Des": "binding/any.go",
+        "Whole": "PureJSON",
+        "Part": "any",
+        "ObjName": "Data",
+        "Pos": ""
+    },
+    {
+        "Src": "render/json.go",
+        "Des": "render/any.go",
+        "Whole": "JSON",
+        "Part": "any",
+        "ObjName": "Data",
+        "Pos": ""
+    },
+    {
+        "Src": "render/json.go",
+        "Des": "render/any.go",
+        "Whole": "IndentedJSON",
+        "Part": "any",
+        "ObjName": "Data",
+        "Pos": ""
+    },
+    {
+        "Src": "render/json.go",
+        "Des": "render/any.go",
+        "Whole": "SecureJSON",
+        "Part": "any",
+        "ObjName": "Data",
+        "Pos": ""
+    },
+    {
+        "Src": "render/json.go",
+        "Des": "render/any.go",
+        "Whole": "JsonpJSON",
+        "Part": "any",
+        "ObjName": "Data",
+        "Pos": ""
+    },
+    {
+        "Src": "render/json.go",
+        "Des": "render/any.go",
+        "Whole": "AsciiJSON",
+        "Part": "any",
+        "ObjName": "Data",
+        "Pos": ""
+    },
+    {
+        "Src": "render/json.go",
+        "Des": "render/any.go",
+        "Whole": "PureJSON",
+        "Part": "any",
+        "ObjName": "Data",
+        "Pos": ""
+    },
+    {
+        "Src": "render/json.go",
+        "Des": "testdata/protoexample/any.go",
+        "Whole": "JSON",
+        "Part": "any",
+        "ObjName": "Data",
+        "Pos": ""
+    },
+    {
+        "Src": "render/json.go",
+        "Des": "testdata/protoexample/any.go",
+        "Whole": "IndentedJSON",
+        "Part": "any",
+        "ObjName": "Data",
+        "Pos": ""
+    },
+    {
+        "Src": "render/json.go",
+        "Des": "testdata/protoexample/any.go",
+        "Whole": "SecureJSON",
+        "Part": "any",
+        "ObjName": "Data",
+        "Pos": ""
+    },
+    {
+        "Src": "render/json.go",
+        "Des": "testdata/protoexample/any.go",
+        "Whole": "JsonpJSON",
+        "Part": "any",
+        "ObjName": "Data",
+        "Pos": ""
+    },
+    {
+        "Src": "render/json.go",
+        "Des": "testdata/protoexample/any.go",
+        "Whole": "AsciiJSON",
+        "Part": "any",
+        "ObjName": "Data",
+        "Pos": ""
+    },
+    {
+        "Src": "render/json.go",
+        "Des": "testdata/protoexample/any.go",
+        "Whole": "PureJSON",
+        "Part": "any",
+        "ObjName": "Data",
+        "Pos": ""
+    },
+    {
+        "Src": "render/msgpack.go",
+        "Des": "any.go",
+        "Whole": "MsgPack",
+        "Part": "any",
+        "ObjName": "Data",
+        "Pos": ""
+    },
+    {
+        "Src": "render/msgpack.go",
+        "Des": "binding/any.go",
+        "Whole": "MsgPack",
+        "Part": "any",
+        "ObjName": "Data",
+        "Pos": ""
+    },
+    {
+        "Src": "render/msgpack.go",
+        "Des": "render/any.go",
+        "Whole": "MsgPack",
+        "Part": "any",
+        "ObjName": "Data",
+        "Pos": ""
+    },
+    {
+        "Src": "render/msgpack.go",
+        "Des": "testdata/protoexample/any.go",
+        "Whole": "MsgPack",
+        "Part": "any",
+        "ObjName": "Data",
+        "Pos": ""
+    },
+    {
+        "Src": "render/protobuf.go",
+        "Des": "any.go",
+        "Whole": "ProtoBuf",
+        "Part": "any",
+        "ObjName": "Data",
+        "Pos": ""
+    },
+    {
+        "Src": "render/protobuf.go",
+        "Des": "binding/any.go",
+        "Whole": "ProtoBuf",
+        "Part": "any",
+        "ObjName": "Data",
+        "Pos": ""
+    },
+    {
+        "Src": "render/protobuf.go",
+        "Des": "render/any.go",
+        "Whole": "ProtoBuf",
+        "Part": "any",
+        "ObjName": "Data",
+        "Pos": ""
+    },
+    {
+        "Src": "render/protobuf.go",
+        "Des": "testdata/protoexample/any.go",
+        "Whole": "ProtoBuf",
+        "Part": "any",
+        "ObjName": "Data",
+        "Pos": ""
+    },
+    {
+        "Src": "render/toml.go",
+        "Des": "any.go",
+        "Whole": "TOML",
+        "Part": "any",
+        "ObjName": "Data",
+        "Pos": ""
+    },
+    {
+        "Src": "render/toml.go",
+        "Des": "binding/any.go",
+        "Whole": "TOML",
+        "Part": "any",
+        "ObjName": "Data",
+        "Pos": ""
+    },
+    {
+        "Src": "render/toml.go",
+        "Des": "render/any.go",
+        "Whole": "TOML",
+        "Part": "any",
+        "ObjName": "Data",
+        "Pos": ""
+    },
+    {
+        "Src": "render/toml.go",
+        "Des": "testdata/protoexample/any.go",
+        "Whole": "TOML",
+        "Part": "any",
+        "ObjName": "Data",
+        "Pos": ""
+    },
+    {
+        "Src": "render/xml.go",
+        "Des": "any.go",
+        "Whole": "XML",
+        "Part": "any",
+        "ObjName": "Data",
+        "Pos": ""
+    },
+    {
+        "Src": "render/xml.go",
+        "Des": "binding/any.go",
+        "Whole": "XML",
+        "Part": "any",
+        "ObjName": "Data",
+        "Pos": ""
+    },
+    {
+        "Src": "render/xml.go",
+        "Des": "render/any.go",
+        "Whole": "XML",
+        "Part": "any",
+        "ObjName": "Data",
+        "Pos": ""
+    },
+    {
+        "Src": "render/xml.go",
+        "Des": "testdata/protoexample/any.go",
+        "Whole": "XML",
+        "Part": "any",
+        "ObjName": "Data",
+        "Pos": ""
+    },
+    {
+        "Src": "render/yaml.go",
+        "Des": "any.go",
+        "Whole": "YAML",
+        "Part": "any",
+        "ObjName": "Data",
+        "Pos": ""
+    },
+    {
+        "Src": "render/yaml.go",
+        "Des": "binding/any.go",
+        "Whole": "YAML",
+        "Part": "any",
+        "ObjName": "Data",
+        "Pos": ""
+    },
+    {
+        "Src": "render/yaml.go",
+        "Des": "render/any.go",
+        "Whole": "YAML",
+        "Part": "any",
+        "ObjName": "Data",
+        "Pos": ""
+    },
+    {
+        "Src": "render/yaml.go",
+        "Des": "testdata/protoexample/any.go",
+        "Whole": "YAML",
+        "Part": "any",
+        "ObjName": "Data",
+        "Pos": ""
+    },
+    {
+        "Src": "routergroup.go",
+        "Des": "gin.go",
+        "Whole": "RouterGroup",
+        "Part": "HandlersChain",
+        "ObjName": "Handlers",
+        "Pos": ""
+    },
+    {
+        "Src": "tree.go",
+        "Des": "gin.go",
+        "Whole": "node",
+        "Part": "HandlersChain",
+        "ObjName": "handlers",
+        "Pos": ""
+    },
+    {
+        "Src": "tree.go",
+        "Des": "gin.go",
+        "Whole": "nodeValue",
+        "Part": "HandlersChain",
+        "ObjName": "handlers",
+        "Pos": ""
+    }
+]

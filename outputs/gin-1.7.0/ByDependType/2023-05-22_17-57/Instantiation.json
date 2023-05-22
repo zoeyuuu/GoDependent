@@ -1,0 +1,194 @@
+[
+    {
+        "Src": "binding/binding.go",
+        "Des": "binding/binding_nomsgpack.go",
+        "StructName": "StructValidator",
+        "ObjName": "Validator",
+        "Token": "var",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding_nomsgpack.go",
+        "Des": "binding/binding.go",
+        "StructName": "StructValidator",
+        "ObjName": "Validator",
+        "Token": "var",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/default_validator.go",
+        "Des": "binding/binding.go",
+        "StructName": "StructValidator",
+        "ObjName": "_",
+        "Token": "var",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/default_validator.go",
+        "Des": "binding/binding_nomsgpack.go",
+        "StructName": "StructValidator",
+        "ObjName": "_",
+        "Token": "var",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/header.go",
+        "Des": "binding/form_mapping.go",
+        "StructName": "setter",
+        "ObjName": "_",
+        "Token": "var",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/multipart_form_mapping.go",
+        "Des": "binding/form_mapping.go",
+        "StructName": "setter",
+        "ObjName": "_",
+        "Token": "var",
+        "Pos": ""
+    },
+    {
+        "Src": "context_test.go",
+        "Des": "gin.go",
+        "StructName": "HandlerFunc",
+        "ObjName": "handlerTest",
+        "Token": "var",
+        "Pos": ""
+    },
+    {
+        "Src": "gin.go",
+        "Des": "routergroup.go",
+        "StructName": "IRouter",
+        "ObjName": "_",
+        "Token": "var",
+        "Pos": ""
+    },
+    {
+        "Src": "gin_test.go",
+        "Des": "gin.go",
+        "StructName": "HandlerFunc",
+        "ObjName": "middleware0",
+        "Token": "var",
+        "Pos": ""
+    },
+    {
+        "Src": "gin_test.go",
+        "Des": "gin.go",
+        "StructName": "HandlerFunc",
+        "ObjName": "middleware1",
+        "Token": "var",
+        "Pos": ""
+    },
+    {
+        "Src": "gin_test.go",
+        "Des": "gin.go",
+        "StructName": "HandlerFunc",
+        "ObjName": "middleware0",
+        "Token": "var",
+        "Pos": ""
+    },
+    {
+        "Src": "gin_test.go",
+        "Des": "gin.go",
+        "StructName": "HandlerFunc",
+        "ObjName": "middleware1",
+        "Token": "var",
+        "Pos": ""
+    },
+    {
+        "Src": "gin_test.go",
+        "Des": "gin.go",
+        "StructName": "HandlerFunc",
+        "ObjName": "middleware2",
+        "Token": "var",
+        "Pos": ""
+    },
+    {
+        "Src": "gin_test.go",
+        "Des": "gin.go",
+        "StructName": "HandlerFunc",
+        "ObjName": "middleware0",
+        "Token": "var",
+        "Pos": ""
+    },
+    {
+        "Src": "gin_test.go",
+        "Des": "gin.go",
+        "StructName": "HandlerFunc",
+        "ObjName": "middleware1",
+        "Token": "var",
+        "Pos": ""
+    },
+    {
+        "Src": "gin_test.go",
+        "Des": "gin.go",
+        "StructName": "HandlerFunc",
+        "ObjName": "middleware0",
+        "Token": "var",
+        "Pos": ""
+    },
+    {
+        "Src": "gin_test.go",
+        "Des": "gin.go",
+        "StructName": "HandlerFunc",
+        "ObjName": "middleware1",
+        "Token": "var",
+        "Pos": ""
+    },
+    {
+        "Src": "gin_test.go",
+        "Des": "gin.go",
+        "StructName": "HandlerFunc",
+        "ObjName": "middleware2",
+        "Token": "var",
+        "Pos": ""
+    },
+    {
+        "Src": "logger_test.go",
+        "Des": "logger.go",
+        "StructName": "LogFormatterParams",
+        "ObjName": "gotParam",
+        "Token": "var",
+        "Pos": ""
+    },
+    {
+        "Src": "render/msgpack.go",
+        "Des": "render/render.go",
+        "StructName": "Render",
+        "ObjName": "_",
+        "Token": "var",
+        "Pos": ""
+    },
+    {
+        "Src": "render/render.go",
+        "Des": "render/html.go",
+        "StructName": "HTMLRender",
+        "ObjName": "_",
+        "Token": "var",
+        "Pos": ""
+    },
+    {
+        "Src": "render/render.go",
+        "Des": "render/html.go",
+        "StructName": "HTMLRender",
+        "ObjName": "_",
+        "Token": "var",
+        "Pos": ""
+    },
+    {
+        "Src": "response_writer_test.go",
+        "Des": "response_writer.go",
+        "StructName": "ResponseWriter",
+        "ObjName": "_",
+        "Token": "var",
+        "Pos": ""
+    },
+    {
+        "Src": "response_writer_test.go",
+        "Des": "response_writer.go",
+        "StructName": "ResponseWriter",
+        "ObjName": "w",
+        "Token": "var",
+        "Pos": ""
+    }
+]

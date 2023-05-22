@@ -1,6 +1,7 @@
 package tool
 
 import (
+	"GoDependent/file"
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
@@ -11,7 +12,8 @@ import (
 
 func DependenciesToJson() {
 	now := time.Now()
-	dirName := fmt.Sprintf("outputs/ByDependType/%s", now.Format("2006-01-02_15-04"))
+	dirName := fmt.Sprintf("outputs/"+file.Name+
+		"/ByDependType/%s", now.Format("2006-01-02_15-04"))
 	err := os.MkdirAll(dirName, 0755)
 	if err != nil {
 		panic(err)
@@ -34,12 +36,12 @@ func InstantiationToJson(dirName string) {
 			for _, rel := range rels {
 				if ins, ok := rel.(Instantiation); ok {
 					instantiationsJSON = append(instantiationsJSON, InstantiationJSON{
-						Src:        dep.Src,
-						Des:        dep.Tar,
+						Src:        dep.RelativeSrc,
+						Des:        dep.RelativeTar,
 						StructName: ins.StructName,
 						ObjName:    ins.ObjName,
 						Token:      ins.Token,
-						Pos:        ins.Pos.String(),
+						//Pos:        ins.Pos.String(),
 					})
 				}
 			}
@@ -66,12 +68,12 @@ func StructaggregationToJson(dirName string) {
 			for _, rel := range rels {
 				if ins, ok := rel.(structAggregation); ok {
 					structAggregationsJSON = append(structAggregationsJSON, StructAggregationJSON{
-						Src:     dep.Src,
-						Des:     dep.Tar,
+						Src:     dep.RelativeSrc,
+						Des:     dep.RelativeTar,
 						Whole:   ins.Whole,
 						Part:    ins.Part,
 						ObjName: ins.ObjName,
-						Pos:     ins.Pos.String(),
+						//Pos:     ins.Pos.String(),
 					})
 				}
 			}
@@ -99,11 +101,11 @@ func StructEmbeddingToJSON(dirName string) {
 			for _, rel := range rels {
 				if ins, ok := rel.(structEmbedding); ok {
 					structEmbeddingsJSON = append(structEmbeddingsJSON, StructEmbeddingJSON{
-						Src:       dep.Src,
-						Des:       dep.Tar,
+						Src:       dep.RelativeSrc,
+						Des:       dep.RelativeTar,
 						Container: ins.Container,
 						Member:    ins.Member,
-						Pos:       ins.Pos.String(),
+						//Pos:       ins.Pos.String(),
 					})
 				}
 			}
@@ -130,10 +132,10 @@ func ConstReferToJSON(dirName string) {
 			for _, rel := range rels {
 				if ins, ok := rel.(constRefer); ok {
 					constRefersJSON = append(constRefersJSON, ConstReferJSON{
-						Src:  dep.Src,
-						Des:  dep.Tar,
+						Src:  dep.RelativeSrc,
+						Des:  dep.RelativeTar,
 						Name: ins.Name,
-						Pos:  ins.Pos.String(),
+						//Pos:  ins.Pos.String(),
 					})
 				}
 			}
@@ -160,11 +162,11 @@ func GlobalReferToJSON(dirName string) {
 			for _, rel := range rels {
 				if ins, ok := rel.(globalRefer); ok {
 					globalRefersJSON = append(globalRefersJSON, GlobalReferJSON{
-						Src:  dep.Src,
-						Des:  dep.Tar,
+						Src:  dep.RelativeSrc,
+						Des:  dep.RelativeTar,
 						Name: ins.Name,
 						Type: ins.Type,
-						Pos:  ins.Pos.String(),
+						//Pos:  ins.Pos.String(),
 					})
 				}
 			}
@@ -191,10 +193,10 @@ func FunctionCallToJSON(dirName string) {
 			for _, rel := range rels {
 				if ins, ok := rel.(functionCall); ok {
 					functionCallsJSON = append(functionCallsJSON, FunctionCallJSON{
-						Src:     dep.Src,
-						Des:     dep.Tar,
+						Src:     dep.RelativeSrc,
+						Des:     dep.RelativeTar,
 						FunName: ins.FunName,
-						Pos:     ins.Pos.String(),
+						//Pos:     ins.Pos.String(),
 					})
 				}
 			}

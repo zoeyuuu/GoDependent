@@ -1,0 +1,494 @@
+[
+    {
+        "Src": "binding/binding.go",
+        "Des": "binding/binding_nomsgpack.go",
+        "Name": "MIMEJSON",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding.go",
+        "Des": "binding/binding_nomsgpack.go",
+        "Name": "MIMEHTML",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding.go",
+        "Des": "binding/binding_nomsgpack.go",
+        "Name": "MIMEXML",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding.go",
+        "Des": "binding/binding_nomsgpack.go",
+        "Name": "MIMEXML2",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding.go",
+        "Des": "binding/binding_nomsgpack.go",
+        "Name": "MIMEPlain",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding.go",
+        "Des": "binding/binding_nomsgpack.go",
+        "Name": "MIMEPOSTForm",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding.go",
+        "Des": "binding/binding_nomsgpack.go",
+        "Name": "MIMEMultipartPOSTForm",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding.go",
+        "Des": "binding/binding_nomsgpack.go",
+        "Name": "MIMEPROTOBUF",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding.go",
+        "Des": "binding/binding_nomsgpack.go",
+        "Name": "MIMEYAML",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding.go",
+        "Des": "binding/binding_nomsgpack.go",
+        "Name": "MIMETOML",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding.go",
+        "Des": "binding/binding_nomsgpack.go",
+        "Name": "MIMEJSON",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding.go",
+        "Des": "binding/binding_nomsgpack.go",
+        "Name": "MIMEXML",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding.go",
+        "Des": "binding/binding_nomsgpack.go",
+        "Name": "MIMEXML2",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding.go",
+        "Des": "binding/binding_nomsgpack.go",
+        "Name": "MIMEPROTOBUF",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding.go",
+        "Des": "binding/binding_nomsgpack.go",
+        "Name": "MIMEYAML",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding.go",
+        "Des": "binding/binding_nomsgpack.go",
+        "Name": "MIMETOML",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding.go",
+        "Des": "binding/binding_nomsgpack.go",
+        "Name": "MIMEMultipartPOSTForm",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding.go",
+        "Des": "context.go",
+        "Name": "MIMEJSON",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding.go",
+        "Des": "context.go",
+        "Name": "MIMEHTML",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding.go",
+        "Des": "context.go",
+        "Name": "MIMEXML",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding.go",
+        "Des": "context.go",
+        "Name": "MIMEXML2",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding.go",
+        "Des": "context.go",
+        "Name": "MIMEPlain",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding.go",
+        "Des": "context.go",
+        "Name": "MIMEPOSTForm",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding.go",
+        "Des": "context.go",
+        "Name": "MIMEMultipartPOSTForm",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding.go",
+        "Des": "context.go",
+        "Name": "MIMEYAML",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding.go",
+        "Des": "context.go",
+        "Name": "MIMETOML",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding.go",
+        "Des": "context.go",
+        "Name": "MIMEJSON",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding.go",
+        "Des": "context.go",
+        "Name": "MIMEXML",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding.go",
+        "Des": "context.go",
+        "Name": "MIMEXML2",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding.go",
+        "Des": "context.go",
+        "Name": "MIMEYAML",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding.go",
+        "Des": "context.go",
+        "Name": "MIMETOML",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding.go",
+        "Des": "context.go",
+        "Name": "MIMEMultipartPOSTForm",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding_nomsgpack.go",
+        "Des": "binding/binding.go",
+        "Name": "MIMEJSON",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding_nomsgpack.go",
+        "Des": "binding/binding.go",
+        "Name": "MIMEHTML",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding_nomsgpack.go",
+        "Des": "binding/binding.go",
+        "Name": "MIMEXML",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding_nomsgpack.go",
+        "Des": "binding/binding.go",
+        "Name": "MIMEXML2",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding_nomsgpack.go",
+        "Des": "binding/binding.go",
+        "Name": "MIMEPlain",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding_nomsgpack.go",
+        "Des": "binding/binding.go",
+        "Name": "MIMEPOSTForm",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding_nomsgpack.go",
+        "Des": "binding/binding.go",
+        "Name": "MIMEMultipartPOSTForm",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding_nomsgpack.go",
+        "Des": "binding/binding.go",
+        "Name": "MIMEPROTOBUF",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding_nomsgpack.go",
+        "Des": "binding/binding.go",
+        "Name": "MIMEYAML",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding_nomsgpack.go",
+        "Des": "binding/binding.go",
+        "Name": "MIMETOML",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding_nomsgpack.go",
+        "Des": "binding/binding.go",
+        "Name": "MIMEJSON",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding_nomsgpack.go",
+        "Des": "binding/binding.go",
+        "Name": "MIMEXML",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding_nomsgpack.go",
+        "Des": "binding/binding.go",
+        "Name": "MIMEXML2",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding_nomsgpack.go",
+        "Des": "binding/binding.go",
+        "Name": "MIMEPROTOBUF",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding_nomsgpack.go",
+        "Des": "binding/binding.go",
+        "Name": "MIMEYAML",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding_nomsgpack.go",
+        "Des": "binding/binding.go",
+        "Name": "MIMEMultipartPOSTForm",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding_nomsgpack.go",
+        "Des": "binding/binding.go",
+        "Name": "MIMETOML",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding_nomsgpack.go",
+        "Des": "context.go",
+        "Name": "MIMEJSON",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding_nomsgpack.go",
+        "Des": "context.go",
+        "Name": "MIMEHTML",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding_nomsgpack.go",
+        "Des": "context.go",
+        "Name": "MIMEXML",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding_nomsgpack.go",
+        "Des": "context.go",
+        "Name": "MIMEXML2",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding_nomsgpack.go",
+        "Des": "context.go",
+        "Name": "MIMEPlain",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding_nomsgpack.go",
+        "Des": "context.go",
+        "Name": "MIMEPOSTForm",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding_nomsgpack.go",
+        "Des": "context.go",
+        "Name": "MIMEMultipartPOSTForm",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding_nomsgpack.go",
+        "Des": "context.go",
+        "Name": "MIMEYAML",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding_nomsgpack.go",
+        "Des": "context.go",
+        "Name": "MIMETOML",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding_nomsgpack.go",
+        "Des": "context.go",
+        "Name": "MIMEJSON",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding_nomsgpack.go",
+        "Des": "context.go",
+        "Name": "MIMEXML",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding_nomsgpack.go",
+        "Des": "context.go",
+        "Name": "MIMEXML2",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding_nomsgpack.go",
+        "Des": "context.go",
+        "Name": "MIMEYAML",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding_nomsgpack.go",
+        "Des": "context.go",
+        "Name": "MIMEMultipartPOSTForm",
+        "Pos": ""
+    },
+    {
+        "Src": "binding/binding_nomsgpack.go",
+        "Des": "context.go",
+        "Name": "MIMETOML",
+        "Pos": ""
+    },
+    {
+        "Src": "context.go",
+        "Des": "binding/binding.go",
+        "Name": "MIMEJSON",
+        "Pos": ""
+    },
+    {
+        "Src": "context.go",
+        "Des": "binding/binding.go",
+        "Name": "MIMEHTML",
+        "Pos": ""
+    },
+    {
+        "Src": "context.go",
+        "Des": "binding/binding.go",
+        "Name": "MIMEXML",
+        "Pos": ""
+    },
+    {
+        "Src": "context.go",
+        "Des": "binding/binding.go",
+        "Name": "MIMEXML2",
+        "Pos": ""
+    },
+    {
+        "Src": "context.go",
+        "Des": "binding/binding.go",
+        "Name": "MIMEPlain",
+        "Pos": ""
+    },
+    {
+        "Src": "context.go",
+        "Des": "binding/binding.go",
+        "Name": "MIMEPOSTForm",
+        "Pos": ""
+    },
+    {
+        "Src": "context.go",
+        "Des": "binding/binding.go",
+        "Name": "MIMEMultipartPOSTForm",
+        "Pos": ""
+    },
+    {
+        "Src": "context.go",
+        "Des": "binding/binding.go",
+        "Name": "MIMEYAML",
+        "Pos": ""
+    },
+    {
+        "Src": "context.go",
+        "Des": "binding/binding.go",
+        "Name": "MIMETOML",
+        "Pos": ""
+    },
+    {
+        "Src": "context.go",
+        "Des": "binding/binding_nomsgpack.go",
+        "Name": "MIMEJSON",
+        "Pos": ""
+    },
+    {
+        "Src": "context.go",
+        "Des": "binding/binding_nomsgpack.go",
+        "Name": "MIMEHTML",
+        "Pos": ""
+    },
+    {
+        "Src": "context.go",
+        "Des": "binding/binding_nomsgpack.go",
+        "Name": "MIMEXML",
+        "Pos": ""
+    },
+    {
+        "Src": "context.go",
+        "Des": "binding/binding_nomsgpack.go",
+        "Name": "MIMEXML2",
+        "Pos": ""
+    },
+    {
+        "Src": "context.go",
+        "Des": "binding/binding_nomsgpack.go",
+        "Name": "MIMEPlain",
+        "Pos": ""
+    },
+    {
+        "Src": "context.go",
+        "Des": "binding/binding_nomsgpack.go",
+        "Name": "MIMEPOSTForm",
+        "Pos": ""
+    },
+    {
+        "Src": "context.go",
+        "Des": "binding/binding_nomsgpack.go",
+        "Name": "MIMEMultipartPOSTForm",
+        "Pos": ""
+    },
+    {
+        "Src": "context.go",
+        "Des": "binding/binding_nomsgpack.go",
+        "Name": "MIMEYAML",
+        "Pos": ""
+    },
+    {
+        "Src": "context.go",
+        "Des": "binding/binding_nomsgpack.go",
+        "Name": "MIMETOML",
+        "Pos": ""
+    }
+]

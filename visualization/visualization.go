@@ -67,8 +67,8 @@ func JsonVisualization() {
 		Categories: categories,
 	}
 
-	dirName := "visualization/static"
-	fileName := "visual.json"
+	dirName := "outputs/" + file.Name
+	fileName := file.Name + ".json"
 	filePath := filepath.Join(dirName, fileName)
 	jsonData, err := json.MarshalIndent(data, "", "    ")
 	if err != nil {

@@ -1,0 +1,5876 @@
+{
+    "nodes": [
+        {
+            "id": "0",
+            "relName": "any.go",
+            "name": "any.go",
+            "symbolSize": 13,
+            "category": "gin",
+            "draggable": true
+        },
+        {
+            "id": "1",
+            "relName": "auth.go",
+            "name": "auth.go",
+            "symbolSize": 5,
+            "category": "gin",
+            "draggable": true
+        },
+        {
+            "id": "2",
+            "relName": "auth_test.go",
+            "name": "auth_test.go",
+            "symbolSize": 7,
+            "category": "gin",
+            "draggable": true
+        },
+        {
+            "id": "3",
+            "relName": "benchmarks_test.go",
+            "name": "benchmarks_test.go",
+            "symbolSize": 18,
+            "category": "gin",
+            "draggable": true
+        },
+        {
+            "id": "4",
+            "relName": "binding/any.go",
+            "name": "any.go",
+            "symbolSize": 13,
+            "category": "binding",
+            "draggable": true
+        },
+        {
+            "id": "5",
+            "relName": "binding/binding.go",
+            "name": "binding.go",
+            "symbolSize": 17,
+            "category": "binding",
+            "draggable": true
+        },
+        {
+            "id": "6",
+            "relName": "binding/binding_msgpack_test.go",
+            "name": "binding_msgpack_test.go",
+            "symbolSize": 14,
+            "category": "binding",
+            "draggable": true
+        },
+        {
+            "id": "7",
+            "relName": "binding/binding_nomsgpack.go",
+            "name": "binding_nomsgpack.go",
+            "symbolSize": 17,
+            "category": "binding",
+            "draggable": true
+        },
+        {
+            "id": "8",
+            "relName": "binding/binding_test.go",
+            "name": "binding_test.go",
+            "symbolSize": 18,
+            "category": "binding",
+            "draggable": true
+        },
+        {
+            "id": "9",
+            "relName": "binding/default_validator.go",
+            "name": "default_validator.go",
+            "symbolSize": 10,
+            "category": "binding",
+            "draggable": true
+        },
+        {
+            "id": "10",
+            "relName": "binding/default_validator_benchmark_test.go",
+            "name": "default_validator_benchmark_test.go",
+            "symbolSize": 1,
+            "category": "binding",
+            "draggable": true
+        },
+        {
+            "id": "11",
+            "relName": "binding/default_validator_test.go",
+            "name": "default_validator_test.go",
+            "symbolSize": 0,
+            "category": "binding",
+            "draggable": true
+        },
+        {
+            "id": "12",
+            "relName": "binding/form.go",
+            "name": "form.go",
+            "symbolSize": 6,
+            "category": "binding",
+            "draggable": true
+        },
+        {
+            "id": "13",
+            "relName": "binding/form_mapping.go",
+            "name": "form_mapping.go",
+            "symbolSize": 15,
+            "category": "binding",
+            "draggable": true
+        },
+        {
+            "id": "14",
+            "relName": "binding/form_mapping_benchmark_test.go",
+            "name": "form_mapping_benchmark_test.go",
+            "symbolSize": 3,
+            "category": "binding",
+            "draggable": true
+        },
+        {
+            "id": "15",
+            "relName": "binding/form_mapping_test.go",
+            "name": "form_mapping_test.go",
+            "symbolSize": 3,
+            "category": "binding",
+            "draggable": true
+        },
+        {
+            "id": "16",
+            "relName": "binding/header.go",
+            "name": "header.go",
+            "symbolSize": 7,
+            "category": "binding",
+            "draggable": true
+        },
+        {
+            "id": "17",
+            "relName": "binding/json.go",
+            "name": "json.go",
+            "symbolSize": 6,
+            "category": "binding",
+            "draggable": true
+        },
+        {
+            "id": "18",
+            "relName": "binding/json_test.go",
+            "name": "json_test.go",
+            "symbolSize": 0,
+            "category": "binding",
+            "draggable": true
+        },
+        {
+            "id": "19",
+            "relName": "binding/msgpack.go",
+            "name": "msgpack.go",
+            "symbolSize": 6,
+            "category": "binding",
+            "draggable": true
+        },
+        {
+            "id": "20",
+            "relName": "binding/msgpack_test.go",
+            "name": "msgpack_test.go",
+            "symbolSize": 0,
+            "category": "binding",
+            "draggable": true
+        },
+        {
+            "id": "21",
+            "relName": "binding/multipart_form_mapping.go",
+            "name": "multipart_form_mapping.go",
+            "symbolSize": 2,
+            "category": "binding",
+            "draggable": true
+        },
+        {
+            "id": "22",
+            "relName": "binding/multipart_form_mapping_test.go",
+            "name": "multipart_form_mapping_test.go",
+            "symbolSize": 10,
+            "category": "binding",
+            "draggable": true
+        },
+        {
+            "id": "23",
+            "relName": "binding/protobuf.go",
+            "name": "protobuf.go",
+            "symbolSize": 8,
+            "category": "binding",
+            "draggable": true
+        },
+        {
+            "id": "24",
+            "relName": "binding/query.go",
+            "name": "query.go",
+            "symbolSize": 6,
+            "category": "binding",
+            "draggable": true
+        },
+        {
+            "id": "25",
+            "relName": "binding/toml.go",
+            "name": "toml.go",
+            "symbolSize": 4,
+            "category": "binding",
+            "draggable": true
+        },
+        {
+            "id": "26",
+            "relName": "binding/toml_test.go",
+            "name": "toml_test.go",
+            "symbolSize": 0,
+            "category": "binding",
+            "draggable": true
+        },
+        {
+            "id": "27",
+            "relName": "binding/uri.go",
+            "name": "uri.go",
+            "symbolSize": 6,
+            "category": "binding",
+            "draggable": true
+        },
+        {
+            "id": "28",
+            "relName": "binding/validate_test.go",
+            "name": "validate_test.go",
+            "symbolSize": 7,
+            "category": "binding",
+            "draggable": true
+        },
+        {
+            "id": "29",
+            "relName": "binding/xml.go",
+            "name": "xml.go",
+            "symbolSize": 6,
+            "category": "binding",
+            "draggable": true
+        },
+        {
+            "id": "30",
+            "relName": "binding/xml_test.go",
+            "name": "xml_test.go",
+            "symbolSize": 0,
+            "category": "binding",
+            "draggable": true
+        },
+        {
+            "id": "31",
+            "relName": "binding/yaml.go",
+            "name": "yaml.go",
+            "symbolSize": 6,
+            "category": "binding",
+            "draggable": true
+        },
+        {
+            "id": "32",
+            "relName": "binding/yaml_test.go",
+            "name": "yaml_test.go",
+            "symbolSize": 0,
+            "category": "binding",
+            "draggable": true
+        },
+        {
+            "id": "33",
+            "relName": "context.go",
+            "name": "context.go",
+            "symbolSize": 47,
+            "category": "gin",
+            "draggable": true
+        },
+        {
+            "id": "34",
+            "relName": "context_1.16_test.go",
+            "name": "context_1.16_test.go",
+            "symbolSize": 4,
+            "category": "gin",
+            "draggable": true
+        },
+        {
+            "id": "35",
+            "relName": "context_1.17_test.go",
+            "name": "context_1.17_test.go",
+            "symbolSize": 11,
+            "category": "gin",
+            "draggable": true
+        },
+        {
+            "id": "36",
+            "relName": "context_1.19_test.go",
+            "name": "context_1.19_test.go",
+            "symbolSize": 4,
+            "category": "gin",
+            "draggable": true
+        },
+        {
+            "id": "37",
+            "relName": "context_appengine.go",
+            "name": "context_appengine.go",
+            "symbolSize": 0,
+            "category": "gin",
+            "draggable": true
+        },
+        {
+            "id": "38",
+            "relName": "context_test.go",
+            "name": "context_test.go",
+            "symbolSize": 23,
+            "category": "gin",
+            "draggable": true
+        },
+        {
+            "id": "39",
+            "relName": "debug.go",
+            "name": "debug.go",
+            "symbolSize": 12,
+            "category": "gin",
+            "draggable": true
+        },
+        {
+            "id": "40",
+            "relName": "debug_test.go",
+            "name": "debug_test.go",
+            "symbolSize": 8,
+            "category": "gin",
+            "draggable": true
+        },
+        {
+            "id": "41",
+            "relName": "deprecated.go",
+            "name": "deprecated.go",
+            "symbolSize": 2,
+            "category": "gin",
+            "draggable": true
+        },
+        {
+            "id": "42",
+            "relName": "deprecated_test.go",
+            "name": "deprecated_test.go",
+            "symbolSize": 3,
+            "category": "gin",
+            "draggable": true
+        },
+        {
+            "id": "43",
+            "relName": "doc.go",
+            "name": "doc.go",
+            "symbolSize": 0,
+            "category": "gin",
+            "draggable": true
+        },
+        {
+            "id": "44",
+            "relName": "errors.go",
+            "name": "errors.go",
+            "symbolSize": 29,
+            "category": "gin",
+            "draggable": true
+        },
+        {
+            "id": "45",
+            "relName": "errors_test.go",
+            "name": "errors_test.go",
+            "symbolSize": 16,
+            "category": "gin",
+            "draggable": true
+        },
+        {
+            "id": "46",
+            "relName": "fs.go",
+            "name": "fs.go",
+            "symbolSize": 5,
+            "category": "gin",
+            "draggable": true
+        },
+        {
+            "id": "47",
+            "relName": "gin.go",
+            "name": "gin.go",
+            "symbolSize": 36,
+            "category": "gin",
+            "draggable": true
+        },
+        {
+            "id": "48",
+            "relName": "ginS/gins.go",
+            "name": "gins.go",
+            "symbolSize": 1,
+            "category": "ginS",
+            "draggable": true
+        },
+        {
+            "id": "49",
+            "relName": "gin_integration_test.go",
+            "name": "gin_integration_test.go",
+            "symbolSize": 7,
+            "category": "gin",
+            "draggable": true
+        },
+        {
+            "id": "50",
+            "relName": "gin_test.go",
+            "name": "gin_test.go",
+            "symbolSize": 10,
+            "category": "gin",
+            "draggable": true
+        },
+        {
+            "id": "51",
+            "relName": "githubapi_test.go",
+            "name": "githubapi_test.go",
+            "symbolSize": 9,
+            "category": "gin",
+            "draggable": true
+        },
+        {
+            "id": "52",
+            "relName": "internal/bytesconv/bytesconv.go",
+            "name": "bytesconv.go",
+            "symbolSize": 7,
+            "category": "bytesconv",
+            "draggable": true
+        },
+        {
+            "id": "53",
+            "relName": "internal/bytesconv/bytesconv_test.go",
+            "name": "bytesconv_test.go",
+            "symbolSize": 1,
+            "category": "bytesconv",
+            "draggable": true
+        },
+        {
+            "id": "54",
+            "relName": "internal/json/go_json.go",
+            "name": "go_json.go",
+            "symbolSize": 0,
+            "category": "json",
+            "draggable": true
+        },
+        {
+            "id": "55",
+            "relName": "internal/json/json.go",
+            "name": "json.go",
+            "symbolSize": 0,
+            "category": "json",
+            "draggable": true
+        },
+        {
+            "id": "56",
+            "relName": "internal/json/jsoniter.go",
+            "name": "jsoniter.go",
+            "symbolSize": 0,
+            "category": "json",
+            "draggable": true
+        },
+        {
+            "id": "57",
+            "relName": "internal/json/sonic.go",
+            "name": "sonic.go",
+            "symbolSize": 0,
+            "category": "json",
+            "draggable": true
+        },
+        {
+            "id": "58",
+            "relName": "logger.go",
+            "name": "logger.go",
+            "symbolSize": 5,
+            "category": "gin",
+            "draggable": true
+        },
+        {
+            "id": "59",
+            "relName": "logger_test.go",
+            "name": "logger_test.go",
+            "symbolSize": 8,
+            "category": "gin",
+            "draggable": true
+        },
+        {
+            "id": "60",
+            "relName": "middleware_test.go",
+            "name": "middleware_test.go",
+            "symbolSize": 6,
+            "category": "gin",
+            "draggable": true
+        },
+        {
+            "id": "61",
+            "relName": "mode.go",
+            "name": "mode.go",
+            "symbolSize": 9,
+            "category": "gin",
+            "draggable": true
+        },
+        {
+            "id": "62",
+            "relName": "mode_test.go",
+            "name": "mode_test.go",
+            "symbolSize": 1,
+            "category": "gin",
+            "draggable": true
+        },
+        {
+            "id": "63",
+            "relName": "path.go",
+            "name": "path.go",
+            "symbolSize": 2,
+            "category": "gin",
+            "draggable": true
+        },
+        {
+            "id": "64",
+            "relName": "path_test.go",
+            "name": "path_test.go",
+            "symbolSize": 1,
+            "category": "gin",
+            "draggable": true
+        },
+        {
+            "id": "65",
+            "relName": "recovery.go",
+            "name": "recovery.go",
+            "symbolSize": 10,
+            "category": "gin",
+            "draggable": true
+        },
+        {
+            "id": "66",
+            "relName": "recovery_test.go",
+            "name": "recovery_test.go",
+            "symbolSize": 9,
+            "category": "gin",
+            "draggable": true
+        },
+        {
+            "id": "67",
+            "relName": "render/any.go",
+            "name": "any.go",
+            "symbolSize": 13,
+            "category": "render",
+            "draggable": true
+        },
+        {
+            "id": "68",
+            "relName": "render/data.go",
+            "name": "data.go",
+            "symbolSize": 20,
+            "category": "render",
+            "draggable": true
+        },
+        {
+            "id": "69",
+            "relName": "render/html.go",
+            "name": "html.go",
+            "symbolSize": 26,
+            "category": "render",
+            "draggable": true
+        },
+        {
+            "id": "70",
+            "relName": "render/json.go",
+            "name": "json.go",
+            "symbolSize": 25,
+            "category": "render",
+            "draggable": true
+        },
+        {
+            "id": "71",
+            "relName": "render/msgpack.go",
+            "name": "msgpack.go",
+            "symbolSize": 15,
+            "category": "render",
+            "draggable": true
+        },
+        {
+            "id": "72",
+            "relName": "render/protobuf.go",
+            "name": "protobuf.go",
+            "symbolSize": 24,
+            "category": "render",
+            "draggable": true
+        },
+        {
+            "id": "73",
+            "relName": "render/reader.go",
+            "name": "reader.go",
+            "symbolSize": 20,
+            "category": "render",
+            "draggable": true
+        },
+        {
+            "id": "74",
+            "relName": "render/reader_test.go",
+            "name": "reader_test.go",
+            "symbolSize": 11,
+            "category": "render",
+            "draggable": true
+        },
+        {
+            "id": "75",
+            "relName": "render/redirect.go",
+            "name": "redirect.go",
+            "symbolSize": 10,
+            "category": "render",
+            "draggable": true
+        },
+        {
+            "id": "76",
+            "relName": "render/render.go",
+            "name": "render.go",
+            "symbolSize": 11,
+            "category": "render",
+            "draggable": true
+        },
+        {
+            "id": "77",
+            "relName": "render/render_msgpack_test.go",
+            "name": "render_msgpack_test.go",
+            "symbolSize": 0,
+            "category": "render",
+            "draggable": true
+        },
+        {
+            "id": "78",
+            "relName": "render/render_test.go",
+            "name": "render_test.go",
+            "symbolSize": 11,
+            "category": "render",
+            "draggable": true
+        },
+        {
+            "id": "79",
+            "relName": "render/text.go",
+            "name": "text.go",
+            "symbolSize": 12,
+            "category": "render",
+            "draggable": true
+        },
+        {
+            "id": "80",
+            "relName": "render/toml.go",
+            "name": "toml.go",
+            "symbolSize": 24,
+            "category": "render",
+            "draggable": true
+        },
+        {
+            "id": "81",
+            "relName": "render/xml.go",
+            "name": "xml.go",
+            "symbolSize": 24,
+            "category": "render",
+            "draggable": true
+        },
+        {
+            "id": "82",
+            "relName": "render/yaml.go",
+            "name": "yaml.go",
+            "symbolSize": 24,
+            "category": "render",
+            "draggable": true
+        },
+        {
+            "id": "83",
+            "relName": "response_writer.go",
+            "name": "response_writer.go",
+            "symbolSize": 13,
+            "category": "gin",
+            "draggable": true
+        },
+        {
+            "id": "84",
+            "relName": "response_writer_test.go",
+            "name": "response_writer_test.go",
+            "symbolSize": 8,
+            "category": "gin",
+            "draggable": true
+        },
+        {
+            "id": "85",
+            "relName": "routergroup.go",
+            "name": "routergroup.go",
+            "symbolSize": 20,
+            "category": "gin",
+            "draggable": true
+        },
+        {
+            "id": "86",
+            "relName": "routergroup_test.go",
+            "name": "routergroup_test.go",
+            "symbolSize": 7,
+            "category": "gin",
+            "draggable": true
+        },
+        {
+            "id": "87",
+            "relName": "routes_test.go",
+            "name": "routes_test.go",
+            "symbolSize": 18,
+            "category": "gin",
+            "draggable": true
+        },
+        {
+            "id": "88",
+            "relName": "test_helpers.go",
+            "name": "test_helpers.go",
+            "symbolSize": 8,
+            "category": "gin",
+            "draggable": true
+        },
+        {
+            "id": "89",
+            "relName": "testdata/protoexample/any.go",
+            "name": "any.go",
+            "symbolSize": 13,
+            "category": "protoexample",
+            "draggable": true
+        },
+        {
+            "id": "90",
+            "relName": "testdata/protoexample/test.pb.go",
+            "name": "test.pb.go",
+            "symbolSize": 0,
+            "category": "protoexample",
+            "draggable": true
+        },
+        {
+            "id": "91",
+            "relName": "tree.go",
+            "name": "tree.go",
+            "symbolSize": 11,
+            "category": "gin",
+            "draggable": true
+        },
+        {
+            "id": "92",
+            "relName": "tree_test.go",
+            "name": "tree_test.go",
+            "symbolSize": 3,
+            "category": "gin",
+            "draggable": true
+        },
+        {
+            "id": "93",
+            "relName": "utils.go",
+            "name": "utils.go",
+            "symbolSize": 11,
+            "category": "gin",
+            "draggable": true
+        },
+        {
+            "id": "94",
+            "relName": "utils_test.go",
+            "name": "utils_test.go",
+            "symbolSize": 18,
+            "category": "gin",
+            "draggable": true
+        },
+        {
+            "id": "95",
+            "relName": "version.go",
+            "name": "version.go",
+            "symbolSize": 0,
+            "category": "gin",
+            "draggable": true
+        }
+    ],
+    "links": [
+        {
+            "source": "1",
+            "target": "3",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "auth.go",
+            "targetname": "benchmarks_test.go"
+        },
+        {
+            "source": "1",
+            "target": "33",
+            "relations": {
+                "FunctionCall": 4
+            },
+            "weight": 4,
+            "value": 2.144,
+            "sourcename": "auth.go",
+            "targetname": "context.go"
+        },
+        {
+            "source": "1",
+            "target": "52",
+            "relations": {
+                "FunctionCall": 3
+            },
+            "weight": 3,
+            "value": 2.108,
+            "sourcename": "auth.go",
+            "targetname": "internal/bytesconv/bytesconv.go"
+        },
+        {
+            "source": "1",
+            "target": "93",
+            "relations": {
+                "FunctionCall": 2
+            },
+            "weight": 2,
+            "value": 2.072,
+            "sourcename": "auth.go",
+            "targetname": "utils.go"
+        },
+        {
+            "source": "2",
+            "target": "1",
+            "relations": {
+                "FunctionCall": 20
+            },
+            "weight": 20,
+            "value": 2.7199999999999998,
+            "sourcename": "auth_test.go",
+            "targetname": "auth.go"
+        },
+        {
+            "source": "2",
+            "target": "3",
+            "relations": {
+                "FunctionCall": 2
+            },
+            "weight": 2,
+            "value": 2.072,
+            "sourcename": "auth_test.go",
+            "targetname": "benchmarks_test.go"
+        },
+        {
+            "source": "2",
+            "target": "33",
+            "relations": {
+                "FunctionCall": 8
+            },
+            "weight": 8,
+            "value": 2.288,
+            "sourcename": "auth_test.go",
+            "targetname": "context.go"
+        },
+        {
+            "source": "2",
+            "target": "44",
+            "relations": {
+                "FunctionCall": 3
+            },
+            "weight": 3,
+            "value": 2.108,
+            "sourcename": "auth_test.go",
+            "targetname": "errors.go"
+        },
+        {
+            "source": "2",
+            "target": "47",
+            "relations": {
+                "FunctionCall": 9
+            },
+            "weight": 9,
+            "value": 2.324,
+            "sourcename": "auth_test.go",
+            "targetname": "gin.go"
+        },
+        {
+            "source": "2",
+            "target": "85",
+            "relations": {
+                "FunctionCall": 6
+            },
+            "weight": 6,
+            "value": 2.216,
+            "sourcename": "auth_test.go",
+            "targetname": "routergroup.go"
+        },
+        {
+            "source": "2",
+            "target": "94",
+            "relations": {
+                "FunctionCall": 3
+            },
+            "weight": 3,
+            "value": 2.108,
+            "sourcename": "auth_test.go",
+            "targetname": "utils_test.go"
+        },
+        {
+            "source": "3",
+            "target": "33",
+            "relations": {
+                "FunctionCall": 4
+            },
+            "weight": 4,
+            "value": 2.144,
+            "sourcename": "benchmarks_test.go",
+            "targetname": "context.go"
+        },
+        {
+            "source": "3",
+            "target": "44",
+            "relations": {
+                "FunctionCall": 3
+            },
+            "weight": 3,
+            "value": 2.108,
+            "sourcename": "benchmarks_test.go",
+            "targetname": "errors.go"
+        },
+        {
+            "source": "3",
+            "target": "47",
+            "relations": {
+                "FunctionCall": 24
+            },
+            "weight": 24,
+            "value": 2.864,
+            "sourcename": "benchmarks_test.go",
+            "targetname": "gin.go"
+        },
+        {
+            "source": "3",
+            "target": "58",
+            "relations": {
+                "FunctionCall": 2
+            },
+            "weight": 2,
+            "value": 2.072,
+            "sourcename": "benchmarks_test.go",
+            "targetname": "logger.go"
+        },
+        {
+            "source": "3",
+            "target": "65",
+            "relations": {
+                "FunctionCall": 2
+            },
+            "weight": 2,
+            "value": 2.072,
+            "sourcename": "benchmarks_test.go",
+            "targetname": "recovery.go"
+        },
+        {
+            "source": "3",
+            "target": "85",
+            "relations": {
+                "FunctionCall": 26
+            },
+            "weight": 26,
+            "value": 2.936,
+            "sourcename": "benchmarks_test.go",
+            "targetname": "routergroup.go"
+        },
+        {
+            "source": "3",
+            "target": "94",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "benchmarks_test.go",
+            "targetname": "utils_test.go"
+        },
+        {
+            "source": "5",
+            "target": "7",
+            "relations": {
+                "ConstRefer": 17,
+                "instantiation": 1
+            },
+            "weight": 18,
+            "value": 2.648,
+            "sourcename": "binding/binding.go",
+            "targetname": "binding/binding_nomsgpack.go"
+        },
+        {
+            "source": "5",
+            "target": "9",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "binding/binding.go",
+            "targetname": "binding/default_validator.go"
+        },
+        {
+            "source": "5",
+            "target": "33",
+            "relations": {
+                "ConstRefer": 15
+            },
+            "weight": 15,
+            "value": 2.54,
+            "sourcename": "binding/binding.go",
+            "targetname": "context.go"
+        },
+        {
+            "source": "6",
+            "target": "5",
+            "relations": {
+                "FunctionCall": 2
+            },
+            "weight": 2,
+            "value": 2.072,
+            "sourcename": "binding/binding_msgpack_test.go",
+            "targetname": "binding/binding.go"
+        },
+        {
+            "source": "6",
+            "target": "7",
+            "relations": {
+                "FunctionCall": 2
+            },
+            "weight": 2,
+            "value": 2.072,
+            "sourcename": "binding/binding_msgpack_test.go",
+            "targetname": "binding/binding_nomsgpack.go"
+        },
+        {
+            "source": "6",
+            "target": "8",
+            "relations": {
+                "FunctionCall": 2
+            },
+            "weight": 2,
+            "value": 2.072,
+            "sourcename": "binding/binding_msgpack_test.go",
+            "targetname": "binding/binding_test.go"
+        },
+        {
+            "source": "6",
+            "target": "9",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "binding/binding_msgpack_test.go",
+            "targetname": "binding/default_validator.go"
+        },
+        {
+            "source": "6",
+            "target": "12",
+            "relations": {
+                "FunctionCall": 9
+            },
+            "weight": 9,
+            "value": 2.324,
+            "sourcename": "binding/binding_msgpack_test.go",
+            "targetname": "binding/form.go"
+        },
+        {
+            "source": "6",
+            "target": "16",
+            "relations": {
+                "FunctionCall": 3
+            },
+            "weight": 3,
+            "value": 2.108,
+            "sourcename": "binding/binding_msgpack_test.go",
+            "targetname": "binding/header.go"
+        },
+        {
+            "source": "6",
+            "target": "17",
+            "relations": {
+                "FunctionCall": 3
+            },
+            "weight": 3,
+            "value": 2.108,
+            "sourcename": "binding/binding_msgpack_test.go",
+            "targetname": "binding/json.go"
+        },
+        {
+            "source": "6",
+            "target": "19",
+            "relations": {
+                "FunctionCall": 3
+            },
+            "weight": 3,
+            "value": 2.108,
+            "sourcename": "binding/binding_msgpack_test.go",
+            "targetname": "binding/msgpack.go"
+        },
+        {
+            "source": "6",
+            "target": "23",
+            "relations": {
+                "FunctionCall": 3
+            },
+            "weight": 3,
+            "value": 2.108,
+            "sourcename": "binding/binding_msgpack_test.go",
+            "targetname": "binding/protobuf.go"
+        },
+        {
+            "source": "6",
+            "target": "24",
+            "relations": {
+                "FunctionCall": 3
+            },
+            "weight": 3,
+            "value": 2.108,
+            "sourcename": "binding/binding_msgpack_test.go",
+            "targetname": "binding/query.go"
+        },
+        {
+            "source": "6",
+            "target": "25",
+            "relations": {
+                "FunctionCall": 3
+            },
+            "weight": 3,
+            "value": 2.108,
+            "sourcename": "binding/binding_msgpack_test.go",
+            "targetname": "binding/toml.go"
+        },
+        {
+            "source": "6",
+            "target": "27",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "binding/binding_msgpack_test.go",
+            "targetname": "binding/uri.go"
+        },
+        {
+            "source": "6",
+            "target": "29",
+            "relations": {
+                "FunctionCall": 3
+            },
+            "weight": 3,
+            "value": 2.108,
+            "sourcename": "binding/binding_msgpack_test.go",
+            "targetname": "binding/xml.go"
+        },
+        {
+            "source": "6",
+            "target": "31",
+            "relations": {
+                "FunctionCall": 3
+            },
+            "weight": 3,
+            "value": 2.108,
+            "sourcename": "binding/binding_msgpack_test.go",
+            "targetname": "binding/yaml.go"
+        },
+        {
+            "source": "7",
+            "target": "5",
+            "relations": {
+                "ConstRefer": 17,
+                "instantiation": 1
+            },
+            "weight": 18,
+            "value": 2.648,
+            "sourcename": "binding/binding_nomsgpack.go",
+            "targetname": "binding/binding.go"
+        },
+        {
+            "source": "7",
+            "target": "9",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "binding/binding_nomsgpack.go",
+            "targetname": "binding/default_validator.go"
+        },
+        {
+            "source": "7",
+            "target": "33",
+            "relations": {
+                "ConstRefer": 15
+            },
+            "weight": 15,
+            "value": 2.54,
+            "sourcename": "binding/binding_nomsgpack.go",
+            "targetname": "context.go"
+        },
+        {
+            "source": "8",
+            "target": "0",
+            "relations": {
+                "structAggregation": 2
+            },
+            "weight": 2,
+            "value": 2.072,
+            "sourcename": "binding/binding_test.go",
+            "targetname": "any.go"
+        },
+        {
+            "source": "8",
+            "target": "4",
+            "relations": {
+                "structAggregation": 2
+            },
+            "weight": 2,
+            "value": 2.072,
+            "sourcename": "binding/binding_test.go",
+            "targetname": "binding/any.go"
+        },
+        {
+            "source": "8",
+            "target": "5",
+            "relations": {
+                "FunctionCall": 16
+            },
+            "weight": 16,
+            "value": 2.576,
+            "sourcename": "binding/binding_test.go",
+            "targetname": "binding/binding.go"
+        },
+        {
+            "source": "8",
+            "target": "7",
+            "relations": {
+                "FunctionCall": 16
+            },
+            "weight": 16,
+            "value": 2.576,
+            "sourcename": "binding/binding_test.go",
+            "targetname": "binding/binding_nomsgpack.go"
+        },
+        {
+            "source": "8",
+            "target": "9",
+            "relations": {
+                "FunctionCall": 48
+            },
+            "weight": 48,
+            "value": 3.7279999999999998,
+            "sourcename": "binding/binding_test.go",
+            "targetname": "binding/default_validator.go"
+        },
+        {
+            "source": "8",
+            "target": "12",
+            "relations": {
+                "FunctionCall": 324
+            },
+            "weight": 324,
+            "value": 13.664,
+            "sourcename": "binding/binding_test.go",
+            "targetname": "binding/form.go"
+        },
+        {
+            "source": "8",
+            "target": "16",
+            "relations": {
+                "FunctionCall": 108
+            },
+            "weight": 108,
+            "value": 5.888,
+            "sourcename": "binding/binding_test.go",
+            "targetname": "binding/header.go"
+        },
+        {
+            "source": "8",
+            "target": "17",
+            "relations": {
+                "FunctionCall": 108
+            },
+            "weight": 108,
+            "value": 5.888,
+            "sourcename": "binding/binding_test.go",
+            "targetname": "binding/json.go"
+        },
+        {
+            "source": "8",
+            "target": "19",
+            "relations": {
+                "FunctionCall": 108
+            },
+            "weight": 108,
+            "value": 5.888,
+            "sourcename": "binding/binding_test.go",
+            "targetname": "binding/msgpack.go"
+        },
+        {
+            "source": "8",
+            "target": "23",
+            "relations": {
+                "FunctionCall": 108
+            },
+            "weight": 108,
+            "value": 5.888,
+            "sourcename": "binding/binding_test.go",
+            "targetname": "binding/protobuf.go"
+        },
+        {
+            "source": "8",
+            "target": "24",
+            "relations": {
+                "FunctionCall": 108
+            },
+            "weight": 108,
+            "value": 5.888,
+            "sourcename": "binding/binding_test.go",
+            "targetname": "binding/query.go"
+        },
+        {
+            "source": "8",
+            "target": "25",
+            "relations": {
+                "FunctionCall": 108
+            },
+            "weight": 108,
+            "value": 5.888,
+            "sourcename": "binding/binding_test.go",
+            "targetname": "binding/toml.go"
+        },
+        {
+            "source": "8",
+            "target": "27",
+            "relations": {
+                "FunctionCall": 34
+            },
+            "weight": 34,
+            "value": 3.224,
+            "sourcename": "binding/binding_test.go",
+            "targetname": "binding/uri.go"
+        },
+        {
+            "source": "8",
+            "target": "29",
+            "relations": {
+                "FunctionCall": 108
+            },
+            "weight": 108,
+            "value": 5.888,
+            "sourcename": "binding/binding_test.go",
+            "targetname": "binding/xml.go"
+        },
+        {
+            "source": "8",
+            "target": "31",
+            "relations": {
+                "FunctionCall": 108
+            },
+            "weight": 108,
+            "value": 5.888,
+            "sourcename": "binding/binding_test.go",
+            "targetname": "binding/yaml.go"
+        },
+        {
+            "source": "8",
+            "target": "67",
+            "relations": {
+                "structAggregation": 2
+            },
+            "weight": 2,
+            "value": 2.072,
+            "sourcename": "binding/binding_test.go",
+            "targetname": "render/any.go"
+        },
+        {
+            "source": "8",
+            "target": "89",
+            "relations": {
+                "structAggregation": 2
+            },
+            "weight": 2,
+            "value": 2.072,
+            "sourcename": "binding/binding_test.go",
+            "targetname": "testdata/protoexample/any.go"
+        },
+        {
+            "source": "9",
+            "target": "5",
+            "relations": {
+                "instantiation": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "binding/default_validator.go",
+            "targetname": "binding/binding.go"
+        },
+        {
+            "source": "9",
+            "target": "7",
+            "relations": {
+                "instantiation": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "binding/default_validator.go",
+            "targetname": "binding/binding_nomsgpack.go"
+        },
+        {
+            "source": "10",
+            "target": "9",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "binding/default_validator_benchmark_test.go",
+            "targetname": "binding/default_validator.go"
+        },
+        {
+            "source": "12",
+            "target": "5",
+            "relations": {
+                "FunctionCall": 3
+            },
+            "weight": 3,
+            "value": 2.108,
+            "sourcename": "binding/form.go",
+            "targetname": "binding/binding.go"
+        },
+        {
+            "source": "12",
+            "target": "7",
+            "relations": {
+                "FunctionCall": 3
+            },
+            "weight": 3,
+            "value": 2.108,
+            "sourcename": "binding/form.go",
+            "targetname": "binding/binding_nomsgpack.go"
+        },
+        {
+            "source": "12",
+            "target": "13",
+            "relations": {
+                "FunctionCall": 3
+            },
+            "weight": 3,
+            "value": 2.108,
+            "sourcename": "binding/form.go",
+            "targetname": "binding/form_mapping.go"
+        },
+        {
+            "source": "13",
+            "target": "0",
+            "relations": {
+                "instantiation": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "binding/form_mapping.go",
+            "targetname": "any.go"
+        },
+        {
+            "source": "13",
+            "target": "4",
+            "relations": {
+                "instantiation": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "binding/form_mapping.go",
+            "targetname": "binding/any.go"
+        },
+        {
+            "source": "13",
+            "target": "14",
+            "relations": {
+                "GlobalRefer": 14
+            },
+            "weight": 14,
+            "value": 2.504,
+            "sourcename": "binding/form_mapping.go",
+            "targetname": "binding/form_mapping_benchmark_test.go"
+        },
+        {
+            "source": "13",
+            "target": "16",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "binding/form_mapping.go",
+            "targetname": "binding/header.go"
+        },
+        {
+            "source": "13",
+            "target": "21",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "binding/form_mapping.go",
+            "targetname": "binding/multipart_form_mapping.go"
+        },
+        {
+            "source": "13",
+            "target": "52",
+            "relations": {
+                "FunctionCall": 2
+            },
+            "weight": 2,
+            "value": 2.072,
+            "sourcename": "binding/form_mapping.go",
+            "targetname": "internal/bytesconv/bytesconv.go"
+        },
+        {
+            "source": "13",
+            "target": "67",
+            "relations": {
+                "instantiation": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "binding/form_mapping.go",
+            "targetname": "render/any.go"
+        },
+        {
+            "source": "13",
+            "target": "89",
+            "relations": {
+                "instantiation": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "binding/form_mapping.go",
+            "targetname": "testdata/protoexample/any.go"
+        },
+        {
+            "source": "14",
+            "target": "13",
+            "relations": {
+                "FunctionCall": 2
+            },
+            "weight": 2,
+            "value": 2.072,
+            "sourcename": "binding/form_mapping_benchmark_test.go",
+            "targetname": "binding/form_mapping.go"
+        },
+        {
+            "source": "15",
+            "target": "9",
+            "relations": {
+                "FunctionCall": 8
+            },
+            "weight": 8,
+            "value": 2.288,
+            "sourcename": "binding/form_mapping_test.go",
+            "targetname": "binding/default_validator.go"
+        },
+        {
+            "source": "15",
+            "target": "13",
+            "relations": {
+                "FunctionCall": 25
+            },
+            "weight": 25,
+            "value": 2.9,
+            "sourcename": "binding/form_mapping_test.go",
+            "targetname": "binding/form_mapping.go"
+        },
+        {
+            "source": "15",
+            "target": "14",
+            "relations": {
+                "GlobalRefer": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "binding/form_mapping_test.go",
+            "targetname": "binding/form_mapping_benchmark_test.go"
+        },
+        {
+            "source": "16",
+            "target": "5",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "binding/header.go",
+            "targetname": "binding/binding.go"
+        },
+        {
+            "source": "16",
+            "target": "7",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "binding/header.go",
+            "targetname": "binding/binding_nomsgpack.go"
+        },
+        {
+            "source": "16",
+            "target": "13",
+            "relations": {
+                "FunctionCall": 2,
+                "instantiation": 1
+            },
+            "weight": 3,
+            "value": 2.108,
+            "sourcename": "binding/header.go",
+            "targetname": "binding/form_mapping.go"
+        },
+        {
+            "source": "17",
+            "target": "5",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "binding/json.go",
+            "targetname": "binding/binding.go"
+        },
+        {
+            "source": "17",
+            "target": "7",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "binding/json.go",
+            "targetname": "binding/binding_nomsgpack.go"
+        },
+        {
+            "source": "19",
+            "target": "5",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "binding/msgpack.go",
+            "targetname": "binding/binding.go"
+        },
+        {
+            "source": "19",
+            "target": "7",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "binding/msgpack.go",
+            "targetname": "binding/binding_nomsgpack.go"
+        },
+        {
+            "source": "21",
+            "target": "13",
+            "relations": {
+                "FunctionCall": 1,
+                "instantiation": 1
+            },
+            "weight": 2,
+            "value": 2.072,
+            "sourcename": "binding/multipart_form_mapping.go",
+            "targetname": "binding/form_mapping.go"
+        },
+        {
+            "source": "22",
+            "target": "9",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "binding/multipart_form_mapping_test.go",
+            "targetname": "binding/default_validator.go"
+        },
+        {
+            "source": "22",
+            "target": "12",
+            "relations": {
+                "FunctionCall": 9
+            },
+            "weight": 9,
+            "value": 2.324,
+            "sourcename": "binding/multipart_form_mapping_test.go",
+            "targetname": "binding/form.go"
+        },
+        {
+            "source": "22",
+            "target": "16",
+            "relations": {
+                "FunctionCall": 3
+            },
+            "weight": 3,
+            "value": 2.108,
+            "sourcename": "binding/multipart_form_mapping_test.go",
+            "targetname": "binding/header.go"
+        },
+        {
+            "source": "22",
+            "target": "17",
+            "relations": {
+                "FunctionCall": 3
+            },
+            "weight": 3,
+            "value": 2.108,
+            "sourcename": "binding/multipart_form_mapping_test.go",
+            "targetname": "binding/json.go"
+        },
+        {
+            "source": "22",
+            "target": "19",
+            "relations": {
+                "FunctionCall": 3
+            },
+            "weight": 3,
+            "value": 2.108,
+            "sourcename": "binding/multipart_form_mapping_test.go",
+            "targetname": "binding/msgpack.go"
+        },
+        {
+            "source": "22",
+            "target": "23",
+            "relations": {
+                "FunctionCall": 3
+            },
+            "weight": 3,
+            "value": 2.108,
+            "sourcename": "binding/multipart_form_mapping_test.go",
+            "targetname": "binding/protobuf.go"
+        },
+        {
+            "source": "22",
+            "target": "24",
+            "relations": {
+                "FunctionCall": 3
+            },
+            "weight": 3,
+            "value": 2.108,
+            "sourcename": "binding/multipart_form_mapping_test.go",
+            "targetname": "binding/query.go"
+        },
+        {
+            "source": "22",
+            "target": "25",
+            "relations": {
+                "FunctionCall": 3
+            },
+            "weight": 3,
+            "value": 2.108,
+            "sourcename": "binding/multipart_form_mapping_test.go",
+            "targetname": "binding/toml.go"
+        },
+        {
+            "source": "22",
+            "target": "29",
+            "relations": {
+                "FunctionCall": 3
+            },
+            "weight": 3,
+            "value": 2.108,
+            "sourcename": "binding/multipart_form_mapping_test.go",
+            "targetname": "binding/xml.go"
+        },
+        {
+            "source": "22",
+            "target": "31",
+            "relations": {
+                "FunctionCall": 3
+            },
+            "weight": 3,
+            "value": 2.108,
+            "sourcename": "binding/multipart_form_mapping_test.go",
+            "targetname": "binding/yaml.go"
+        },
+        {
+            "source": "23",
+            "target": "17",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "binding/protobuf.go",
+            "targetname": "binding/json.go"
+        },
+        {
+            "source": "23",
+            "target": "19",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "binding/protobuf.go",
+            "targetname": "binding/msgpack.go"
+        },
+        {
+            "source": "23",
+            "target": "25",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "binding/protobuf.go",
+            "targetname": "binding/toml.go"
+        },
+        {
+            "source": "23",
+            "target": "29",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "binding/protobuf.go",
+            "targetname": "binding/xml.go"
+        },
+        {
+            "source": "23",
+            "target": "31",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "binding/protobuf.go",
+            "targetname": "binding/yaml.go"
+        },
+        {
+            "source": "24",
+            "target": "5",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "binding/query.go",
+            "targetname": "binding/binding.go"
+        },
+        {
+            "source": "24",
+            "target": "7",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "binding/query.go",
+            "targetname": "binding/binding_nomsgpack.go"
+        },
+        {
+            "source": "24",
+            "target": "13",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "binding/query.go",
+            "targetname": "binding/form_mapping.go"
+        },
+        {
+            "source": "27",
+            "target": "5",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "binding/uri.go",
+            "targetname": "binding/binding.go"
+        },
+        {
+            "source": "27",
+            "target": "7",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "binding/uri.go",
+            "targetname": "binding/binding_nomsgpack.go"
+        },
+        {
+            "source": "27",
+            "target": "13",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "binding/uri.go",
+            "targetname": "binding/form_mapping.go"
+        },
+        {
+            "source": "28",
+            "target": "0",
+            "relations": {
+                "structAggregation": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "binding/validate_test.go",
+            "targetname": "any.go"
+        },
+        {
+            "source": "28",
+            "target": "4",
+            "relations": {
+                "structAggregation": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "binding/validate_test.go",
+            "targetname": "binding/any.go"
+        },
+        {
+            "source": "28",
+            "target": "5",
+            "relations": {
+                "FunctionCall": 15
+            },
+            "weight": 15,
+            "value": 2.54,
+            "sourcename": "binding/validate_test.go",
+            "targetname": "binding/binding.go"
+        },
+        {
+            "source": "28",
+            "target": "7",
+            "relations": {
+                "FunctionCall": 15
+            },
+            "weight": 15,
+            "value": 2.54,
+            "sourcename": "binding/validate_test.go",
+            "targetname": "binding/binding_nomsgpack.go"
+        },
+        {
+            "source": "28",
+            "target": "9",
+            "relations": {
+                "FunctionCall": 2
+            },
+            "weight": 2,
+            "value": 2.072,
+            "sourcename": "binding/validate_test.go",
+            "targetname": "binding/default_validator.go"
+        },
+        {
+            "source": "28",
+            "target": "67",
+            "relations": {
+                "structAggregation": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "binding/validate_test.go",
+            "targetname": "render/any.go"
+        },
+        {
+            "source": "28",
+            "target": "89",
+            "relations": {
+                "structAggregation": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "binding/validate_test.go",
+            "targetname": "testdata/protoexample/any.go"
+        },
+        {
+            "source": "29",
+            "target": "5",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "binding/xml.go",
+            "targetname": "binding/binding.go"
+        },
+        {
+            "source": "29",
+            "target": "7",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "binding/xml.go",
+            "targetname": "binding/binding_nomsgpack.go"
+        },
+        {
+            "source": "31",
+            "target": "5",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "binding/yaml.go",
+            "targetname": "binding/binding.go"
+        },
+        {
+            "source": "31",
+            "target": "7",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "binding/yaml.go",
+            "targetname": "binding/binding_nomsgpack.go"
+        },
+        {
+            "source": "33",
+            "target": "0",
+            "relations": {
+                "structAggregation": 6
+            },
+            "weight": 6,
+            "value": 2.216,
+            "sourcename": "context.go",
+            "targetname": "any.go"
+        },
+        {
+            "source": "33",
+            "target": "4",
+            "relations": {
+                "structAggregation": 6
+            },
+            "weight": 6,
+            "value": 2.216,
+            "sourcename": "context.go",
+            "targetname": "binding/any.go"
+        },
+        {
+            "source": "33",
+            "target": "5",
+            "relations": {
+                "ConstRefer": 9,
+                "FunctionCall": 2
+            },
+            "weight": 11,
+            "value": 2.396,
+            "sourcename": "context.go",
+            "targetname": "binding/binding.go"
+        },
+        {
+            "source": "33",
+            "target": "7",
+            "relations": {
+                "ConstRefer": 9,
+                "FunctionCall": 2
+            },
+            "weight": 11,
+            "value": 2.396,
+            "sourcename": "context.go",
+            "targetname": "binding/binding_nomsgpack.go"
+        },
+        {
+            "source": "33",
+            "target": "27",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "context.go",
+            "targetname": "binding/uri.go"
+        },
+        {
+            "source": "33",
+            "target": "38",
+            "relations": {
+                "FunctionCall": 20
+            },
+            "weight": 20,
+            "value": 2.7199999999999998,
+            "sourcename": "context.go",
+            "targetname": "context_test.go"
+        },
+        {
+            "source": "33",
+            "target": "39",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "context.go",
+            "targetname": "debug.go"
+        },
+        {
+            "source": "33",
+            "target": "44",
+            "relations": {
+                "FunctionCall": 7,
+                "structAggregation": 1
+            },
+            "weight": 8,
+            "value": 2.288,
+            "sourcename": "context.go",
+            "targetname": "errors.go"
+        },
+        {
+            "source": "33",
+            "target": "45",
+            "relations": {
+                "FunctionCall": 2
+            },
+            "weight": 2,
+            "value": 2.072,
+            "sourcename": "context.go",
+            "targetname": "errors_test.go"
+        },
+        {
+            "source": "33",
+            "target": "46",
+            "relations": {
+                "FunctionCall": 2
+            },
+            "weight": 2,
+            "value": 2.072,
+            "sourcename": "context.go",
+            "targetname": "fs.go"
+        },
+        {
+            "source": "33",
+            "target": "47",
+            "relations": {
+                "FunctionCall": 3,
+                "structAggregation": 1
+            },
+            "weight": 4,
+            "value": 2.144,
+            "sourcename": "context.go",
+            "targetname": "gin.go"
+        },
+        {
+            "source": "33",
+            "target": "67",
+            "relations": {
+                "structAggregation": 6
+            },
+            "weight": 6,
+            "value": 2.216,
+            "sourcename": "context.go",
+            "targetname": "render/any.go"
+        },
+        {
+            "source": "33",
+            "target": "83",
+            "relations": {
+                "FunctionCall": 4,
+                "structAggregation": 2
+            },
+            "weight": 6,
+            "value": 2.216,
+            "sourcename": "context.go",
+            "targetname": "response_writer.go"
+        },
+        {
+            "source": "33",
+            "target": "89",
+            "relations": {
+                "structAggregation": 6
+            },
+            "weight": 6,
+            "value": 2.216,
+            "sourcename": "context.go",
+            "targetname": "testdata/protoexample/any.go"
+        },
+        {
+            "source": "33",
+            "target": "91",
+            "relations": {
+                "FunctionCall": 18,
+                "structAggregation": 1
+            },
+            "weight": 19,
+            "value": 2.684,
+            "sourcename": "context.go",
+            "targetname": "tree.go"
+        },
+        {
+            "source": "33",
+            "target": "93",
+            "relations": {
+                "FunctionCall": 12
+            },
+            "weight": 12,
+            "value": 2.432,
+            "sourcename": "context.go",
+            "targetname": "utils.go"
+        },
+        {
+            "source": "34",
+            "target": "33",
+            "relations": {
+                "FunctionCall": 2
+            },
+            "weight": 2,
+            "value": 2.072,
+            "sourcename": "context_1.16_test.go",
+            "targetname": "context.go"
+        },
+        {
+            "source": "34",
+            "target": "44",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "context_1.16_test.go",
+            "targetname": "errors.go"
+        },
+        {
+            "source": "34",
+            "target": "45",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "context_1.16_test.go",
+            "targetname": "errors_test.go"
+        },
+        {
+            "source": "34",
+            "target": "88",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "context_1.16_test.go",
+            "targetname": "test_helpers.go"
+        },
+        {
+            "source": "35",
+            "target": "3",
+            "relations": {
+                "FunctionCall": 4
+            },
+            "weight": 4,
+            "value": 2.144,
+            "sourcename": "context_1.17_test.go",
+            "targetname": "benchmarks_test.go"
+        },
+        {
+            "source": "35",
+            "target": "33",
+            "relations": {
+                "FunctionCall": 9
+            },
+            "weight": 9,
+            "value": 2.324,
+            "sourcename": "context_1.17_test.go",
+            "targetname": "context.go"
+        },
+        {
+            "source": "35",
+            "target": "44",
+            "relations": {
+                "FunctionCall": 3
+            },
+            "weight": 3,
+            "value": 2.108,
+            "sourcename": "context_1.17_test.go",
+            "targetname": "errors.go"
+        },
+        {
+            "source": "35",
+            "target": "45",
+            "relations": {
+                "FunctionCall": 2
+            },
+            "weight": 2,
+            "value": 2.072,
+            "sourcename": "context_1.17_test.go",
+            "targetname": "errors_test.go"
+        },
+        {
+            "source": "35",
+            "target": "47",
+            "relations": {
+                "FunctionCall": 2
+            },
+            "weight": 2,
+            "value": 2.072,
+            "sourcename": "context_1.17_test.go",
+            "targetname": "gin.go"
+        },
+        {
+            "source": "35",
+            "target": "83",
+            "relations": {
+                "structEmbedding": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "context_1.17_test.go",
+            "targetname": "response_writer.go"
+        },
+        {
+            "source": "35",
+            "target": "85",
+            "relations": {
+                "FunctionCall": 2
+            },
+            "weight": 2,
+            "value": 2.072,
+            "sourcename": "context_1.17_test.go",
+            "targetname": "routergroup.go"
+        },
+        {
+            "source": "35",
+            "target": "88",
+            "relations": {
+                "FunctionCall": 2
+            },
+            "weight": 2,
+            "value": 2.072,
+            "sourcename": "context_1.17_test.go",
+            "targetname": "test_helpers.go"
+        },
+        {
+            "source": "36",
+            "target": "33",
+            "relations": {
+                "FunctionCall": 2
+            },
+            "weight": 2,
+            "value": 2.072,
+            "sourcename": "context_1.19_test.go",
+            "targetname": "context.go"
+        },
+        {
+            "source": "36",
+            "target": "44",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "context_1.19_test.go",
+            "targetname": "errors.go"
+        },
+        {
+            "source": "36",
+            "target": "45",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "context_1.19_test.go",
+            "targetname": "errors_test.go"
+        },
+        {
+            "source": "36",
+            "target": "88",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "context_1.19_test.go",
+            "targetname": "test_helpers.go"
+        },
+        {
+            "source": "38",
+            "target": "0",
+            "relations": {
+                "instantiation": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "context_test.go",
+            "targetname": "any.go"
+        },
+        {
+            "source": "38",
+            "target": "3",
+            "relations": {
+                "FunctionCall": 58
+            },
+            "weight": 58,
+            "value": 4.088,
+            "sourcename": "context_test.go",
+            "targetname": "benchmarks_test.go"
+        },
+        {
+            "source": "38",
+            "target": "4",
+            "relations": {
+                "instantiation": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "context_test.go",
+            "targetname": "binding/any.go"
+        },
+        {
+            "source": "38",
+            "target": "33",
+            "relations": {
+                "FunctionCall": 398
+            },
+            "weight": 398,
+            "value": 16.328,
+            "sourcename": "context_test.go",
+            "targetname": "context.go"
+        },
+        {
+            "source": "38",
+            "target": "35",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "context_test.go",
+            "targetname": "context_1.17_test.go"
+        },
+        {
+            "source": "38",
+            "target": "40",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "context_test.go",
+            "targetname": "debug_test.go"
+        },
+        {
+            "source": "38",
+            "target": "44",
+            "relations": {
+                "FunctionCall": 33
+            },
+            "weight": 33,
+            "value": 3.1879999999999997,
+            "sourcename": "context_test.go",
+            "targetname": "errors.go"
+        },
+        {
+            "source": "38",
+            "target": "45",
+            "relations": {
+                "FunctionCall": 19
+            },
+            "weight": 19,
+            "value": 2.684,
+            "sourcename": "context_test.go",
+            "targetname": "errors_test.go"
+        },
+        {
+            "source": "38",
+            "target": "46",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "context_test.go",
+            "targetname": "fs.go"
+        },
+        {
+            "source": "38",
+            "target": "47",
+            "relations": {
+                "FunctionCall": 25,
+                "instantiation": 1
+            },
+            "weight": 26,
+            "value": 2.936,
+            "sourcename": "context_test.go",
+            "targetname": "gin.go"
+        },
+        {
+            "source": "38",
+            "target": "50",
+            "relations": {
+                "FunctionCall": 2
+            },
+            "weight": 2,
+            "value": 2.072,
+            "sourcename": "context_test.go",
+            "targetname": "gin_test.go"
+        },
+        {
+            "source": "38",
+            "target": "61",
+            "relations": {
+                "FunctionCall": 2
+            },
+            "weight": 2,
+            "value": 2.072,
+            "sourcename": "context_test.go",
+            "targetname": "mode.go"
+        },
+        {
+            "source": "38",
+            "target": "67",
+            "relations": {
+                "instantiation": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "context_test.go",
+            "targetname": "render/any.go"
+        },
+        {
+            "source": "38",
+            "target": "83",
+            "relations": {
+                "FunctionCall": 8
+            },
+            "weight": 8,
+            "value": 2.288,
+            "sourcename": "context_test.go",
+            "targetname": "response_writer.go"
+        },
+        {
+            "source": "38",
+            "target": "85",
+            "relations": {
+                "FunctionCall": 4
+            },
+            "weight": 4,
+            "value": 2.144,
+            "sourcename": "context_test.go",
+            "targetname": "routergroup.go"
+        },
+        {
+            "source": "38",
+            "target": "87",
+            "relations": {
+                "FunctionCall": 2
+            },
+            "weight": 2,
+            "value": 2.072,
+            "sourcename": "context_test.go",
+            "targetname": "routes_test.go"
+        },
+        {
+            "source": "38",
+            "target": "88",
+            "relations": {
+                "FunctionCall": 128
+            },
+            "weight": 128,
+            "value": 6.608,
+            "sourcename": "context_test.go",
+            "targetname": "test_helpers.go"
+        },
+        {
+            "source": "38",
+            "target": "89",
+            "relations": {
+                "instantiation": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "context_test.go",
+            "targetname": "testdata/protoexample/any.go"
+        },
+        {
+            "source": "38",
+            "target": "91",
+            "relations": {
+                "FunctionCall": 6
+            },
+            "weight": 6,
+            "value": 2.216,
+            "sourcename": "context_test.go",
+            "targetname": "tree.go"
+        },
+        {
+            "source": "38",
+            "target": "93",
+            "relations": {
+                "FunctionCall": 4
+            },
+            "weight": 4,
+            "value": 2.144,
+            "sourcename": "context_test.go",
+            "targetname": "utils.go"
+        },
+        {
+            "source": "39",
+            "target": "3",
+            "relations": {
+                "FunctionCall": 3
+            },
+            "weight": 3,
+            "value": 2.108,
+            "sourcename": "debug.go",
+            "targetname": "benchmarks_test.go"
+        },
+        {
+            "source": "39",
+            "target": "33",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "debug.go",
+            "targetname": "context.go"
+        },
+        {
+            "source": "39",
+            "target": "44",
+            "relations": {
+                "FunctionCall": 2
+            },
+            "weight": 2,
+            "value": 2.072,
+            "sourcename": "debug.go",
+            "targetname": "errors.go"
+        },
+        {
+            "source": "39",
+            "target": "47",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "debug.go",
+            "targetname": "gin.go"
+        },
+        {
+            "source": "39",
+            "target": "83",
+            "relations": {
+                "FunctionCall": 3
+            },
+            "weight": 3,
+            "value": 2.108,
+            "sourcename": "debug.go",
+            "targetname": "response_writer.go"
+        },
+        {
+            "source": "39",
+            "target": "93",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "debug.go",
+            "targetname": "utils.go"
+        },
+        {
+            "source": "40",
+            "target": "33",
+            "relations": {
+                "FunctionCall": 3
+            },
+            "weight": 3,
+            "value": 2.108,
+            "sourcename": "debug_test.go",
+            "targetname": "context.go"
+        },
+        {
+            "source": "40",
+            "target": "39",
+            "relations": {
+                "FunctionCall": 19
+            },
+            "weight": 19,
+            "value": 2.684,
+            "sourcename": "debug_test.go",
+            "targetname": "debug.go"
+        },
+        {
+            "source": "40",
+            "target": "44",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "debug_test.go",
+            "targetname": "errors.go"
+        },
+        {
+            "source": "40",
+            "target": "47",
+            "relations": {
+                "FunctionCall": 2
+            },
+            "weight": 2,
+            "value": 2.072,
+            "sourcename": "debug_test.go",
+            "targetname": "gin.go"
+        },
+        {
+            "source": "40",
+            "target": "61",
+            "relations": {
+                "FunctionCall": 22
+            },
+            "weight": 22,
+            "value": 2.792,
+            "sourcename": "debug_test.go",
+            "targetname": "mode.go"
+        },
+        {
+            "source": "41",
+            "target": "33",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "deprecated.go",
+            "targetname": "context.go"
+        },
+        {
+            "source": "42",
+            "target": "40",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "deprecated_test.go",
+            "targetname": "debug_test.go"
+        },
+        {
+            "source": "42",
+            "target": "41",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "deprecated_test.go",
+            "targetname": "deprecated.go"
+        },
+        {
+            "source": "42",
+            "target": "88",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "deprecated_test.go",
+            "targetname": "test_helpers.go"
+        },
+        {
+            "source": "44",
+            "target": "0",
+            "relations": {
+                "structAggregation": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "errors.go",
+            "targetname": "any.go"
+        },
+        {
+            "source": "44",
+            "target": "4",
+            "relations": {
+                "structAggregation": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "errors.go",
+            "targetname": "binding/any.go"
+        },
+        {
+            "source": "44",
+            "target": "33",
+            "relations": {
+                "FunctionCall": 7
+            },
+            "weight": 7,
+            "value": 2.252,
+            "sourcename": "errors.go",
+            "targetname": "context.go"
+        },
+        {
+            "source": "44",
+            "target": "45",
+            "relations": {
+                "FunctionCall": 2
+            },
+            "weight": 2,
+            "value": 2.072,
+            "sourcename": "errors.go",
+            "targetname": "errors_test.go"
+        },
+        {
+            "source": "44",
+            "target": "47",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "errors.go",
+            "targetname": "gin.go"
+        },
+        {
+            "source": "44",
+            "target": "67",
+            "relations": {
+                "structAggregation": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "errors.go",
+            "targetname": "render/any.go"
+        },
+        {
+            "source": "44",
+            "target": "89",
+            "relations": {
+                "structAggregation": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "errors.go",
+            "targetname": "testdata/protoexample/any.go"
+        },
+        {
+            "source": "45",
+            "target": "33",
+            "relations": {
+                "FunctionCall": 15
+            },
+            "weight": 15,
+            "value": 2.54,
+            "sourcename": "errors_test.go",
+            "targetname": "context.go"
+        },
+        {
+            "source": "45",
+            "target": "44",
+            "relations": {
+                "FunctionCall": 37
+            },
+            "weight": 37,
+            "value": 3.332,
+            "sourcename": "errors_test.go",
+            "targetname": "errors.go"
+        },
+        {
+            "source": "45",
+            "target": "47",
+            "relations": {
+                "FunctionCall": 7
+            },
+            "weight": 7,
+            "value": 2.252,
+            "sourcename": "errors_test.go",
+            "targetname": "gin.go"
+        },
+        {
+            "source": "47",
+            "target": "33",
+            "relations": {
+                "FunctionCall": 9
+            },
+            "weight": 9,
+            "value": 2.324,
+            "sourcename": "gin.go",
+            "targetname": "context.go"
+        },
+        {
+            "source": "47",
+            "target": "39",
+            "relations": {
+                "FunctionCall": 24
+            },
+            "weight": 24,
+            "value": 2.864,
+            "sourcename": "gin.go",
+            "targetname": "debug.go"
+        },
+        {
+            "source": "47",
+            "target": "52",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "gin.go",
+            "targetname": "internal/bytesconv/bytesconv.go"
+        },
+        {
+            "source": "47",
+            "target": "58",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "gin.go",
+            "targetname": "logger.go"
+        },
+        {
+            "source": "47",
+            "target": "63",
+            "relations": {
+                "FunctionCall": 2
+            },
+            "weight": 2,
+            "value": 2.072,
+            "sourcename": "gin.go",
+            "targetname": "path.go"
+        },
+        {
+            "source": "47",
+            "target": "65",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "gin.go",
+            "targetname": "recovery.go"
+        },
+        {
+            "source": "47",
+            "target": "69",
+            "relations": {
+                "structAggregation": 2
+            },
+            "weight": 2,
+            "value": 2.072,
+            "sourcename": "gin.go",
+            "targetname": "render/html.go"
+        },
+        {
+            "source": "47",
+            "target": "83",
+            "relations": {
+                "FunctionCall": 2
+            },
+            "weight": 2,
+            "value": 2.072,
+            "sourcename": "gin.go",
+            "targetname": "response_writer.go"
+        },
+        {
+            "source": "47",
+            "target": "85",
+            "relations": {
+                "FunctionCall": 3,
+                "instantiation": 1,
+                "structEmbedding": 1
+            },
+            "weight": 5,
+            "value": 2.18,
+            "sourcename": "gin.go",
+            "targetname": "routergroup.go"
+        },
+        {
+            "source": "47",
+            "target": "91",
+            "relations": {
+                "FunctionCall": 5,
+                "structAggregation": 1
+            },
+            "weight": 6,
+            "value": 2.216,
+            "sourcename": "gin.go",
+            "targetname": "tree.go"
+        },
+        {
+            "source": "47",
+            "target": "93",
+            "relations": {
+                "FunctionCall": 5
+            },
+            "weight": 5,
+            "value": 2.18,
+            "sourcename": "gin.go",
+            "targetname": "utils.go"
+        },
+        {
+            "source": "48",
+            "target": "47",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "ginS/gins.go",
+            "targetname": "gin.go"
+        },
+        {
+            "source": "49",
+            "target": "33",
+            "relations": {
+                "FunctionCall": 60
+            },
+            "weight": 60,
+            "value": 4.16,
+            "sourcename": "gin_integration_test.go",
+            "targetname": "context.go"
+        },
+        {
+            "source": "49",
+            "target": "44",
+            "relations": {
+                "FunctionCall": 57
+            },
+            "weight": 57,
+            "value": 4.052,
+            "sourcename": "gin_integration_test.go",
+            "targetname": "errors.go"
+        },
+        {
+            "source": "49",
+            "target": "45",
+            "relations": {
+                "FunctionCall": 10
+            },
+            "weight": 10,
+            "value": 2.36,
+            "sourcename": "gin_integration_test.go",
+            "targetname": "errors_test.go"
+        },
+        {
+            "source": "49",
+            "target": "47",
+            "relations": {
+                "FunctionCall": 38
+            },
+            "weight": 38,
+            "value": 3.3680000000000003,
+            "sourcename": "gin_integration_test.go",
+            "targetname": "gin.go"
+        },
+        {
+            "source": "49",
+            "target": "85",
+            "relations": {
+                "FunctionCall": 49
+            },
+            "weight": 49,
+            "value": 3.7640000000000002,
+            "sourcename": "gin_integration_test.go",
+            "targetname": "routergroup.go"
+        },
+        {
+            "source": "49",
+            "target": "91",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "gin_integration_test.go",
+            "targetname": "tree.go"
+        },
+        {
+            "source": "49",
+            "target": "94",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "gin_integration_test.go",
+            "targetname": "utils_test.go"
+        },
+        {
+            "source": "50",
+            "target": "33",
+            "relations": {
+                "FunctionCall": 34
+            },
+            "weight": 34,
+            "value": 3.224,
+            "sourcename": "gin_test.go",
+            "targetname": "context.go"
+        },
+        {
+            "source": "50",
+            "target": "40",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "gin_test.go",
+            "targetname": "debug_test.go"
+        },
+        {
+            "source": "50",
+            "target": "44",
+            "relations": {
+                "FunctionCall": 19
+            },
+            "weight": 19,
+            "value": 2.684,
+            "sourcename": "gin_test.go",
+            "targetname": "errors.go"
+        },
+        {
+            "source": "50",
+            "target": "45",
+            "relations": {
+                "FunctionCall": 18
+            },
+            "weight": 18,
+            "value": 2.648,
+            "sourcename": "gin_test.go",
+            "targetname": "errors_test.go"
+        },
+        {
+            "source": "50",
+            "target": "47",
+            "relations": {
+                "FunctionCall": 60,
+                "instantiation": 10
+            },
+            "weight": 70,
+            "value": 4.52,
+            "sourcename": "gin_test.go",
+            "targetname": "gin.go"
+        },
+        {
+            "source": "50",
+            "target": "61",
+            "relations": {
+                "FunctionCall": 3
+            },
+            "weight": 3,
+            "value": 2.108,
+            "sourcename": "gin_test.go",
+            "targetname": "mode.go"
+        },
+        {
+            "source": "50",
+            "target": "85",
+            "relations": {
+                "FunctionCall": 19
+            },
+            "weight": 19,
+            "value": 2.684,
+            "sourcename": "gin_test.go",
+            "targetname": "routergroup.go"
+        },
+        {
+            "source": "50",
+            "target": "87",
+            "relations": {
+                "FunctionCall": 2
+            },
+            "weight": 2,
+            "value": 2.072,
+            "sourcename": "gin_test.go",
+            "targetname": "routes_test.go"
+        },
+        {
+            "source": "50",
+            "target": "91",
+            "relations": {
+                "FunctionCall": 19
+            },
+            "weight": 19,
+            "value": 2.684,
+            "sourcename": "gin_test.go",
+            "targetname": "tree.go"
+        },
+        {
+            "source": "51",
+            "target": "3",
+            "relations": {
+                "FunctionCall": 3
+            },
+            "weight": 3,
+            "value": 2.108,
+            "sourcename": "githubapi_test.go",
+            "targetname": "benchmarks_test.go"
+        },
+        {
+            "source": "51",
+            "target": "33",
+            "relations": {
+                "FunctionCall": 18
+            },
+            "weight": 18,
+            "value": 2.648,
+            "sourcename": "githubapi_test.go",
+            "targetname": "context.go"
+        },
+        {
+            "source": "51",
+            "target": "44",
+            "relations": {
+                "FunctionCall": 7
+            },
+            "weight": 7,
+            "value": 2.252,
+            "sourcename": "githubapi_test.go",
+            "targetname": "errors.go"
+        },
+        {
+            "source": "51",
+            "target": "45",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "githubapi_test.go",
+            "targetname": "errors_test.go"
+        },
+        {
+            "source": "51",
+            "target": "47",
+            "relations": {
+                "FunctionCall": 10
+            },
+            "weight": 10,
+            "value": 2.36,
+            "sourcename": "githubapi_test.go",
+            "targetname": "gin.go"
+        },
+        {
+            "source": "51",
+            "target": "83",
+            "relations": {
+                "FunctionCall": 2
+            },
+            "weight": 2,
+            "value": 2.072,
+            "sourcename": "githubapi_test.go",
+            "targetname": "response_writer.go"
+        },
+        {
+            "source": "51",
+            "target": "85",
+            "relations": {
+                "FunctionCall": 5
+            },
+            "weight": 5,
+            "value": 2.18,
+            "sourcename": "githubapi_test.go",
+            "targetname": "routergroup.go"
+        },
+        {
+            "source": "51",
+            "target": "87",
+            "relations": {
+                "FunctionCall": 5
+            },
+            "weight": 5,
+            "value": 2.18,
+            "sourcename": "githubapi_test.go",
+            "targetname": "routes_test.go"
+        },
+        {
+            "source": "51",
+            "target": "94",
+            "relations": {
+                "FunctionCall": 2
+            },
+            "weight": 2,
+            "value": 2.072,
+            "sourcename": "githubapi_test.go",
+            "targetname": "utils_test.go"
+        },
+        {
+            "source": "53",
+            "target": "52",
+            "relations": {
+                "FunctionCall": 4
+            },
+            "weight": 4,
+            "value": 2.144,
+            "sourcename": "internal/bytesconv/bytesconv_test.go",
+            "targetname": "internal/bytesconv/bytesconv.go"
+        },
+        {
+            "source": "58",
+            "target": "33",
+            "relations": {
+                "FunctionCall": 4
+            },
+            "weight": 4,
+            "value": 2.144,
+            "sourcename": "logger.go",
+            "targetname": "context.go"
+        },
+        {
+            "source": "58",
+            "target": "44",
+            "relations": {
+                "FunctionCall": 2
+            },
+            "weight": 2,
+            "value": 2.072,
+            "sourcename": "logger.go",
+            "targetname": "errors.go"
+        },
+        {
+            "source": "59",
+            "target": "33",
+            "relations": {
+                "FunctionCall": 68
+            },
+            "weight": 68,
+            "value": 4.448,
+            "sourcename": "logger_test.go",
+            "targetname": "context.go"
+        },
+        {
+            "source": "59",
+            "target": "44",
+            "relations": {
+                "FunctionCall": 67
+            },
+            "weight": 67,
+            "value": 4.412,
+            "sourcename": "logger_test.go",
+            "targetname": "errors.go"
+        },
+        {
+            "source": "59",
+            "target": "45",
+            "relations": {
+                "FunctionCall": 2
+            },
+            "weight": 2,
+            "value": 2.072,
+            "sourcename": "logger_test.go",
+            "targetname": "errors_test.go"
+        },
+        {
+            "source": "59",
+            "target": "47",
+            "relations": {
+                "FunctionCall": 19
+            },
+            "weight": 19,
+            "value": 2.684,
+            "sourcename": "logger_test.go",
+            "targetname": "gin.go"
+        },
+        {
+            "source": "59",
+            "target": "58",
+            "relations": {
+                "FunctionCall": 22,
+                "instantiation": 1
+            },
+            "weight": 23,
+            "value": 2.828,
+            "sourcename": "logger_test.go",
+            "targetname": "logger.go"
+        },
+        {
+            "source": "59",
+            "target": "61",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "logger_test.go",
+            "targetname": "mode.go"
+        },
+        {
+            "source": "59",
+            "target": "85",
+            "relations": {
+                "FunctionCall": 30
+            },
+            "weight": 30,
+            "value": 3.08,
+            "sourcename": "logger_test.go",
+            "targetname": "routergroup.go"
+        },
+        {
+            "source": "59",
+            "target": "87",
+            "relations": {
+                "FunctionCall": 25
+            },
+            "weight": 25,
+            "value": 2.9,
+            "sourcename": "logger_test.go",
+            "targetname": "routes_test.go"
+        },
+        {
+            "source": "60",
+            "target": "33",
+            "relations": {
+                "FunctionCall": 29
+            },
+            "weight": 29,
+            "value": 3.044,
+            "sourcename": "middleware_test.go",
+            "targetname": "context.go"
+        },
+        {
+            "source": "60",
+            "target": "38",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "middleware_test.go",
+            "targetname": "context_test.go"
+        },
+        {
+            "source": "60",
+            "target": "44",
+            "relations": {
+                "FunctionCall": 5
+            },
+            "weight": 5,
+            "value": 2.18,
+            "sourcename": "middleware_test.go",
+            "targetname": "errors.go"
+        },
+        {
+            "source": "60",
+            "target": "47",
+            "relations": {
+                "FunctionCall": 33
+            },
+            "weight": 33,
+            "value": 3.1879999999999997,
+            "sourcename": "middleware_test.go",
+            "targetname": "gin.go"
+        },
+        {
+            "source": "60",
+            "target": "85",
+            "relations": {
+                "FunctionCall": 22
+            },
+            "weight": 22,
+            "value": 2.792,
+            "sourcename": "middleware_test.go",
+            "targetname": "routergroup.go"
+        },
+        {
+            "source": "60",
+            "target": "87",
+            "relations": {
+                "FunctionCall": 8
+            },
+            "weight": 8,
+            "value": 2.288,
+            "sourcename": "middleware_test.go",
+            "targetname": "routes_test.go"
+        },
+        {
+            "source": "62",
+            "target": "61",
+            "relations": {
+                "FunctionCall": 15
+            },
+            "weight": 15,
+            "value": 2.54,
+            "sourcename": "mode_test.go",
+            "targetname": "mode.go"
+        },
+        {
+            "source": "64",
+            "target": "63",
+            "relations": {
+                "FunctionCall": 7
+            },
+            "weight": 7,
+            "value": 2.252,
+            "sourcename": "path_test.go",
+            "targetname": "path.go"
+        },
+        {
+            "source": "65",
+            "target": "33",
+            "relations": {
+                "FunctionCall": 5
+            },
+            "weight": 5,
+            "value": 2.18,
+            "sourcename": "recovery.go",
+            "targetname": "context.go"
+        },
+        {
+            "source": "65",
+            "target": "39",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "recovery.go",
+            "targetname": "debug.go"
+        },
+        {
+            "source": "65",
+            "target": "44",
+            "relations": {
+                "FunctionCall": 2
+            },
+            "weight": 2,
+            "value": 2.072,
+            "sourcename": "recovery.go",
+            "targetname": "errors.go"
+        },
+        {
+            "source": "65",
+            "target": "45",
+            "relations": {
+                "FunctionCall": 2
+            },
+            "weight": 2,
+            "value": 2.072,
+            "sourcename": "recovery.go",
+            "targetname": "errors_test.go"
+        },
+        {
+            "source": "65",
+            "target": "47",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "recovery.go",
+            "targetname": "gin.go"
+        },
+        {
+            "source": "65",
+            "target": "85",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "recovery.go",
+            "targetname": "routergroup.go"
+        },
+        {
+            "source": "66",
+            "target": "3",
+            "relations": {
+                "FunctionCall": 4
+            },
+            "weight": 4,
+            "value": 2.144,
+            "sourcename": "recovery_test.go",
+            "targetname": "benchmarks_test.go"
+        },
+        {
+            "source": "66",
+            "target": "33",
+            "relations": {
+                "FunctionCall": 32
+            },
+            "weight": 32,
+            "value": 3.152,
+            "sourcename": "recovery_test.go",
+            "targetname": "context.go"
+        },
+        {
+            "source": "66",
+            "target": "44",
+            "relations": {
+                "FunctionCall": 25
+            },
+            "weight": 25,
+            "value": 2.9,
+            "sourcename": "recovery_test.go",
+            "targetname": "errors.go"
+        },
+        {
+            "source": "66",
+            "target": "47",
+            "relations": {
+                "FunctionCall": 15
+            },
+            "weight": 15,
+            "value": 2.54,
+            "sourcename": "recovery_test.go",
+            "targetname": "gin.go"
+        },
+        {
+            "source": "66",
+            "target": "61",
+            "relations": {
+                "FunctionCall": 8
+            },
+            "weight": 8,
+            "value": 2.288,
+            "sourcename": "recovery_test.go",
+            "targetname": "mode.go"
+        },
+        {
+            "source": "66",
+            "target": "65",
+            "relations": {
+                "FunctionCall": 11
+            },
+            "weight": 11,
+            "value": 2.396,
+            "sourcename": "recovery_test.go",
+            "targetname": "recovery.go"
+        },
+        {
+            "source": "66",
+            "target": "83",
+            "relations": {
+                "FunctionCall": 4
+            },
+            "weight": 4,
+            "value": 2.144,
+            "sourcename": "recovery_test.go",
+            "targetname": "response_writer.go"
+        },
+        {
+            "source": "66",
+            "target": "85",
+            "relations": {
+                "FunctionCall": 14
+            },
+            "weight": 14,
+            "value": 2.504,
+            "sourcename": "recovery_test.go",
+            "targetname": "routergroup.go"
+        },
+        {
+            "source": "66",
+            "target": "87",
+            "relations": {
+                "FunctionCall": 11
+            },
+            "weight": 11,
+            "value": 2.396,
+            "sourcename": "recovery_test.go",
+            "targetname": "routes_test.go"
+        },
+        {
+            "source": "68",
+            "target": "69",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/data.go",
+            "targetname": "render/html.go"
+        },
+        {
+            "source": "68",
+            "target": "70",
+            "relations": {
+                "FunctionCall": 6
+            },
+            "weight": 6,
+            "value": 2.216,
+            "sourcename": "render/data.go",
+            "targetname": "render/json.go"
+        },
+        {
+            "source": "68",
+            "target": "71",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/data.go",
+            "targetname": "render/msgpack.go"
+        },
+        {
+            "source": "68",
+            "target": "72",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/data.go",
+            "targetname": "render/protobuf.go"
+        },
+        {
+            "source": "68",
+            "target": "73",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/data.go",
+            "targetname": "render/reader.go"
+        },
+        {
+            "source": "68",
+            "target": "75",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/data.go",
+            "targetname": "render/redirect.go"
+        },
+        {
+            "source": "68",
+            "target": "76",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/data.go",
+            "targetname": "render/render.go"
+        },
+        {
+            "source": "68",
+            "target": "79",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/data.go",
+            "targetname": "render/text.go"
+        },
+        {
+            "source": "68",
+            "target": "80",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/data.go",
+            "targetname": "render/toml.go"
+        },
+        {
+            "source": "68",
+            "target": "81",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/data.go",
+            "targetname": "render/xml.go"
+        },
+        {
+            "source": "68",
+            "target": "82",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/data.go",
+            "targetname": "render/yaml.go"
+        },
+        {
+            "source": "69",
+            "target": "0",
+            "relations": {
+                "structAggregation": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/html.go",
+            "targetname": "any.go"
+        },
+        {
+            "source": "69",
+            "target": "4",
+            "relations": {
+                "structAggregation": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/html.go",
+            "targetname": "binding/any.go"
+        },
+        {
+            "source": "69",
+            "target": "67",
+            "relations": {
+                "structAggregation": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/html.go",
+            "targetname": "render/any.go"
+        },
+        {
+            "source": "69",
+            "target": "68",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/html.go",
+            "targetname": "render/data.go"
+        },
+        {
+            "source": "69",
+            "target": "70",
+            "relations": {
+                "FunctionCall": 6
+            },
+            "weight": 6,
+            "value": 2.216,
+            "sourcename": "render/html.go",
+            "targetname": "render/json.go"
+        },
+        {
+            "source": "69",
+            "target": "71",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/html.go",
+            "targetname": "render/msgpack.go"
+        },
+        {
+            "source": "69",
+            "target": "72",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/html.go",
+            "targetname": "render/protobuf.go"
+        },
+        {
+            "source": "69",
+            "target": "73",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/html.go",
+            "targetname": "render/reader.go"
+        },
+        {
+            "source": "69",
+            "target": "75",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/html.go",
+            "targetname": "render/redirect.go"
+        },
+        {
+            "source": "69",
+            "target": "76",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/html.go",
+            "targetname": "render/render.go"
+        },
+        {
+            "source": "69",
+            "target": "79",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/html.go",
+            "targetname": "render/text.go"
+        },
+        {
+            "source": "69",
+            "target": "80",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/html.go",
+            "targetname": "render/toml.go"
+        },
+        {
+            "source": "69",
+            "target": "81",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/html.go",
+            "targetname": "render/xml.go"
+        },
+        {
+            "source": "69",
+            "target": "82",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/html.go",
+            "targetname": "render/yaml.go"
+        },
+        {
+            "source": "69",
+            "target": "89",
+            "relations": {
+                "structAggregation": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/html.go",
+            "targetname": "testdata/protoexample/any.go"
+        },
+        {
+            "source": "70",
+            "target": "0",
+            "relations": {
+                "structAggregation": 6
+            },
+            "weight": 6,
+            "value": 2.216,
+            "sourcename": "render/json.go",
+            "targetname": "any.go"
+        },
+        {
+            "source": "70",
+            "target": "4",
+            "relations": {
+                "structAggregation": 6
+            },
+            "weight": 6,
+            "value": 2.216,
+            "sourcename": "render/json.go",
+            "targetname": "binding/any.go"
+        },
+        {
+            "source": "70",
+            "target": "52",
+            "relations": {
+                "FunctionCall": 7
+            },
+            "weight": 7,
+            "value": 2.252,
+            "sourcename": "render/json.go",
+            "targetname": "internal/bytesconv/bytesconv.go"
+        },
+        {
+            "source": "70",
+            "target": "67",
+            "relations": {
+                "structAggregation": 6
+            },
+            "weight": 6,
+            "value": 2.216,
+            "sourcename": "render/json.go",
+            "targetname": "render/any.go"
+        },
+        {
+            "source": "70",
+            "target": "68",
+            "relations": {
+                "FunctionCall": 5
+            },
+            "weight": 5,
+            "value": 2.18,
+            "sourcename": "render/json.go",
+            "targetname": "render/data.go"
+        },
+        {
+            "source": "70",
+            "target": "69",
+            "relations": {
+                "FunctionCall": 5
+            },
+            "weight": 5,
+            "value": 2.18,
+            "sourcename": "render/json.go",
+            "targetname": "render/html.go"
+        },
+        {
+            "source": "70",
+            "target": "71",
+            "relations": {
+                "FunctionCall": 5
+            },
+            "weight": 5,
+            "value": 2.18,
+            "sourcename": "render/json.go",
+            "targetname": "render/msgpack.go"
+        },
+        {
+            "source": "70",
+            "target": "72",
+            "relations": {
+                "FunctionCall": 5
+            },
+            "weight": 5,
+            "value": 2.18,
+            "sourcename": "render/json.go",
+            "targetname": "render/protobuf.go"
+        },
+        {
+            "source": "70",
+            "target": "73",
+            "relations": {
+                "FunctionCall": 5
+            },
+            "weight": 5,
+            "value": 2.18,
+            "sourcename": "render/json.go",
+            "targetname": "render/reader.go"
+        },
+        {
+            "source": "70",
+            "target": "75",
+            "relations": {
+                "FunctionCall": 5
+            },
+            "weight": 5,
+            "value": 2.18,
+            "sourcename": "render/json.go",
+            "targetname": "render/redirect.go"
+        },
+        {
+            "source": "70",
+            "target": "76",
+            "relations": {
+                "FunctionCall": 7
+            },
+            "weight": 7,
+            "value": 2.252,
+            "sourcename": "render/json.go",
+            "targetname": "render/render.go"
+        },
+        {
+            "source": "70",
+            "target": "79",
+            "relations": {
+                "FunctionCall": 6
+            },
+            "weight": 6,
+            "value": 2.216,
+            "sourcename": "render/json.go",
+            "targetname": "render/text.go"
+        },
+        {
+            "source": "70",
+            "target": "80",
+            "relations": {
+                "FunctionCall": 5
+            },
+            "weight": 5,
+            "value": 2.18,
+            "sourcename": "render/json.go",
+            "targetname": "render/toml.go"
+        },
+        {
+            "source": "70",
+            "target": "81",
+            "relations": {
+                "FunctionCall": 5
+            },
+            "weight": 5,
+            "value": 2.18,
+            "sourcename": "render/json.go",
+            "targetname": "render/xml.go"
+        },
+        {
+            "source": "70",
+            "target": "82",
+            "relations": {
+                "FunctionCall": 5
+            },
+            "weight": 5,
+            "value": 2.18,
+            "sourcename": "render/json.go",
+            "targetname": "render/yaml.go"
+        },
+        {
+            "source": "70",
+            "target": "89",
+            "relations": {
+                "structAggregation": 6
+            },
+            "weight": 6,
+            "value": 2.216,
+            "sourcename": "render/json.go",
+            "targetname": "testdata/protoexample/any.go"
+        },
+        {
+            "source": "71",
+            "target": "0",
+            "relations": {
+                "structAggregation": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/msgpack.go",
+            "targetname": "any.go"
+        },
+        {
+            "source": "71",
+            "target": "4",
+            "relations": {
+                "structAggregation": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/msgpack.go",
+            "targetname": "binding/any.go"
+        },
+        {
+            "source": "71",
+            "target": "67",
+            "relations": {
+                "structAggregation": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/msgpack.go",
+            "targetname": "render/any.go"
+        },
+        {
+            "source": "71",
+            "target": "76",
+            "relations": {
+                "FunctionCall": 2,
+                "instantiation": 1
+            },
+            "weight": 3,
+            "value": 2.108,
+            "sourcename": "render/msgpack.go",
+            "targetname": "render/render.go"
+        },
+        {
+            "source": "71",
+            "target": "89",
+            "relations": {
+                "structAggregation": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/msgpack.go",
+            "targetname": "testdata/protoexample/any.go"
+        },
+        {
+            "source": "72",
+            "target": "0",
+            "relations": {
+                "structAggregation": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/protobuf.go",
+            "targetname": "any.go"
+        },
+        {
+            "source": "72",
+            "target": "4",
+            "relations": {
+                "structAggregation": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/protobuf.go",
+            "targetname": "binding/any.go"
+        },
+        {
+            "source": "72",
+            "target": "67",
+            "relations": {
+                "structAggregation": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/protobuf.go",
+            "targetname": "render/any.go"
+        },
+        {
+            "source": "72",
+            "target": "68",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/protobuf.go",
+            "targetname": "render/data.go"
+        },
+        {
+            "source": "72",
+            "target": "69",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/protobuf.go",
+            "targetname": "render/html.go"
+        },
+        {
+            "source": "72",
+            "target": "70",
+            "relations": {
+                "FunctionCall": 6
+            },
+            "weight": 6,
+            "value": 2.216,
+            "sourcename": "render/protobuf.go",
+            "targetname": "render/json.go"
+        },
+        {
+            "source": "72",
+            "target": "71",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/protobuf.go",
+            "targetname": "render/msgpack.go"
+        },
+        {
+            "source": "72",
+            "target": "73",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/protobuf.go",
+            "targetname": "render/reader.go"
+        },
+        {
+            "source": "72",
+            "target": "75",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/protobuf.go",
+            "targetname": "render/redirect.go"
+        },
+        {
+            "source": "72",
+            "target": "76",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/protobuf.go",
+            "targetname": "render/render.go"
+        },
+        {
+            "source": "72",
+            "target": "79",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/protobuf.go",
+            "targetname": "render/text.go"
+        },
+        {
+            "source": "72",
+            "target": "80",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/protobuf.go",
+            "targetname": "render/toml.go"
+        },
+        {
+            "source": "72",
+            "target": "81",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/protobuf.go",
+            "targetname": "render/xml.go"
+        },
+        {
+            "source": "72",
+            "target": "82",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/protobuf.go",
+            "targetname": "render/yaml.go"
+        },
+        {
+            "source": "72",
+            "target": "89",
+            "relations": {
+                "structAggregation": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/protobuf.go",
+            "targetname": "testdata/protoexample/any.go"
+        },
+        {
+            "source": "73",
+            "target": "68",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/reader.go",
+            "targetname": "render/data.go"
+        },
+        {
+            "source": "73",
+            "target": "69",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/reader.go",
+            "targetname": "render/html.go"
+        },
+        {
+            "source": "73",
+            "target": "70",
+            "relations": {
+                "FunctionCall": 6
+            },
+            "weight": 6,
+            "value": 2.216,
+            "sourcename": "render/reader.go",
+            "targetname": "render/json.go"
+        },
+        {
+            "source": "73",
+            "target": "71",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/reader.go",
+            "targetname": "render/msgpack.go"
+        },
+        {
+            "source": "73",
+            "target": "72",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/reader.go",
+            "targetname": "render/protobuf.go"
+        },
+        {
+            "source": "73",
+            "target": "75",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/reader.go",
+            "targetname": "render/redirect.go"
+        },
+        {
+            "source": "73",
+            "target": "76",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/reader.go",
+            "targetname": "render/render.go"
+        },
+        {
+            "source": "73",
+            "target": "79",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/reader.go",
+            "targetname": "render/text.go"
+        },
+        {
+            "source": "73",
+            "target": "80",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/reader.go",
+            "targetname": "render/toml.go"
+        },
+        {
+            "source": "73",
+            "target": "81",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/reader.go",
+            "targetname": "render/xml.go"
+        },
+        {
+            "source": "73",
+            "target": "82",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/reader.go",
+            "targetname": "render/yaml.go"
+        },
+        {
+            "source": "74",
+            "target": "68",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/reader_test.go",
+            "targetname": "render/data.go"
+        },
+        {
+            "source": "74",
+            "target": "69",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/reader_test.go",
+            "targetname": "render/html.go"
+        },
+        {
+            "source": "74",
+            "target": "70",
+            "relations": {
+                "FunctionCall": 6
+            },
+            "weight": 6,
+            "value": 2.216,
+            "sourcename": "render/reader_test.go",
+            "targetname": "render/json.go"
+        },
+        {
+            "source": "74",
+            "target": "71",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/reader_test.go",
+            "targetname": "render/msgpack.go"
+        },
+        {
+            "source": "74",
+            "target": "72",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/reader_test.go",
+            "targetname": "render/protobuf.go"
+        },
+        {
+            "source": "74",
+            "target": "73",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/reader_test.go",
+            "targetname": "render/reader.go"
+        },
+        {
+            "source": "74",
+            "target": "75",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/reader_test.go",
+            "targetname": "render/redirect.go"
+        },
+        {
+            "source": "74",
+            "target": "79",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/reader_test.go",
+            "targetname": "render/text.go"
+        },
+        {
+            "source": "74",
+            "target": "80",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/reader_test.go",
+            "targetname": "render/toml.go"
+        },
+        {
+            "source": "74",
+            "target": "81",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/reader_test.go",
+            "targetname": "render/xml.go"
+        },
+        {
+            "source": "74",
+            "target": "82",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/reader_test.go",
+            "targetname": "render/yaml.go"
+        },
+        {
+            "source": "76",
+            "target": "69",
+            "relations": {
+                "instantiation": 2
+            },
+            "weight": 2,
+            "value": 2.072,
+            "sourcename": "render/render.go",
+            "targetname": "render/html.go"
+        },
+        {
+            "source": "78",
+            "target": "68",
+            "relations": {
+                "FunctionCall": 8
+            },
+            "weight": 8,
+            "value": 2.288,
+            "sourcename": "render/render_test.go",
+            "targetname": "render/data.go"
+        },
+        {
+            "source": "78",
+            "target": "69",
+            "relations": {
+                "FunctionCall": 18
+            },
+            "weight": 18,
+            "value": 2.648,
+            "sourcename": "render/render_test.go",
+            "targetname": "render/html.go"
+        },
+        {
+            "source": "78",
+            "target": "70",
+            "relations": {
+                "FunctionCall": 48
+            },
+            "weight": 48,
+            "value": 3.7279999999999998,
+            "sourcename": "render/render_test.go",
+            "targetname": "render/json.go"
+        },
+        {
+            "source": "78",
+            "target": "71",
+            "relations": {
+                "FunctionCall": 8
+            },
+            "weight": 8,
+            "value": 2.288,
+            "sourcename": "render/render_test.go",
+            "targetname": "render/msgpack.go"
+        },
+        {
+            "source": "78",
+            "target": "72",
+            "relations": {
+                "FunctionCall": 8
+            },
+            "weight": 8,
+            "value": 2.288,
+            "sourcename": "render/render_test.go",
+            "targetname": "render/protobuf.go"
+        },
+        {
+            "source": "78",
+            "target": "73",
+            "relations": {
+                "FunctionCall": 8
+            },
+            "weight": 8,
+            "value": 2.288,
+            "sourcename": "render/render_test.go",
+            "targetname": "render/reader.go"
+        },
+        {
+            "source": "78",
+            "target": "75",
+            "relations": {
+                "FunctionCall": 8
+            },
+            "weight": 8,
+            "value": 2.288,
+            "sourcename": "render/render_test.go",
+            "targetname": "render/redirect.go"
+        },
+        {
+            "source": "78",
+            "target": "79",
+            "relations": {
+                "FunctionCall": 8
+            },
+            "weight": 8,
+            "value": 2.288,
+            "sourcename": "render/render_test.go",
+            "targetname": "render/text.go"
+        },
+        {
+            "source": "78",
+            "target": "80",
+            "relations": {
+                "FunctionCall": 8
+            },
+            "weight": 8,
+            "value": 2.288,
+            "sourcename": "render/render_test.go",
+            "targetname": "render/toml.go"
+        },
+        {
+            "source": "78",
+            "target": "81",
+            "relations": {
+                "FunctionCall": 8
+            },
+            "weight": 8,
+            "value": 2.288,
+            "sourcename": "render/render_test.go",
+            "targetname": "render/xml.go"
+        },
+        {
+            "source": "78",
+            "target": "82",
+            "relations": {
+                "FunctionCall": 8
+            },
+            "weight": 8,
+            "value": 2.288,
+            "sourcename": "render/render_test.go",
+            "targetname": "render/yaml.go"
+        },
+        {
+            "source": "79",
+            "target": "52",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/text.go",
+            "targetname": "internal/bytesconv/bytesconv.go"
+        },
+        {
+            "source": "79",
+            "target": "76",
+            "relations": {
+                "FunctionCall": 2
+            },
+            "weight": 2,
+            "value": 2.072,
+            "sourcename": "render/text.go",
+            "targetname": "render/render.go"
+        },
+        {
+            "source": "80",
+            "target": "0",
+            "relations": {
+                "structAggregation": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/toml.go",
+            "targetname": "any.go"
+        },
+        {
+            "source": "80",
+            "target": "4",
+            "relations": {
+                "structAggregation": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/toml.go",
+            "targetname": "binding/any.go"
+        },
+        {
+            "source": "80",
+            "target": "67",
+            "relations": {
+                "structAggregation": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/toml.go",
+            "targetname": "render/any.go"
+        },
+        {
+            "source": "80",
+            "target": "68",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/toml.go",
+            "targetname": "render/data.go"
+        },
+        {
+            "source": "80",
+            "target": "69",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/toml.go",
+            "targetname": "render/html.go"
+        },
+        {
+            "source": "80",
+            "target": "70",
+            "relations": {
+                "FunctionCall": 6
+            },
+            "weight": 6,
+            "value": 2.216,
+            "sourcename": "render/toml.go",
+            "targetname": "render/json.go"
+        },
+        {
+            "source": "80",
+            "target": "71",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/toml.go",
+            "targetname": "render/msgpack.go"
+        },
+        {
+            "source": "80",
+            "target": "72",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/toml.go",
+            "targetname": "render/protobuf.go"
+        },
+        {
+            "source": "80",
+            "target": "73",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/toml.go",
+            "targetname": "render/reader.go"
+        },
+        {
+            "source": "80",
+            "target": "75",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/toml.go",
+            "targetname": "render/redirect.go"
+        },
+        {
+            "source": "80",
+            "target": "76",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/toml.go",
+            "targetname": "render/render.go"
+        },
+        {
+            "source": "80",
+            "target": "79",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/toml.go",
+            "targetname": "render/text.go"
+        },
+        {
+            "source": "80",
+            "target": "81",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/toml.go",
+            "targetname": "render/xml.go"
+        },
+        {
+            "source": "80",
+            "target": "82",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/toml.go",
+            "targetname": "render/yaml.go"
+        },
+        {
+            "source": "80",
+            "target": "89",
+            "relations": {
+                "structAggregation": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/toml.go",
+            "targetname": "testdata/protoexample/any.go"
+        },
+        {
+            "source": "81",
+            "target": "0",
+            "relations": {
+                "structAggregation": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/xml.go",
+            "targetname": "any.go"
+        },
+        {
+            "source": "81",
+            "target": "4",
+            "relations": {
+                "structAggregation": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/xml.go",
+            "targetname": "binding/any.go"
+        },
+        {
+            "source": "81",
+            "target": "67",
+            "relations": {
+                "structAggregation": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/xml.go",
+            "targetname": "render/any.go"
+        },
+        {
+            "source": "81",
+            "target": "68",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/xml.go",
+            "targetname": "render/data.go"
+        },
+        {
+            "source": "81",
+            "target": "69",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/xml.go",
+            "targetname": "render/html.go"
+        },
+        {
+            "source": "81",
+            "target": "70",
+            "relations": {
+                "FunctionCall": 6
+            },
+            "weight": 6,
+            "value": 2.216,
+            "sourcename": "render/xml.go",
+            "targetname": "render/json.go"
+        },
+        {
+            "source": "81",
+            "target": "71",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/xml.go",
+            "targetname": "render/msgpack.go"
+        },
+        {
+            "source": "81",
+            "target": "72",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/xml.go",
+            "targetname": "render/protobuf.go"
+        },
+        {
+            "source": "81",
+            "target": "73",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/xml.go",
+            "targetname": "render/reader.go"
+        },
+        {
+            "source": "81",
+            "target": "75",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/xml.go",
+            "targetname": "render/redirect.go"
+        },
+        {
+            "source": "81",
+            "target": "76",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/xml.go",
+            "targetname": "render/render.go"
+        },
+        {
+            "source": "81",
+            "target": "79",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/xml.go",
+            "targetname": "render/text.go"
+        },
+        {
+            "source": "81",
+            "target": "80",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/xml.go",
+            "targetname": "render/toml.go"
+        },
+        {
+            "source": "81",
+            "target": "82",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/xml.go",
+            "targetname": "render/yaml.go"
+        },
+        {
+            "source": "81",
+            "target": "89",
+            "relations": {
+                "structAggregation": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/xml.go",
+            "targetname": "testdata/protoexample/any.go"
+        },
+        {
+            "source": "82",
+            "target": "0",
+            "relations": {
+                "structAggregation": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/yaml.go",
+            "targetname": "any.go"
+        },
+        {
+            "source": "82",
+            "target": "4",
+            "relations": {
+                "structAggregation": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/yaml.go",
+            "targetname": "binding/any.go"
+        },
+        {
+            "source": "82",
+            "target": "67",
+            "relations": {
+                "structAggregation": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/yaml.go",
+            "targetname": "render/any.go"
+        },
+        {
+            "source": "82",
+            "target": "68",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/yaml.go",
+            "targetname": "render/data.go"
+        },
+        {
+            "source": "82",
+            "target": "69",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/yaml.go",
+            "targetname": "render/html.go"
+        },
+        {
+            "source": "82",
+            "target": "70",
+            "relations": {
+                "FunctionCall": 6
+            },
+            "weight": 6,
+            "value": 2.216,
+            "sourcename": "render/yaml.go",
+            "targetname": "render/json.go"
+        },
+        {
+            "source": "82",
+            "target": "71",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/yaml.go",
+            "targetname": "render/msgpack.go"
+        },
+        {
+            "source": "82",
+            "target": "72",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/yaml.go",
+            "targetname": "render/protobuf.go"
+        },
+        {
+            "source": "82",
+            "target": "73",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/yaml.go",
+            "targetname": "render/reader.go"
+        },
+        {
+            "source": "82",
+            "target": "75",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/yaml.go",
+            "targetname": "render/redirect.go"
+        },
+        {
+            "source": "82",
+            "target": "76",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/yaml.go",
+            "targetname": "render/render.go"
+        },
+        {
+            "source": "82",
+            "target": "79",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/yaml.go",
+            "targetname": "render/text.go"
+        },
+        {
+            "source": "82",
+            "target": "80",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/yaml.go",
+            "targetname": "render/toml.go"
+        },
+        {
+            "source": "82",
+            "target": "81",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/yaml.go",
+            "targetname": "render/xml.go"
+        },
+        {
+            "source": "82",
+            "target": "89",
+            "relations": {
+                "structAggregation": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "render/yaml.go",
+            "targetname": "testdata/protoexample/any.go"
+        },
+        {
+            "source": "83",
+            "target": "3",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "response_writer.go",
+            "targetname": "benchmarks_test.go"
+        },
+        {
+            "source": "83",
+            "target": "39",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "response_writer.go",
+            "targetname": "debug.go"
+        },
+        {
+            "source": "84",
+            "target": "3",
+            "relations": {
+                "FunctionCall": 8
+            },
+            "weight": 8,
+            "value": 2.288,
+            "sourcename": "response_writer_test.go",
+            "targetname": "benchmarks_test.go"
+        },
+        {
+            "source": "84",
+            "target": "33",
+            "relations": {
+                "FunctionCall": 14
+            },
+            "weight": 14,
+            "value": 2.504,
+            "sourcename": "response_writer_test.go",
+            "targetname": "context.go"
+        },
+        {
+            "source": "84",
+            "target": "35",
+            "relations": {
+                "FunctionCall": 6
+            },
+            "weight": 6,
+            "value": 2.216,
+            "sourcename": "response_writer_test.go",
+            "targetname": "context_1.17_test.go"
+        },
+        {
+            "source": "84",
+            "target": "38",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "response_writer_test.go",
+            "targetname": "context_test.go"
+        },
+        {
+            "source": "84",
+            "target": "44",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "response_writer_test.go",
+            "targetname": "errors.go"
+        },
+        {
+            "source": "84",
+            "target": "61",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "response_writer_test.go",
+            "targetname": "mode.go"
+        },
+        {
+            "source": "84",
+            "target": "83",
+            "relations": {
+                "FunctionCall": 39,
+                "instantiation": 2
+            },
+            "weight": 41,
+            "value": 3.476,
+            "sourcename": "response_writer_test.go",
+            "targetname": "response_writer.go"
+        },
+        {
+            "source": "84",
+            "target": "91",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "response_writer_test.go",
+            "targetname": "tree.go"
+        },
+        {
+            "source": "85",
+            "target": "33",
+            "relations": {
+                "FunctionCall": 3
+            },
+            "weight": 3,
+            "value": 2.108,
+            "sourcename": "routergroup.go",
+            "targetname": "context.go"
+        },
+        {
+            "source": "85",
+            "target": "46",
+            "relations": {
+                "FunctionCall": 2
+            },
+            "weight": 2,
+            "value": 2.072,
+            "sourcename": "routergroup.go",
+            "targetname": "fs.go"
+        },
+        {
+            "source": "85",
+            "target": "47",
+            "relations": {
+                "FunctionCall": 1,
+                "structAggregation": 1
+            },
+            "weight": 2,
+            "value": 2.072,
+            "sourcename": "routergroup.go",
+            "targetname": "gin.go"
+        },
+        {
+            "source": "85",
+            "target": "93",
+            "relations": {
+                "FunctionCall": 2
+            },
+            "weight": 2,
+            "value": 2.072,
+            "sourcename": "routergroup.go",
+            "targetname": "utils.go"
+        },
+        {
+            "source": "85",
+            "target": "94",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "routergroup.go",
+            "targetname": "utils_test.go"
+        },
+        {
+            "source": "86",
+            "target": "33",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "routergroup_test.go",
+            "targetname": "context.go"
+        },
+        {
+            "source": "86",
+            "target": "44",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "routergroup_test.go",
+            "targetname": "errors.go"
+        },
+        {
+            "source": "86",
+            "target": "46",
+            "relations": {
+                "FunctionCall": 4
+            },
+            "weight": 4,
+            "value": 2.144,
+            "sourcename": "routergroup_test.go",
+            "targetname": "fs.go"
+        },
+        {
+            "source": "86",
+            "target": "47",
+            "relations": {
+                "FunctionCall": 13
+            },
+            "weight": 13,
+            "value": 2.468,
+            "sourcename": "routergroup_test.go",
+            "targetname": "gin.go"
+        },
+        {
+            "source": "86",
+            "target": "61",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "routergroup_test.go",
+            "targetname": "mode.go"
+        },
+        {
+            "source": "86",
+            "target": "85",
+            "relations": {
+                "FunctionCall": 56
+            },
+            "weight": 56,
+            "value": 4.016,
+            "sourcename": "routergroup_test.go",
+            "targetname": "routergroup.go"
+        },
+        {
+            "source": "86",
+            "target": "87",
+            "relations": {
+                "FunctionCall": 2
+            },
+            "weight": 2,
+            "value": 2.072,
+            "sourcename": "routergroup_test.go",
+            "targetname": "routes_test.go"
+        },
+        {
+            "source": "87",
+            "target": "3",
+            "relations": {
+                "FunctionCall": 33
+            },
+            "weight": 33,
+            "value": 3.1879999999999997,
+            "sourcename": "routes_test.go",
+            "targetname": "benchmarks_test.go"
+        },
+        {
+            "source": "87",
+            "target": "33",
+            "relations": {
+                "FunctionCall": 57
+            },
+            "weight": 57,
+            "value": 4.052,
+            "sourcename": "routes_test.go",
+            "targetname": "context.go"
+        },
+        {
+            "source": "87",
+            "target": "44",
+            "relations": {
+                "FunctionCall": 10
+            },
+            "weight": 10,
+            "value": 2.36,
+            "sourcename": "routes_test.go",
+            "targetname": "errors.go"
+        },
+        {
+            "source": "87",
+            "target": "45",
+            "relations": {
+                "FunctionCall": 2
+            },
+            "weight": 2,
+            "value": 2.072,
+            "sourcename": "routes_test.go",
+            "targetname": "errors_test.go"
+        },
+        {
+            "source": "87",
+            "target": "46",
+            "relations": {
+                "FunctionCall": 5
+            },
+            "weight": 5,
+            "value": 2.18,
+            "sourcename": "routes_test.go",
+            "targetname": "fs.go"
+        },
+        {
+            "source": "87",
+            "target": "47",
+            "relations": {
+                "FunctionCall": 38
+            },
+            "weight": 38,
+            "value": 3.3680000000000003,
+            "sourcename": "routes_test.go",
+            "targetname": "gin.go"
+        },
+        {
+            "source": "87",
+            "target": "83",
+            "relations": {
+                "FunctionCall": 3
+            },
+            "weight": 3,
+            "value": 2.108,
+            "sourcename": "routes_test.go",
+            "targetname": "response_writer.go"
+        },
+        {
+            "source": "87",
+            "target": "85",
+            "relations": {
+                "FunctionCall": 52
+            },
+            "weight": 52,
+            "value": 3.872,
+            "sourcename": "routes_test.go",
+            "targetname": "routergroup.go"
+        },
+        {
+            "source": "87",
+            "target": "91",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "routes_test.go",
+            "targetname": "tree.go"
+        },
+        {
+            "source": "87",
+            "target": "94",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "routes_test.go",
+            "targetname": "utils_test.go"
+        },
+        {
+            "source": "88",
+            "target": "33",
+            "relations": {
+                "FunctionCall": 2
+            },
+            "weight": 2,
+            "value": 2.072,
+            "sourcename": "test_helpers.go",
+            "targetname": "context.go"
+        },
+        {
+            "source": "88",
+            "target": "47",
+            "relations": {
+                "FunctionCall": 3
+            },
+            "weight": 3,
+            "value": 2.108,
+            "sourcename": "test_helpers.go",
+            "targetname": "gin.go"
+        },
+        {
+            "source": "88",
+            "target": "83",
+            "relations": {
+                "FunctionCall": 2
+            },
+            "weight": 2,
+            "value": 2.072,
+            "sourcename": "test_helpers.go",
+            "targetname": "response_writer.go"
+        },
+        {
+            "source": "91",
+            "target": "33",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "tree.go",
+            "targetname": "context.go"
+        },
+        {
+            "source": "91",
+            "target": "47",
+            "relations": {
+                "structAggregation": 2
+            },
+            "weight": 2,
+            "value": 2.072,
+            "sourcename": "tree.go",
+            "targetname": "gin.go"
+        },
+        {
+            "source": "91",
+            "target": "52",
+            "relations": {
+                "FunctionCall": 4
+            },
+            "weight": 4,
+            "value": 2.144,
+            "sourcename": "tree.go",
+            "targetname": "internal/bytesconv/bytesconv.go"
+        },
+        {
+            "source": "92",
+            "target": "47",
+            "relations": {
+                "FunctionCall": 17
+            },
+            "weight": 17,
+            "value": 2.612,
+            "sourcename": "tree_test.go",
+            "targetname": "gin.go"
+        },
+        {
+            "source": "92",
+            "target": "65",
+            "relations": {
+                "GlobalRefer": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "tree_test.go",
+            "targetname": "recovery.go"
+        },
+        {
+            "source": "92",
+            "target": "91",
+            "relations": {
+                "FunctionCall": 31
+            },
+            "weight": 31,
+            "value": 3.116,
+            "sourcename": "tree_test.go",
+            "targetname": "tree.go"
+        },
+        {
+            "source": "93",
+            "target": "33",
+            "relations": {
+                "FunctionCall": 2
+            },
+            "weight": 2,
+            "value": 2.072,
+            "sourcename": "utils.go",
+            "targetname": "context.go"
+        },
+        {
+            "source": "93",
+            "target": "39",
+            "relations": {
+                "FunctionCall": 2
+            },
+            "weight": 2,
+            "value": 2.072,
+            "sourcename": "utils.go",
+            "targetname": "debug.go"
+        },
+        {
+            "source": "93",
+            "target": "47",
+            "relations": {
+                "FunctionCall": 2
+            },
+            "weight": 2,
+            "value": 2.072,
+            "sourcename": "utils.go",
+            "targetname": "gin.go"
+        },
+        {
+            "source": "93",
+            "target": "94",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "utils.go",
+            "targetname": "utils_test.go"
+        },
+        {
+            "source": "94",
+            "target": "3",
+            "relations": {
+                "FunctionCall": 2
+            },
+            "weight": 2,
+            "value": 2.072,
+            "sourcename": "utils_test.go",
+            "targetname": "benchmarks_test.go"
+        },
+        {
+            "source": "94",
+            "target": "33",
+            "relations": {
+                "FunctionCall": 4
+            },
+            "weight": 4,
+            "value": 2.144,
+            "sourcename": "utils_test.go",
+            "targetname": "context.go"
+        },
+        {
+            "source": "94",
+            "target": "35",
+            "relations": {
+                "FunctionCall": 2
+            },
+            "weight": 2,
+            "value": 2.072,
+            "sourcename": "utils_test.go",
+            "targetname": "context_1.17_test.go"
+        },
+        {
+            "source": "94",
+            "target": "44",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "utils_test.go",
+            "targetname": "errors.go"
+        },
+        {
+            "source": "94",
+            "target": "45",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "utils_test.go",
+            "targetname": "errors_test.go"
+        },
+        {
+            "source": "94",
+            "target": "47",
+            "relations": {
+                "FunctionCall": 2
+            },
+            "weight": 2,
+            "value": 2.072,
+            "sourcename": "utils_test.go",
+            "targetname": "gin.go"
+        },
+        {
+            "source": "94",
+            "target": "61",
+            "relations": {
+                "FunctionCall": 1
+            },
+            "weight": 1,
+            "value": 2.036,
+            "sourcename": "utils_test.go",
+            "targetname": "mode.go"
+        },
+        {
+            "source": "94",
+            "target": "83",
+            "relations": {
+                "FunctionCall": 2
+            },
+            "weight": 2,
+            "value": 2.072,
+            "sourcename": "utils_test.go",
+            "targetname": "response_writer.go"
+        },
+        {
+            "source": "94",
+            "target": "85",
+            "relations": {
+                "FunctionCall": 3
+            },
+            "weight": 3,
+            "value": 2.108,
+            "sourcename": "utils_test.go",
+            "targetname": "routergroup.go"
+        },
+        {
+            "source": "94",
+            "target": "87",
+            "relations": {
+                "FunctionCall": 4
+            },
+            "weight": 4,
+            "value": 2.144,
+            "sourcename": "utils_test.go",
+            "targetname": "routes_test.go"
+        },
+        {
+            "source": "94",
+            "target": "93",
+            "relations": {
+                "FunctionCall": 28
+            },
+            "weight": 28,
+            "value": 3.008,
+            "sourcename": "utils_test.go",
+            "targetname": "utils.go"
+        }
+    ],
+    "categories": [
+        {
+            "name": "gin"
+        },
+        {
+            "name": "binding"
+        },
+        {
+            "name": "ginS"
+        },
+        {
+            "name": "bytesconv"
+        },
+        {
+            "name": "json"
+        },
+        {
+            "name": "render"
+        },
+        {
+            "name": "protoexample"
+        }
+    ]
+}

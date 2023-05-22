@@ -1,0 +1,90 @@
+[
+    {
+        "Src": "context.go",
+        "Des": "errors.go",
+        "Whole": "Context",
+        "Part": "errorMsgs",
+        "ObjName": "Errors",
+        "Pos": ""
+    },
+    {
+        "Src": "context.go",
+        "Des": "gin.go",
+        "Whole": "Context",
+        "Part": "HandlersChain",
+        "ObjName": "handlers",
+        "Pos": ""
+    },
+    {
+        "Src": "context.go",
+        "Des": "response_writer.go",
+        "Whole": "Context",
+        "Part": "responseWriter",
+        "ObjName": "writermem",
+        "Pos": ""
+    },
+    {
+        "Src": "context.go",
+        "Des": "response_writer.go",
+        "Whole": "Context",
+        "Part": "ResponseWriter",
+        "ObjName": "Writer",
+        "Pos": ""
+    },
+    {
+        "Src": "context.go",
+        "Des": "tree.go",
+        "Whole": "Context",
+        "Part": "Params",
+        "ObjName": "Params",
+        "Pos": ""
+    },
+    {
+        "Src": "gin.go",
+        "Des": "render/html.go",
+        "Whole": "Engine",
+        "Part": "Delims",
+        "ObjName": "delims",
+        "Pos": ""
+    },
+    {
+        "Src": "gin.go",
+        "Des": "render/html.go",
+        "Whole": "Engine",
+        "Part": "HTMLRender",
+        "ObjName": "HTMLRender",
+        "Pos": ""
+    },
+    {
+        "Src": "gin.go",
+        "Des": "tree.go",
+        "Whole": "Engine",
+        "Part": "methodTrees",
+        "ObjName": "trees",
+        "Pos": ""
+    },
+    {
+        "Src": "routergroup.go",
+        "Des": "gin.go",
+        "Whole": "RouterGroup",
+        "Part": "HandlersChain",
+        "ObjName": "Handlers",
+        "Pos": ""
+    },
+    {
+        "Src": "tree.go",
+        "Des": "gin.go",
+        "Whole": "node",
+        "Part": "HandlersChain",
+        "ObjName": "handlers",
+        "Pos": ""
+    },
+    {
+        "Src": "tree.go",
+        "Des": "gin.go",
+        "Whole": "nodeValue",
+        "Part": "HandlersChain",
+        "ObjName": "handlers",
+        "Pos": ""
+    }
+]
