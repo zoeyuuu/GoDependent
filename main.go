@@ -20,7 +20,6 @@ var depList []tool.Dependencies
 func main() {
 
 	root := "D:\\projects\\go_projects\\src\\ginVersions\\gin-1.9.0"
-	fmt.Println("root1:" + root)
 	file.GetFileName(root)
 	file.FindFileInfos()
 	tool.FindDependenyAll()

@@ -17,21 +17,20 @@ var InfoList []FileInfo
 // type structName string
 
 type FileInfo struct {
-	FileBaseName  string //文件名
-	FileRelName   string //相对路径名
-	FileAbsName   string //绝对路径名
-	PkgName       string //ny
-	imports       []string
-	Cons          []Con
+	FileBaseName  string   //文件名
+	FileRelName   string   //相对路径名
+	FileAbsName   string   //绝对路径名
+	PkgName       string   //包名
+	imports       []string //导入
+	Cons          []Con    //常量
 	structTypes   []StructType
 	funcTypes     []FuncType
 	interfaceType []InterfaceType
 	arrayTypes    []ArrayType
 	Vars          []Var
-	//	Type         []any
-	StructName []string
-	FuncName   []string //普通函数名
-	method     []method
+	StructName    []string
+	FuncName      []string //普通函数名
+	method        []method
 }
 
 type Con struct {
